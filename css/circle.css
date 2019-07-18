@@ -1,0 +1,465 @@
+/*===================== INTERACTIVE ANIMATION =====================*/
+.interactiveImage{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+#interactive1{
+	z-index: 1;
+}
+
+#interactiveCover{
+	z-index:4;
+	background-color: white;
+	opacity: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.interactiveContainer{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	filter:contrast(100);
+}
+#container1{
+	z-index: 3;
+}
+
+/*===================== BODY =====================*/
+body{
+	width: 100%;
+	font-family: "Lato";
+}
+.container{
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 100%;
+}
+/*===================== NAVIGATION BAR =====================*/
+nav{
+	z-index: 100;
+	/*background-image: linear-gradient(to  right, rgba(255,255,255,1) 30%,rgba(255,255,255,0) 70%,rgba(255,255,255,1) 100%);*/
+
+}
+.navbar .container{
+	margin-bottom: 0px;
+	margin-top: 30px;
+}
+
+.nav-item{
+	margin-left: 10px;
+}
+
+.navbar-light a:hover{
+	color:#0076be !important;
+}
+
+.nav-item.active{
+	border-bottom: solid 1px #0076be;
+}
+
+
+/*===================== INTRO =====================*/
+#home{
+	min-height: calc(100vh - 106px);
+	width: 100%;
+	padding-left: 30px;
+	padding-top: 100px;
+	padding-bottom: 0px;
+}
+
+#home div[class^="col"]{
+	margin-top: 0px !important;
+	z-index: 10;
+}
+
+#home h1{
+	font-weight: 700;
+	font-size: 2.5rem;
+	line-height: 1.2;
+	z-index: 2;
+	-webkit-font-smoothing: antialiased;
+}
+
+#home p{
+	margin-top: 20px;
+	margin-bottom: 60px;
+	font-weight: 400;
+	color: rgba(14,19,24,.8);
+	font-size:15px;
+}
+
+.fa-arrow-alt-circle-right{
+	font-size: 30px;
+	vertical-align: middle;
+	padding-right: 10px;
+}
+
+.btn-outline-primary{
+	color: #0076be;
+	border-color: #0076be;
+}
+
+.btn-outline-primary:hover{
+	background-color: #0076be;
+}
+
+.btn:focus, .btn:active{
+	box-shadow: none;
+	outline: none;
+}
+#home .btn-video{
+	font-size: 20px;
+	margin-top: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+
+}
+
+#home #btn-cta{
+	position: absolute;
+	top: 340px;
+	left: 307px;
+	width: 250px;
+	font-size: 20px;
+	font-weight: 100;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border: none;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#home #btn-cta:hover{
+	color:white;
+	background-color: rgba(0,0,0,0.3);
+}
+
+#home #iphoneVector{
+	height: 650px;
+	transform: translateY(-150px);
+	
+	padding-left: 30%;
+	pointer-events: none;
+}
+
+#home .card{
+	border: 0px;
+	margin-top: 180px;
+	background-color: transparent;
+}
+#home .card p{
+	margin-top: 0px !important;
+}
+#home .fa-lock{
+	color: #0076be;
+	padding-right: 20px;
+	font-size: 2rem;
+	vertical-align: bottom;
+}
+#home #myhealth-logo{
+	padding-left: 10px;
+	width: 150px;
+}
+
+
+
+/*===================== FEATURES =====================*/
+#bgVector{
+	background-image: url("../img/features-bg.svg");
+	width: 100%;
+	height: calc(100% + 200px);
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	transform: translateY(-150px);
+	z-index: 5;
+}
+#features .container{
+	z-index: 10;
+	position: relative;
+	
+}
+
+#features{
+	/*background-color: transparent;
+	background-image: url("../img/features-bg.svg");
+	background-size: cover;*/
+	height: 100vh;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#features .card{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+	padding-bottom: 0px;
+}
+
+#features .card-title{
+	font-weight: 700;
+	font-size: 2.5rem;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+
+#features h3{
+	text-align: center;
+}
+
+#features p{
+	text-align: center;
+	color: rgba(14,19,24,.8);
+	font-weight: 400;
+	font-size: 15px;
+	padding: 20px;
+}
+#features i{
+	color: #0076be;
+	padding: 20px;
+	font-size: 100px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+#features div[class^="col"]{
+	/*padding-bottom: 100px;*/
+}
+
+/*===================== TESTIMONIALS =====================*/
+#testimonials{
+	height: 60vh;
+	overflow: hidden;
+}
+#testimonials video{
+	opacity: 1;
+	width: 100%;
+	transform: translateY(-15%);
+	transition:0.5s;
+	z-index: 2;
+}
+
+#testimonials video:hover{
+	opacity: 1;
+
+	
+}
+
+#testimonials #videoOverlay{
+	position: absolute;
+	background-color: rgba(0,0,0,0.3);
+	width: 100%;
+	height: 60vh;
+	z-index: 3;
+	overflow: hidden;
+	transition:0.5s;
+}
+#testimonials #videoOverlay:hover{
+	background-color: rgba(255,255,255,0);
+}
+
+#testimonials #videoOverlay h1{
+	color: white;
+	/*text-shadow: 2px 2px 5px rgba(0,0,0,0.4);*/
+	text-align:center;
+	font-weight: 700;
+	font-size: 2.5rem;
+	margin-top: 150px;
+}
+
+#testimonials #videoOverlay i{
+	color: black;
+	padding-top: 20px;
+	font-size:100px;
+	color: white;
+	transition: 0.2s;
+}
+
+#testimonials #videoOverlay i:hover{
+	color: rgba(255,255,255,0.5);
+}
+
+#testimonials #videoOverlay button{
+	background-color: transparent;
+	border-width: 0px;
+}
+
+#testimonials #videoOverlay button:active, #testimonials #videoOverlay button:focus {
+	box-shadow:none;
+	outline: none;
+}
+
+
+/*===================== DOWNLOADS =====================*/
+#downloads{
+	background-color: rgba(14,19,24,0);
+}
+#downloads h1{
+	color: black;
+	/*text-shadow: 2px 2px 5px rgba(0,0,0,0.4);*/
+	text-align:center;
+	font-weight: 700;
+	font-size: 2.5rem;
+	padding-top: 100px;
+}
+
+#downloads .badges{
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#downloads .badges{
+	width: 70%;
+	padding-top: 80px;
+	padding-bottom: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+#downloads .badge-link img{
+	width: 250px;
+	margin-right: 15px;
+	margin-left: 15px;
+	transition: 0.2s;
+	/*opacity: 0;
+  	animation: slideInLeft 0.3s linear 2.1s 1 forwards;*/
+}
+#downloads .badge-link img:hover{
+	filter: opacity(50%);
+}
+
+/*===================== FOOTER =====================*/
+footer{
+	background-color: #00243b;
+}
+footer .container{
+	padding-top: 50px;
+}
+
+footer .row{
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+footer p{
+	color: rgba(200,200,210,0.9);
+}
+
+footer .social{
+	color: rgba(200,200,210,0.9);
+	transition: 0.2s;
+	font-size: 25px;
+	margin-right: 20px;
+}
+
+footer .social:hover{
+	color: rgba(255,255,255,1);
+}
+
+footer #email{
+	font-size: 1rem;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+footer #email i{
+	font-size: 20px;
+	padding-right: 20px;
+}
+footer #email:hover{
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+}
+footer .joinList{
+	font-weight: 300;
+	font-size: 0.9rem;
+	line-height: 10px;
+}
+
+footer hr{
+	width: 80%;
+	padding-bottom: 20px;
+	border-color: rgba(200,200,210,0.3);
+}
+
+footer img{
+	transform: translateY(-25%);
+}
+
+footer #copyright{
+	text-align: center;
+	padding: 20px;
+	font-weight: 100;
+	font-size: 15px;
+	margin-bottom: 0px;
+}
+/*===================== ANIMATIONS =====================*/
+@keyframes fadeOut{
+	0%{
+		opacity: 1;
+	}
+
+	100%{
+		opacity: 0;
+	}
+}
+
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes hideCanvas{
+	0%{
+		opacity: 0.5
+		
+	}
+
+	100%{
+		opacity: 1;
+		
+	}
+}
+
+@keyframes whiten{
+	0%{
+		background-color: rgba(255,255,255,0);
+		
+	}
+
+	100%{
+		background-color: rgba(255,255,255,1);
+		
+	}
+}
+
+canvas{
+	filter: blur(20px);
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+svg{
+	width: 100vw;
+	height: 100vh;
+}
