@@ -5,6 +5,29 @@ var State;
 var Scene1;
 
 
+$(document).ready(function(){
+
+	//Check-In Graphic
+
+	var interval = setInterval(function() {
+    	if ($(window).scrollTop() >= $("#check-in_row").offset().top-200) {
+    		console.log("SCROLL");
+        	$("#check-in_graphic").attr("data","img/consult_graphic.svg");
+			$("#check-in_graphic").css("animation","fadeIn 1s ease-out 0s 1 forwards");
+			$(".tempCol h1").css("animation","slideInLeft 0.6s ease-out 0s 1 forwards");
+			$(".tempCol p").css("animation","slideInLeft 0.6s ease-out 0.1s 1 forwards");
+        	clearInterval(interval);
+    	}
+    	else{
+    		console.log($(window).scrollTop(),$(".tempCol h1").offset());
+    	}
+	}, 250);
+
+	setTimeout(function(){
+		
+	},1000);
+	
+})
 	
 var images = function(){
 	
@@ -30,7 +53,7 @@ var particle = function(P,color,i){
 	this.Yspeed = initPositions[i].speed;
 	this.opacity = P.random(1,1);
 	this.fadeVal = P.random(0.004,0.008)*-1;
-	this.color = colors[cur-1];
+	this.color = "blue";
 	this.mode ="normal";
 
 	
@@ -104,7 +127,6 @@ var particle = function(P,color,i){
 		this.Xspeed= initPositions[this.i].speed;
 		this.Yspeed= initPositions[this.i].speed;
 		this.mode="normal";
-		this.color = colors[cur-1];
 	}
 }
 
@@ -129,7 +151,7 @@ function setCur(n){
 	if (cur>3){cur=1;}
 	isChanging=false;
 
-	$("#interactive1").attr('src',"img/placeholder"+cur+".jpg");
+	// $("#interactive1").attr('src',"img/placeholder"+cur+".jpg");
 }
 
 // Canvas 1
