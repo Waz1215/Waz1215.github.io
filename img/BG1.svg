@@ -15,19 +15,19 @@
    viewBox="0 0 297 210"
    version="1.1"
    id="svg10065"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="BG1.svg">
+   sodipodi:docname="BG1.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
   <defs
      id="defs10059">
     <linearGradient
        inkscape:collect="always"
        id="linearGradient10073">
       <stop
-         style="stop-color:#0076be;stop-opacity:1"
+         style="stop-color:#b696be;stop-opacity:1"
          offset="0"
          id="stop10069" />
       <stop
-         style="stop-color:#af34be;stop-opacity:1"
+         style="stop-color:#00ffff;stop-opacity:1"
          offset="1"
          id="stop10071" />
     </linearGradient>
@@ -35,10 +35,10 @@
        inkscape:collect="always"
        xlink:href="#linearGradient10073"
        id="linearGradient10075"
-       x1="-7.5595236"
-       y1="85.333336"
-       x2="303.13693"
-       y2="301.53571"
+       x1="56.69643"
+       y1="170"
+       x2="276.67859"
+       y2="264.49405"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -49,7 +49,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-114.28571"
+     inkscape:cx="340"
      inkscape:cy="560"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -84,6 +84,8 @@
        x="-7.5595236"
        y="85.333336"
        rx="2.6458333"
-       ry="2.6458333" />
+       ry="2.6458333"
+       inkscape:export-xdpi="96.453148"
+       inkscape:export-ydpi="96.453148" />
   </g>
 </svg>

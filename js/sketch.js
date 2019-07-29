@@ -5,29 +5,7 @@ var State;
 var Scene1;
 
 
-$(document).ready(function(){
 
-	//Check-In Graphic
-
-	var interval = setInterval(function() {
-    	if ($(window).scrollTop() >= $("#check-in_row").offset().top-200) {
-    		console.log("SCROLL");
-        	$("#check-in_graphic").attr("data","img/consult_graphic.svg");
-			$("#check-in_graphic").css("animation","fadeIn 1s ease-out 0s 1 forwards");
-			$(".tempCol h1").css("animation","slideInLeft 0.6s ease-out 0s 1 forwards");
-			$(".tempCol p").css("animation","slideInLeft 0.6s ease-out 0.1s 1 forwards");
-        	clearInterval(interval);
-    	}
-    	else{
-    		console.log($(window).scrollTop(),$(".tempCol h1").offset());
-    	}
-	}, 250);
-
-	setTimeout(function(){
-		
-	},1000);
-	
-})
 	
 var images = function(){
 	
