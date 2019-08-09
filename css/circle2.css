@@ -1,14 +1,4 @@
 /*===================== INTERACTIVE ANIMATION =====================*/
-#backgroundGradient{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background-image: linear-gradient(to  right, rgb(255,0,255), rgb(0,255,255));
-	/*display: none;*/
-}
-
 .interactiveImage{
 	position: absolute;
 	top: 0;
@@ -70,8 +60,8 @@ nav{
 	margin-left: 10px;
 }
 .navbar-light a{
-	font-weight: 500;
-	/*color: white !important;*/
+	font-weight: 300;
+	color: white !important;
 }
 
 .navbar-light a:hover{
@@ -79,7 +69,7 @@ nav{
 }
 
 .nav-item.active{
-	border-bottom: solid 2px #0076be;
+	border-bottom: solid 1px rgba(255,255,255,0.7);
 }
 
 #logo{
@@ -88,11 +78,10 @@ nav{
 
 /*===================== INTRO =====================*/
 #home{
-	/*background-color: green;*/
 	min-height: calc(100vh - 106px);
 	width: 100%;
 	padding-left: 30px;
-	padding-top: 30px;
+	padding-top: 50px;
 	padding-bottom: 0px;
 	/*background-image: url("../img/HomeBg.svg");
 	background-size: contain;
@@ -100,7 +89,7 @@ nav{
 }
 
 #home *{
-	/*color: black !important;*/
+	color: white !important;
 }
 
 #home div[class^="col"]{
@@ -109,7 +98,6 @@ nav{
 }
 
 #home h1{
-	padding-top: 20px;
 	font-weight: 700;
 	font-size: 3rem;
 	line-height: 1.2;
