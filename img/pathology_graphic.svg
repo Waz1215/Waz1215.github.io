@@ -23,7 +23,7 @@
    version="1.1"><metadata
      id="metadata12"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs10"><linearGradient
        id="linearGradient17204"
        inkscape:collect="always"><stop
@@ -1015,13 +1015,13 @@
      inkscape:measure-end="0,0"
      inkscape:measure-start="0,0"
      showguides="true"
-     inkscape:current-layer="layer38"
+     inkscape:current-layer="layer36"
      inkscape:window-maximized="0"
      inkscape:window-y="0"
      inkscape:window-x="0"
-     inkscape:cy="174.8555"
-     inkscape:cx="67.204186"
-     inkscape:zoom="1.4142136"
+     inkscape:cy="229.69241"
+     inkscape:cx="262.49014"
+     inkscape:zoom="4.8665586"
      showgrid="false"
      id="namedview8"
      inkscape:window-height="852"
@@ -1299,8 +1299,7 @@
      inkscape:groupmode="layer"
      id="layer29"
      inkscape:label="DNAContainerTop"
-     style="display:inline"
-     sodipodi:insensitive="true"><path
+     style="display:inline"><path
        style="opacity:0.63800001;fill:url(#linearGradient16222);fill-opacity:1;stroke:none;stroke-width:0.34531993;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 83.684563,123.55231 99.751607,0.54367 -0.12071,141.69289 c -0.0139,16.57859 -21.98154,29.9252 -49.28597,29.9252 h -0.54961 c -27.3044,0 -49.262195,-13.34587 -49.285977,-29.9252 l -0.04295,-142.19673 z"
        id="path16127"
@@ -1346,8 +1345,7 @@
        rx="48.735291" /></g><g
      inkscape:groupmode="layer"
      id="layer36"
-     inkscape:label="Heart"
-     sodipodi:insensitive="true"><g
+     inkscape:label="Heart"><g
        id="g17123"
        transform="matrix(0.35833752,0,0,0.35833752,137.41513,78.608086)"
        style="fill:#b40b58;fill-opacity:0.54028434"><g
@@ -1401,7 +1399,23 @@
          id="g17094"
          style="fill:#b40b58;fill-opacity:0.54028434" /><g
          id="g17096"
-         style="fill:#b40b58;fill-opacity:0.54028434" /></g></g><g
+         style="fill:#b40b58;fill-opacity:0.54028434" /></g><g
+       transform="matrix(0.35197298,0.10343195,-0.0283943,0.37352026,253.79294,51.992948)"
+       style="display:inline;opacity:1;enable-background:new"
+       inkscape:label="Layer 2"
+       id="layer7"
+       inkscape:transform-center-x="-0.32103326"
+       inkscape:transform-center-y="0.23899324"><path
+         sodipodi:nodetypes="ccssccssccsccccc"
+         inkscape:connector-curvature="0"
+         id="path3460"
+         d="M 55.369234,199.48534 H 68.18263 l 0.434353,-20.19738 c 0.04357,-2.02633 5.552185,-1.3129 5.537992,0 l -0.217176,20.0888 13.356336,0.10859 V 179.7223 c 0,-2.23042 5.212229,-1.39808 5.212229,0 v 20.41458 h 12.596216 c 0,0 0.32726,-20.34227 0.1086,-25.40963 -0.26553,-6.15381 -9.26819,-14.58938 -19.002925,-4.4521 -5.13945,-6.10802 -12.237066,-7.08497 -19.111506,0.1086 v -3.25766 H 55.586411 Z"
+         style="fill:#ffffff;fill-opacity:0.9905213;stroke:none;stroke-width:0.30452549;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /><path
+         sodipodi:nodetypes="ccccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path3463"
+         d="m 97.724041,173.61173 v 3.16891 h 2.311749 l 0.0334,-3.06295 h 2.81287 l -0.0334,-1.7944 -2.82434,-0.0334 0.0334,-3.0677 -2.28407,-0.0334 -0.06682,3.02381 -3.023809,-0.0334 v 1.84403 z"
+         style="fill:#e70a47;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" /></g></g><g
      inkscape:groupmode="layer"
      id="layer37"
      inkscape:label="HeartLine"
@@ -1419,7 +1433,8 @@
          style="fill:none;stroke:url(#linearGradient17188);stroke-width:2.352911;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" /></g></g><g
      inkscape:groupmode="layer"
      id="layer38"
-     inkscape:label="Float1" /><path
+     inkscape:label="Float1"
+     sodipodi:insensitive="true" /><path
      style="opacity:1;fill:#5986c7;fill-opacity:0.89411765;fill-rule:evenodd;stroke:#9fc8e4;stroke-width:0.01424381;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d=""
      id="path78322"
@@ -1427,9 +1442,7 @@
      id="style2-2"
      type="text/css">
 	.st0{fill:none;}
-</style>
-
-    <animateTransform
+</style><animateTransform
      xlink:href="#layer30"
      attributeName="transform"
      type="translate"
@@ -1438,10 +1451,7 @@
      dur="2.5s"
      additive="sum"
      repeatCount="indefinite"
-     id="containerB-anim-1" />
-
-
-    <animateTransform
+     id="containerB-anim-1" /><animateTransform
      xlink:href="#layer30"
      attributeName="transform"
      type="scale"
@@ -1450,10 +1460,7 @@
      dur="0.3s"
      additive="sum"
      repeatCount="1"
-     id="containerB-anim-2" />
-
-
-    <animateTransform
+     id="containerB-anim-2" /><animateTransform
      xlink:href="#layer29"
      attributeName="transform"
      type="translate"
@@ -1462,9 +1469,7 @@
      dur="2.5s"
      additive="sum"
      repeatCount="indefinite"
-     id="containerT-anim-1" />
-
-         <animateTransform
+     id="containerT-anim-1" /><animateTransform
      xlink:href="#layer29"
      attributeName="transform"
      type="scale"
@@ -1473,9 +1478,7 @@
      dur="0.3s"
      additive="sum"
      repeatCount="1"
-     id="containerT-anim-2" />
-
-    <animateTransform
+     id="containerT-anim-2" /><animateTransform
      xlink:href="#layer34"
      attributeName="transform"
      type="translate"
@@ -1484,9 +1487,7 @@
      dur="2.5s"
      additive="sum"
      repeatCount="indefinite"
-     id="dna1-anim-1" />
-
-         <animateTransform
+     id="dna1-anim-1" /><animateTransform
      xlink:href="#layer34"
      attributeName="transform"
      type="scale"
@@ -1495,11 +1496,7 @@
      dur="0.3s"
      additive="sum"
      repeatCount="1"
-     id="dna1-anim-2" />
-
-
-
-    <animate
+     id="dna1-anim-2" /><animate
      xlink:href="#layer34"
      attributeType="CSS"
      attributeName="opacity"
@@ -1507,12 +1504,7 @@
      keyTimes="0; 0.5; 1"
      dur="2.5s"
      repeatCount="indefinite"
-     id="dna1-anim-3" />
-
-
-
-
-    <animateTransform
+     id="dna1-anim-3" /><animateTransform
      xlink:href="#layer32"
      attributeName="transform"
      type="translate"
@@ -1521,9 +1513,7 @@
      dur="2.5s"
      additive="sum"
      repeatCount="indefinite"
-     id="dna2-anim-1" />
-
-    <animate
+     id="dna2-anim-1" /><animate
      xlink:href="#layer32"
      attributeType="CSS"
      attributeName="opacity"
@@ -1531,10 +1521,7 @@
      keyTimes="0; 0.5; 1"
      dur="2.5s"
      repeatCount="indefinite"
-     id="dna2-anim-2" />
-
-
-         <animateTransform
+     id="dna2-anim-2" /><animateTransform
      xlink:href="#layer32"
      attributeName="transform"
      type="scale"
@@ -1543,10 +1530,7 @@
      dur="0.3s"
      additive="sum"
      repeatCount="1"
-     id="dna2-anim-3" />
-
-
-     <animateTransform
+     id="dna2-anim-3" /><animateTransform
      xlink:href="#layer35"
      attributeName="transform"
      type="translate"
@@ -1555,9 +1539,7 @@
      dur="2.5s"
      additive="sum"
      repeatCount="indefinite"
-     id="dnaLines-anim-1" />
-
-         <animateTransform
+     id="dnaLines-anim-1" /><animateTransform
      xlink:href="#layer35"
      attributeName="transform"
      type="scale"
@@ -1566,12 +1548,7 @@
      dur="0.3s"
      additive="sum"
      repeatCount="1"
-     id="dnaLines-anim-2" />
-
-
-
-
-    <animateTransform
+     id="dnaLines-anim-2" /><animateTransform
      xlink:href="#layer36"
      attributeName="transform"
      type="translate"
@@ -1580,10 +1557,7 @@
      dur="4s"
      additive="sum"
      repeatCount="indefinite"
-     id="heart-anim-1" />
-
-
-         <animateTransform
+     id="heart-anim-1" /><animateTransform
      xlink:href="#layer36"
      attributeName="transform"
      type="scale"
@@ -1592,11 +1566,7 @@
      dur="0.3s"
      additive="sum"
      repeatCount="1"
-     id="heart-anim-2" />
-
-
-
-      <animateTransform
+     id="heart-anim-2" /><animateTransform
      xlink:href="#layer37"
      attributeName="transform"
      type="translate"
@@ -1605,9 +1575,7 @@
      dur="4s"
      additive="sum"
      repeatCount="indefinite"
-     id="heartLines-anim-1" />
-
-         <animateTransform
+     id="heartLines-anim-1" /><animateTransform
      xlink:href="#layer37"
      attributeName="transform"
      type="scale"
@@ -1616,10 +1584,7 @@
      dur="0.3s"
      additive="sum"
      repeatCount="1"
-     id="heartLines-anim-2" />
-
-
-          <animate
+     id="heartLines-anim-2" /><animate
      xlink:href="#layer37"
      attributeType="CSS"
      attributeName="opacity"
@@ -1627,11 +1592,7 @@
      keyTimes="0; 0.3; 0.6; 0.95; 1"
      dur="2.5s"
      repeatCount="indefinite"
-     id="shadow-anim" />
-
-
-
-      <animateTransform
+     id="shadow-anim" /><animateTransform
      xlink:href="#layer33"
      attributeName="transform"
      type="translate"
@@ -1640,9 +1601,7 @@
      dur="2.5s"
      additive="sum"
      repeatCount="indefinite"
-     id="bubbles-anim-1" />
-
-         <animateTransform
+     id="bubbles-anim-1" /><animateTransform
      xlink:href="#layer33"
      attributeName="transform"
      type="scale"
@@ -1651,10 +1610,7 @@
      dur="0.3s"
      additive="sum"
      repeatCount="1"
-     id="bubbles-anim-2" />
-
-
-      <animateTransform
+     id="bubbles-anim-2" /><animateTransform
      xlink:href="#path16781"
      attributeName="transform"
      type="translate"
@@ -1663,9 +1619,7 @@
      dur="4s"
      additive="sum"
      repeatCount="indefinite"
-     id="bubbles1-anim-1" />
-
-      <animateTransform
+     id="bubbles1-anim-1" /><animateTransform
      xlink:href="#circle16825"
      attributeName="transform"
      type="translate"
@@ -1674,10 +1628,7 @@
      dur="6s"
      additive="sum"
      repeatCount="indefinite"
-     id="bubbles2-anim-1" />
-
-
-    <animateTransform
+     id="bubbles2-anim-1" /><animateTransform
      xlink:href="#circle16833"
      attributeName="transform"
      type="translate"
@@ -1686,9 +1637,7 @@
      dur="8s"
      additive="sum"
      repeatCount="indefinite"
-     id="bubbles2-anim-1" />
-
-     <animate
+     id="bubbles2-anim-1" /><animate
      xlink:href="#layer27"
      attributeType="CSS"
      attributeName="opacity"
@@ -1696,7 +1645,4 @@
      keyTimes="0; 0.5; 1"
      dur="2.5s"
      repeatCount="indefinite"
-     id="shadow-anim" />
-
-
-   </svg>
+     id="shadow-anim" /></svg>
