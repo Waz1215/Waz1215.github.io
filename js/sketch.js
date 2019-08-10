@@ -39,7 +39,7 @@ var particle = function(P,color,i){
 		if (this.opacity>0){
 			P.noStroke();
 			if (this.color=="blue"){
-				P.fill(0,0,255);
+				P.fill(0,0,0);
 			}
 			if (this.color=="red"){
 				P.fill(255,0,0);
