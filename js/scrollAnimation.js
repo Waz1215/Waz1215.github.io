@@ -72,6 +72,12 @@ $(document).ready(function(){
     	}
 	}, 250);
 
+	$('#cta-btn').click(function(){
+		console.log("SCROLL");
+		$('html, body').animate({ scrollTop: ($("#downloads").offset().top)} , 1000, "swing");
+		return false;
+	});
+
 
 	
 })
