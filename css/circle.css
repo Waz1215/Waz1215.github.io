@@ -20,9 +20,9 @@
 
 #interactive1{
 	z-index: 1;
-	min-width: 100vw;
-	width: 1500px;
-	height: auto;
+	height: 110vh;
+	min-height: 800px;
+	width: auto;
 }
 
 #interactiveCover{
@@ -60,9 +60,9 @@
 
 #canvasOverlay{
 
-	/*display: none;*/
+	display: none;
 	position: absolute;
-	top: 100vh;
+	bottom:0px;
 	z-index: 10;
 	width: 100vw;
 
@@ -82,12 +82,14 @@ body{
 /*===================== NAVIGATION BAR =====================*/
 nav{
 	z-index: 100;
+
 	/*background-image: linear-gradient(to  right, rgba(255,255,255,1) 30%,rgba(255,255,255,0) 70%,rgba(255,255,255,1) 100%);*/
 
 }
 .navbar .container{
 	margin-bottom: 0px;
 	margin-top: 30px;
+
 }
 
 .nav-item{
@@ -99,7 +101,7 @@ nav{
 }
 
 .navbar-light a:hover{
-	color:#0076be !important;
+	color: rgba(255,255,255,0.5) !important;
 }
 
 .nav-item.active{
@@ -108,6 +110,11 @@ nav{
 
 #logo{
 	width: 200px;
+	padding:10px;
+	background-color: rgba(255,255,255,1);
+	border-radius: 0px 30px 30px 0px;
+	/*border-right: 1px solid white;*/
+
 }
 
 /*===================== INTRO =====================*/
@@ -155,6 +162,10 @@ nav{
 	padding-right: 10px;
 }
 
+.btn-primary{
+	background-color: white;
+	color:black !important;
+}
 .btn-outline-primary{
 	color: #0076be;
 	border-color: #0076be;
@@ -345,9 +356,9 @@ video{
 	
 	margin-top: 0px;
 	margin-bottom: 50px;
-	padding-top: 0px;
+	padding-top: 20px;
 
-	/*background-image: url("../img/colBg1.svg");*/
+	background-image: url("../img/colBg1.svg");
 	background-size: 100% 100%;
 }
 
@@ -371,14 +382,14 @@ video{
 }
 
 #features .row{
-	height: 600px;
-	padding-right: 200px;
-	padding-left: 200px;
+	min-height: 600px;
+	padding-right: 150px;
+	padding-left: 150px;
 }
 
 #features h1{
 	font-weight: 700;
-	font-size: 3rem;
+	font-size: 40px;
 	line-height: 1.2;
 	z-index: 2;
 	-webkit-font-smoothing: antialiased;
@@ -392,8 +403,20 @@ video{
 #features p{
 	color: rgba(14,19,24,.8);
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 18px;
+	text-align: justify;
+	margin-top: 20px;
 	
+}
+
+#features .read-more{
+	font-weight: 500;
+	color: #0076be;
+}
+
+#features .read-more:hover{
+	text-decoration: none;
+	color: gray;
 }
 #features i{
 	color: #0076be;
@@ -531,7 +554,7 @@ video{
 
 /*===================== FOOTER =====================*/
 footer{
-	background-color: #00243b;
+	background-color: #001940;
 }
 footer .container{
 	padding-top: 50px;

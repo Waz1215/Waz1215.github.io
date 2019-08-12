@@ -53,13 +53,13 @@
      inkscape:window-height="855"
      id="namedview8"
      showgrid="false"
-     inkscape:zoom="2.2801932"
-     inkscape:cx="96.179286"
-     inkscape:cy="352.88528"
+     inkscape:zoom="1.6123401"
+     inkscape:cx="77.337421"
+     inkscape:cy="483.68738"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showguides="false" /><style
      type="text/css"
      id="style2">
@@ -81,8 +81,7 @@
      id="layer3"
      inkscape:label="screenBG"
      style="display:inline"
-     transform="translate(-48.098186,-5.0296779)"
-     sodipodi:insensitive="true"><rect
+     transform="translate(-48.098186,-5.0296779)"><rect
        style="display:inline;fill:#dadada;fill-opacity:1;stroke-width:0.99193388"
        id="rect33"
        width="314.44983"
@@ -92,19 +91,20 @@
        ry="0" /></g><g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="ChatUI"><rect
+     inkscape:label="ChatUI"
+     style="display:inline"><rect
        style="opacity:1;fill:#009be4;fill-opacity:1;stroke:none;stroke-width:1.30596089;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.77251186"
        id="rect2713"
        width="314.98901"
        height="132.50247"
        x="0.040496174"
        y="22.040497" /><rect
-       y="-0.014157394"
+       y="1.2262764"
        x="-0.014156869"
-       height="117.72658"
+       height="116.48615"
        width="315.09833"
        id="rect2715"
-       style="opacity:1;fill:#003a68;fill-opacity:1;stroke:none;stroke-width:1.2312063;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.478673" /><rect
+       style="opacity:1;fill:#003a68;fill-opacity:1;stroke:none;stroke-width:1.22470272;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.478673" /><rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#0055a9;stroke-width:1.07849956;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.77251186"
        id="rect2729"
        width="184.7054"
@@ -133,7 +133,8 @@
          style="fill:#111111;fill-opacity:1;stroke-width:0.51758474">|</tspan></text>
 <g
        id="g3004"
-       transform="matrix(0.13658632,0,0,0.13658632,37.834748,38.595865)"><circle
+       transform="matrix(0.09056001,0,0,0.09056001,44.135491,58.843641)"
+       style="opacity:0.87999998"><circle
          id="circle2868"
          r="256"
          cy="256"
@@ -251,7 +252,7 @@
          id="g2948" /><g
          id="g2950" /><g
          id="g2952" /></g><g
-       transform="matrix(0.13658632,0,0,0.13658632,35.690805,279.8601)"
+       transform="matrix(0.10494887,0,0,0.10494887,46.701924,287.95929)"
        id="g3094"><circle
          style="fill:#ecf0f1"
          cx="256"
@@ -371,7 +372,7 @@
          id="g3090" /><g
          id="g3092" /></g><g
        id="g3268"
-       transform="matrix(0.1387178,0,0,0.1387178,207.35567,183.77864)"><path
+       transform="matrix(0.10389987,0,0,0.10389987,215.84264,200.64955)"><path
          id="path3189"
          d="m 256,526.41676 c 140.998,0 256,-114.999 256,-255.997 0,-141.001 -114.999,-256 -256,-256 -141.001,0 -256,114.999 -256,255.999 0,140.998 114.999,255.998 256,255.998 z"
          style="fill:#ff8181;fill-opacity:1;stroke:#bddce0;stroke-width:17.35580444;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -420,7 +421,7 @@
          id="g3231" /><g
          id="g3233" /><g
          id="g3235" /></g><g
-       transform="matrix(0.1387178,0,0,0.1387178,207.35567,374.80533)"
+       transform="matrix(0.10389987,0,0,0.10389987,215.84264,384.22074)"
        id="g3318"><path
          inkscape:connector-curvature="0"
          style="fill:#ff8181;fill-opacity:1;stroke:#bddce0;stroke-width:17.35580444;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -497,8 +498,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="ChatLines"
-     style="display:none;opacity:1"
-     sodipodi:insensitive="true"><g
+     style="display:none;opacity:1"><g
        id="g3536"
        transform="translate(0,3.8899051)"><path
          inkscape:connector-curvature="0"
@@ -541,7 +541,8 @@
          inkscape:connector-curvature="0" /></g></g><g
      inkscape:groupmode="layer"
      id="layer9"
-     inkscape:label="AppChat"><text
+     inkscape:label="AppChat"
+     style="display:inline"><text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="145.11017"
@@ -643,8 +644,7 @@
      id="layer8"
      inkscape:label="ScreenColor"
      style="display:none"
-     transform="translate(-48.098186,-30.029678)"
-     sodipodi:insensitive="true"><rect
+     transform="translate(-48.098186,-30.029678)"><rect
        style="opacity:1;fill:url(#linearGradient7857);fill-opacity:1;stroke:none;stroke-opacity:1"
        id="rect6047"
        width="314.44983"
@@ -665,7 +665,7 @@
      id="layer1"
      inkscape:label="Chat"
      transform="translate(-20.098186,-17.529678)"
-     sodipodi:insensitive="true"><text
+     style="display:inline"><text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.33333397px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none"
        x="49.86858"
@@ -675,18 +675,19 @@
          id="tspan2725"
          x="49.86858"
          y="160.75066"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.33333397px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-         dx="1.38">TELECHAT CONSULT</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.33333397px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue, Medium';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">Time Elapsed: <tspan
+   style="-inkscape-font-specification:'Helvetica Neue Light';font-family:'Helvetica Neue';font-weight:300;font-style:normal;font-stretch:normal;font-variant:normal"
+   id="tspan4775">0:30</tspan></tspan></text>
 <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="135.00073"
-       y="98.985733"
+       y="103.67668"
        id="text3322"><tspan
          sodipodi:role="line"
          id="tspan3320"
          x="135.00073"
-         y="98.985733"
+         y="103.67668"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue';opacity:0.83999999;fill:#ffffff;fill-opacity:1">Dr. Alice Jeffrey</tspan></text>
 </g><g
      inkscape:groupmode="layer"

@@ -10,22 +10,22 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="300.41095mm"
-   height="212.74654mm"
-   viewBox="0 0 300.41095 212.74654"
+   width="302.01456mm"
+   height="154.4848mm"
+   viewBox="0 0 302.01456 154.4848"
    version="1.1"
    id="svg18213"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="HomeBg.svg"
-   enable-background="new">
+   style="enable-background:new">
   <defs
      id="defs18207">
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 106.37327 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="300.41095 : 106.37327 : 1"
-       inkscape:persp3d-origin="150.20548 : 70.915513 : 1"
+       inkscape:vp_y="0 : 999.99998 : 0"
+       inkscape:vp_z="300.41098 : 106.37327 : 1"
+       inkscape:persp3d-origin="150.20549 : 70.915512 : 1"
        id="perspective2366" />
     <linearGradient
        inkscape:collect="always"
@@ -219,6 +219,15 @@
        y1="82.694901"
        x2="78.241058"
        y2="103.13345" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2357"
+       id="linearGradient4773"
+       gradientUnits="userSpaceOnUse"
+       x1="233.23312"
+       y1="82.694901"
+       x2="78.241058"
+       y2="103.13345" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -227,11 +236,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="408.16733"
-     inkscape:cy="559.58051"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="468.09417"
+     inkscape:cy="122.4089"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1440"
      inkscape:window-height="855"
@@ -255,8 +264,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(1.6036172,-85.857079)"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <path
        style="opacity:1;fill:url(#linearGradient19024);fill-opacity:1;stroke:none;stroke-width:0.62256455;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M -1.6036172,85.857079 H 298.80733 l 1.60362,88.198931 C 214.0441,167.56579 135.72972,240.88434 -1.6036172,240.33885 Z"
@@ -296,10 +304,9 @@
      inkscape:groupmode="layer"
      id="layer40"
      inkscape:label="Paths"
-     style="display:inline;opacity:1"
-     sodipodi:insensitive="true">
+     style="display:inline;opacity:1">
     <path
-       style="fill:none;stroke:url(#linearGradient19216);stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:none;stroke:url(#linearGradient4773);stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M -17.197917,142.63196 C 56.760765,54.796396 270.13693,98.030544 361.15625,52.484637"
        id="path19045"
        inkscape:connector-curvature="0"
@@ -314,8 +321,7 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="orbs"
-     sodipodi:insensitive="true">
+     inkscape:label="orbs">
     <circle
        style="opacity:1;fill:#06bbff;fill-opacity:0.59241704;stroke:none;stroke-width:0.16189824;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.28909954"
        id="path2388"

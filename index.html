@@ -39,25 +39,24 @@
   <div id='container1' class="interactiveContainer"></div>
   <div id="backgroundGradient"></div>
   <div id="cover"></div>
-  <img id="canvasOverlay" src="img/HomeOverlay.svg"/>
-
+ 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="./index.html"><img id="logo" src="img/medinet-logo-white.svg"/></a>
+      <a class="navbar-brand js-scroll-trigger" href="./index.html"><img id="logo" src="img/Medinet-Logo.png"/></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="home-link nav-link js-scroll-trigger" href="#">Home</a>
+            <a class="home-link nav-link js-scroll-trigger" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#">Careers</a>
+            <a class="nav-link js-scroll-trigger" href="careers.html">Careers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#">About Us</a>
+            <a class="nav-link js-scroll-trigger" href="about.html">About Us</a>
           </li>
         </ul>
       </div>
@@ -73,7 +72,7 @@
           <p>Join over 5,000 people who receive medical consultations with Medinet. 
           <br>We’re up to 3x cheaper than traditional medical service providers.<br></p>
           <video autoplay loop muted controls>
-           <source src="img/MedinetLandingAnimation.mp4" type="video/mp4" width="100%">
+           <source src="img/MedinetHomeAnimationFinal.mp4" type="video/mp4" width="100%">
               Your browser does not support the video tag.
           </video><br>
           <a><button id="cta-btn" type="button" class="btn btn-outline-primary btn-video"><i class="fas fa-arrow-alt-circle-right"></i> Get a Consultation Now</button>
@@ -114,6 +113,7 @@
 
         </div>
       </div>
+        <img id="canvasOverlay" src="img/HomeOverlay.svg"/>
     </div>
   </header>
 
@@ -161,65 +161,94 @@
     </div> -->
 
     <div class="container">
-      <div class="row" id="appointments_row">
-        <div class="col-lg-7 col-md-5 col-sm-5 my-auto main-col featureCol appointments_col">
-          <h1>Appointments</h1>
-          <p>Easy to use online booking system that allows you to update and manage all of your appointments in real time.</p>
-        </div>
-        <div class="col-lg-5 col-md-7 col-sm-7 my-auto main-col">
-          <object id="nts_graphic" width="100%" type="image/svg+xml" data="img/appointments_graphic_min.svg"></object>
-        </div>
-      </div>
 
       <div class="row" id="consult_row">
+        <div class="col-lg-7 col-md-7 col-sm-7 my-auto main-col featureCol consult_col">
+          <h1>Consult GPs online</h1>
+          <p>We give each doctor a chance to provide 24/7 high-quality consultations for non-urgent medical issues. In case future appointments are needed, they can book a face-to-face consultation in their practice through app. 
+          <br><br>Our network of external doctors are supported by the AI-assisted in-house medical team, keeping all the advice given safe and sound. Arrangements from medical advice to issuance of medical certification take all place inside one app, at the palm of your hands. 
+          <br><br>
+          <a href="#" class="read-more">Read more about it all here.</a>
+          </p>
+        </div>
         <div class="col-lg-5 col-md-5 col-sm-5 my-auto main-col">
           <object id="consult_graphic" width="100%"  type="image/svg+xml" data="img/consult_graphic_min.svg"></object>
         </div>
-        <div class="col-lg-7 col-md-7 col-sm-7 my-auto main-col featureCol consult_col">
-          <h1>Consult</h1>
-          <p>Our doctors can provide advise or instantly issue medical certificates, specialist referrals and medication.</p>
+      </div>
+
+
+      <div class="row" id="appointments_row">
+        <div class="col-lg-5 col-md-7 col-sm-7 my-auto main-col">
+          <object id="nts_graphic" width="100%" type="image/svg+xml" data="img/appointments_graphic_min.svg"></object>
+        </div>
+        <div class="col-lg-7 col-md-5 col-sm-5 my-auto main-col featureCol appointments_col">
+          <h1>Get Referred to Specialists</h1>
+          <p>Our network of GPs can be easily used to get a referral for the specialist you need. We allow you to book the specialist you need online, so you won’t waste your precious time and health. 
+          <br><br>In case you suddenly can’t make it, you can request another time and communicate with the specialist from one place.
+          <br><br>
+          <a href="#" class="read-more">Read more about it all here.</a>
+          </p>
         </div>
       </div>
 
-      <div class="row" id="check-in_row">
-        <div class="col-lg-7 col-md-5 col-sm-5 my-auto main-col check-in_col featureCol">
-          <h1>Self Check-in</h1>
-          <p>Use your personalised QR code to quickly and conveniently check-in at reception on your next appointment.</p>
+      <div class="row" id="medication_row">
+        <div class="col-lg-7 col-md-7 col-sm-7 my-auto main-col featureCol medication_col">
+          <h1>Get Medications Delivered</h1>
+          <p>Our GPs can write you prescriptions for the medications you need, so our delivery team can either deliver it to you by the end of same evening or you can pick it up from your local pharmacy yourself. 
+          <br><br>We offer you a chance to buy other health supplements, wellness products and OTC medicine within our app, so all your medical purchases are being tracked and reach you, when you need them the most.
+          <br><br>
+          <a href="#" class="read-more">Read more about it all here.</a>
+          </p>
         </div>
-        <div class="col-lg-5 col-md-7 col-sm-7 my-auto main-col">
-         <object id="check-in_graphic" width="100%"  type="image/svg+xml" data="img/check-in_graphic_min.svg"></object>
+        <div class="col-lg-5 col-md-5 col-sm-5 my-auto main-col">
+          <object id="medication_graphic" width="100%"  type="image/svg+xml" data="img/medication_graphic_min.svg"></object>
         </div>
       </div>
+
 
       <div class="row" id="documents_row">
         <div class="col-lg-5 col-md-5 col-sm-5 my-auto main-col">
           <object id="documents_graphic" width="100%"  type="image/svg+xml" data="img/documents_graphic_min.svg"></object>
         </div>
         <div class="col-lg-7 col-md-7 col-sm-7 my-auto main-col featureCol documents_col">
-          <h1>Documents</h1>
-          <p>Manage your medical certificates and specialist referrals electronically. No more wasted paper!</p>
+          <h1>All your Documents in One Place</h1>
+          <p>We offer you a safe place to hold all your past and present medical certificates, specialist referrals and pathology results, so when you need them, you know where to get them. 
+          <br><br>Our patient friendly platform is easy to read and share with any doctor you want to visit. We believe that your data belongs only to you, so we make sure that only you and people who want to see it, will actually see it.
+          <br><br>
+          <a href="#" class="read-more">Read more about it all here.</a>
+          </p>
         </div>
       </div>
 
       <div class="row" id="pathology_row">
         <div class="col-lg-7 col-md-5 col-sm-5 my-auto main-col featureCol pathology_col">
-          <h1>Pathology</h1>
-          <p>Preview your past and present pathology results on our easy to read, patient friendly platform.</p>
+          <h1>Pathology on your Doorstep</h1>
+          <p>We understand what it means to be sick and not be able to get out of your bed. That’s why we offer you a prime service, where you can request a professional pathology team to come visit you at your home to get all the testing done, without the need to travel to hospitals or medical centres full of other sick patients. 
+          <br><br>You can also book a pathology appointment yourself to your nearest medical centre wherever you are.
+          <br><br>
+          <a href="#" class="read-more">Read more about it all here.</a>
+          </p>
         </div>
         <div class="col-lg-5 col-md-7 col-sm-7 my-auto main-col">
          <object id="pathology_graphic" width="100%"  type="image/svg+xml" data="img/pathology_graphic_min.svg"></object>
         </div>
       </div>
 
-      <div class="row" id="medication_row">
-        <div class="col-lg-5 col-md-5 col-sm-5 my-auto main-col">
-          <object id="medication_graphic" width="100%"  type="image/svg+xml" data="img/medication_graphic_min.svg"></object>
+
+      <div class="row" id="check-in_row">
+        <div class="col-lg-5 col-md-7 col-sm-7 my-auto main-col">
+         <object id="check-in_graphic" width="100%"  type="image/svg+xml" data="img/check-in_graphic_min.svg"></object>
         </div>
-        <div class="col-lg-7 col-md-7 col-sm-7 my-auto main-col featureCol medication_col">
-          <h1>Medication</h1>
-          <p>Purchase your electronic scripts directly through the app and have the products delivered to your home.</p>
+        <div class="col-lg-7 col-md-5 col-sm-5 my-auto main-col check-in_col featureCol">
+          <h1>Find the Doctor Closest to you</h1>
+          <p>Feeling sick on your way home? We offer you to find the doctor closest to you, so when you reach your medical centre, you can use your personalised QR code to quickly and conveniently check-in at reception on your next appointment.
+          <br><br>
+          <a href="#" class="read-more">Read more about it all here.</a>
+          </p>
         </div>
       </div>
+
+
 
     </div>
   </section>
