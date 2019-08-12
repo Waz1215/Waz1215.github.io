@@ -78,6 +78,12 @@ $(document).ready(function(){
 		return false;
 	});
 
+	$('.read-more').click(function(){
+		console.log("SCROLL");
+		$('html, body').animate({ scrollTop: ($("#examples").offset().top)} , 1000, "swing");
+		return false;
+	});
+
 
 	
 })
