@@ -558,7 +558,7 @@ video{
 
 /*===================== FOOTER =====================*/
 footer{
-	background-color: #001940;
+	background-image: linear-gradient(to  right, #012c6f 0%, #1289ff 100%);
 }
 footer .container{
 	padding-top: 50px;
