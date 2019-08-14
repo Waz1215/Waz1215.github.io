@@ -243,5 +243,10 @@ var Canvas3 = function( p ) { // p could be any variable name
 		});
   	};
 };
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 // var myp5 = new p5(Canvas3, 'c3');
 

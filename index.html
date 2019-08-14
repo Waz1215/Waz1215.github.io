@@ -34,14 +34,17 @@
 
 <!-- Interactive Animation -->
 <body id="page-top">
-  <img id="interactive1" class="interactiveImage" src='img/HomeBg.svg '/>
+<div id="site-wrapper">
+  <div id="bgContainer">
+    <img id="interactive1" class="interactiveImage" src='img/HomeBg.svg '/>
+  </div>
   <div id="interactiveCover" class="interactiveImage"></div>
   <div id='container1' class="interactiveContainer"></div>
   <div id="backgroundGradient"></div>
   <div id="cover"></div>
  
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+  <nav class="navbar navbar-expand-sm navbar-light" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="./index.html"><img id="logo" src="img/Medinet-Logo.png"/></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,11 +70,11 @@
   <header id="home" class="masthead">
     <div class="container">
       <div class="row h-100">
-        <div class="col-lg-5 col-md-5 col-sm-5 my-auto main-col">
+        <div class="col-lg-5 col-md-6 col-sm-12  main-col">
           <h1 class="header-text"><span id="header-text1">Doctor</span><span id="header-text2"> Anytime.</span><br><span id="header-text3">Anywhere.</span></h1>
           <p>Join over 5,000 people who receive medical consultations with Medinet. 
           <br>We’re up to 3x cheaper than traditional medical service providers.<br></p>
-          <video autoplay loop muted controls>
+          <video autoplay loop muted controls width="100%">
            <source src="img/MedinetHomeAnimationFinal.mp4" type="video/mp4" width="100%">
               Your browser does not support the video tag.
           </video><br>
@@ -85,31 +88,37 @@
           </div> -->
 
         </div>
-        <div class="col-lg-7 col-md-7 col-sm-7 my-auto main-col">
-          <!-- <object id="iphoneVector" data="img/iphone-x-flat-no-buttons.svg" type="image/svg+xml"></object> -->
-          <!-- <button type="button" id="btn-cta" class="btn btn-outline-light">Get a Consultation Now</button> -->
-
-           <a id="carousel-prev" href="#phoneCarousel" role="button" data-slide="prev">
-            <i class="fas fa-chevron-circle-left"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a id="carousel-next" href="#phoneCarousel" role="button" data-slide="next">
-            <i class="fas fa-chevron-circle-right"></i>
-            <span class="sr-only">Next</span>
-          </a>
-
-          <div id="phoneCarousel" class="carousel slide" data-ride="carousel">
-            <img id="phoneFrame" class="d-block" src="img/iphoneXframe.svg">
-            <!-- <img id="phoneMask" class="d-block" src="img/iphoneXMask.svg" > -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block" src="img/iphoneXScreen1.svg" alt="First slide">
+        <div class="col-lg-7 col-md-6 col-sm-7 d-none d-md-block  main-col">
+          <div class="row">
+            <div class="col-lg-3 col-md-1 col-sm-3  main-col">
+              <a id="carousel-prev" href="#phoneCarousel" role="button" data-slide="prev">
+                <i class="fas fa-chevron-circle-left"></i>
+                <span class="sr-only">Previous</span>
+              </a>
             </div>
-            <div class="carousel-item">
-              <img class="d-block" src="img/iphoneXScreen2.svg" alt="Second slide">
+             <div class="col-lg-6 col-md-10 col-sm-6  main-col">
+                <div id="phoneCarousel" class="carousel slide" data-ride="carousel">
+                  <img id="phoneFrame" class="d-block" src="img/iphoneXframe.svg">
+                  <!-- <img id="phoneMask" class="d-block" src="img/iphoneXMask.svg" > -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block" src="img/iphoneXScreen1.svg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block" src="img/iphoneXScreen2.svg" alt="Second slide">
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <div class="col-lg-3 col-md-1 col-sm-3  main-col">
+              <a id="carousel-next" href="#phoneCarousel" role="button" data-slide="next">
+                <i class="fas fa-chevron-circle-right"></i>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
           </div>
-        </div>
 
         </div>
       </div>
@@ -121,49 +130,11 @@
   <!-- Section 2: Features -->
   <section id="features">
 
-<!--     <div id="bgVector"></div>
-    <!-- <object id="bgVector" data="img/features-bg.svg" type="image/svg+xml">  <param wmode="transparent" /></object>
-    <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <h1 class="card-title">Our All-in-One Powerful Platform</h1>
-          <div class="row">
-            <div class="col-lg-4">
-              <h3> <i class="far fa-calendar-check"></i><br>Appointments</h3>
-              <p>Our doctors can provide advise or instantly issue medical certificates, specialist referrals and medication.</p>
-            </div>
-            <div class="col-lg-4">
-              <h3><i class="fas fa-user-md"></i><br>Consult</h3>
-              <p>Easy to use online booking system that allows you to update and manage all of your appointments in real time.</p>
-            </div>
-            <div class="col-lg-4">
-              <h3><i class="fas fa-qrcode"></i><br>Self Check-in</h3>
-              <p>Use your personalised QR code to quickly and conveniently check-in at reception on your next appointment.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4">
-              <h3><i class="fas fa-paste"></i><br>Documents</h3>
-              <p>Manage your medical certificates and specialist referrals electronically. No more wasted paper!</p>
-            </div>
-            <div class="col-lg-4">
-              <h3><i class="fas fa-microscope"></i><br>Pathology</h3>
-              <p>Preview your past and present pathology results on our easy to read, patient friendly platform.</p>
-            </div>
-            <div class="col-lg-4">
-              <h3><i class="fas fa-prescription-bottle"></i><br>Medication</h3>
-              <p>Purchase your electronic scripts directly through the app and have the products delivered to your home.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div> -->
 
     <div class="container">
 
       <div class="row" id="consult_row">
-        <div class="col-lg-7 col-md-7 col-sm-7 my-auto main-col featureCol consult_col">
+        <div class="col-lg-7 col-md-7 col-sm-12  main-col featureCol consult_col">
           <h1>Consult GPs online</h1>
           <p>We give each doctor a chance to provide 24/7 high-quality consultations for non-urgent medical issues. In case future appointments are needed, they can book a face-to-face consultation in their practice through app. 
           <br><br>Our network of external doctors are supported by the AI-assisted in-house medical team, keeping all the advice given safe and sound. Arrangements from medical advice to issuance of medical certification take all place inside one app, at the palm of your hands. 
@@ -171,17 +142,17 @@
           <a href="#" class="read-more">Read more about it all here.</a>
           </p>
         </div>
-        <div class="col-lg-5 col-md-5 col-sm-5 my-auto main-col">
+        <div class="col-lg-5 col-md-5 col-sm-5  d-none d-md-block main-col">
           <object id="consult_graphic" width="100%"  type="image/svg+xml" data="img/consult_graphic_min.svg"></object>
         </div>
       </div>
 
 
       <div class="row" id="appointments_row">
-        <div class="col-lg-5 col-md-7 col-sm-7 my-auto main-col">
+        <div class="col-lg-5 col-md-5 col-sm-5  d-none d-md-block main-col">
           <object id="nts_graphic" width="100%" type="image/svg+xml" data="img/appointments_graphic_min.svg"></object>
         </div>
-        <div class="col-lg-7 col-md-5 col-sm-5 my-auto main-col featureCol appointments_col">
+        <div class="col-lg-7 col-md-7 col-sm-12  main-col featureCol appointments_col">
           <h1>Get Referred to Specialists</h1>
           <p>Our network of GPs can be easily used to get a referral for the specialist you need. We allow you to book the specialist you need online, so you won’t waste your precious time and health. 
           <br><br>In case you suddenly can’t make it, you can request another time and communicate with the specialist from one place.
@@ -192,7 +163,7 @@
       </div>
 
       <div class="row" id="medication_row">
-        <div class="col-lg-7 col-md-7 col-sm-7 my-auto main-col featureCol medication_col">
+        <div class="col-lg-7 col-md-7 col-sm-12  main-col featureCol medication_col">
           <h1>Get Medications Delivered</h1>
           <p>Our GPs can write you prescriptions for the medications you need, so our delivery team can either deliver it to you by the end of same evening or you can pick it up from your local pharmacy yourself. 
           <br><br>We offer you a chance to buy other health supplements, wellness products and OTC medicine within our app, so all your medical purchases are being tracked and reach you, when you need them the most.
@@ -200,17 +171,17 @@
           <a href="#" class="read-more">Read more about it all here.</a>
           </p>
         </div>
-        <div class="col-lg-5 col-md-5 col-sm-5 my-auto main-col">
+        <div class="col-lg-5 col-md-5 col-sm-5  d-none d-md-block main-col">
           <object id="medication_graphic" width="100%"  type="image/svg+xml" data="img/medication_graphic_min.svg"></object>
         </div>
       </div>
 
 
       <div class="row" id="documents_row">
-        <div class="col-lg-5 col-md-5 col-sm-5 my-auto main-col">
+        <div class="col-lg-5 col-md-5 col-sm-5  d-none d-md-block main-col">
           <object id="documents_graphic" width="100%"  type="image/svg+xml" data="img/documents_graphic_min.svg"></object>
         </div>
-        <div class="col-lg-7 col-md-7 col-sm-7 my-auto main-col featureCol documents_col">
+        <div class="col-lg-7 col-md-7 col-sm-12  main-col featureCol documents_col">
           <h1>All your Documents in One Place</h1>
           <p>We offer you a safe place to hold all your past and present medical certificates, specialist referrals and pathology results, so when you need them, you know where to get them. 
           <br><br>Our patient friendly platform is easy to read and share with any doctor you want to visit. We believe that your data belongs only to you, so we make sure that only you and people who want to see it, will actually see it.
@@ -221,7 +192,7 @@
       </div>
 
       <div class="row" id="pathology_row">
-        <div class="col-lg-7 col-md-5 col-sm-5 my-auto main-col featureCol pathology_col">
+        <div class="col-lg-7 col-md-7 col-sm-12  main-col featureCol pathology_col">
           <h1>Pathology on your Doorstep</h1>
           <p>We understand what it means to be sick and not be able to get out of your bed. That’s why we offer you a prime service, where you can request a professional pathology team to come visit you at your home to get all the testing done, without the need to travel to hospitals or medical centres full of other sick patients. 
           <br><br>You can also book a pathology appointment yourself to your nearest medical centre wherever you are.
@@ -229,17 +200,17 @@
           <a href="#" class="read-more">Read more about it all here.</a>
           </p>
         </div>
-        <div class="col-lg-5 col-md-7 col-sm-7 my-auto main-col">
+        <div class="col-lg-5 col-md-5 col-sm-5  d-none d-md-block main-col">
          <object id="pathology_graphic" width="100%"  type="image/svg+xml" data="img/pathology_graphic_min.svg"></object>
         </div>
       </div>
 
 
       <div class="row" id="check-in_row">
-        <div class="col-lg-5 col-md-7 col-sm-7 my-auto main-col">
+        <div class="col-lg-5 col-md-5 col-sm-5  d-none d-md-block main-col">
          <object id="check-in_graphic" width="100%"  type="image/svg+xml" data="img/check-in_graphic_min.svg"></object>
         </div>
-        <div class="col-lg-7 col-md-5 col-sm-5 my-auto main-col check-in_col featureCol">
+        <div class="col-lg-7 col-md-7 col-sm-12  main-col check-in_col featureCol">
           <h1>Find the Doctor Closest to you</h1>
           <p>Feeling sick on your way home? We offer you to find the doctor closest to you, so when you reach your medical centre, you can use your personalised QR code to quickly and conveniently check-in at reception on your next appointment.
           <br><br>
@@ -252,20 +223,6 @@
 
     </div>
   </section>
-
-  <!-- Section 3: Testimonials 
-  <section id="testimonials">
-    <div id="videoOverlay">
-      <h1>What our Customers are Saying <br><button><i class="far fa-play-circle"></i></button></h1>
-    </div>
-    <video autoplay loop muted>
-      <source src="img/userVideo.mov" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    
-  </section>
-
-  -->
 
   <!-- Section 4: Downloads -->
   <section id="downloads">
@@ -293,14 +250,14 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
         <p>Contact us</p>
         <a id="email" href="mailto:feedback@medinet.com.au" class="social"><i class="fas fa-envelope"></i>feedback@medinet.com.au</a>
         </div>
 
        
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
         <p>Follow us</p>
         <a href="https://www.facebook.com/Medinet-Australia-2314844502128945/" class="social-link"><i class="social fab fa-facebook-square"></i></a>
         <a href="https://www.linkedin.com/company/medinet-australia/" class="social-link"><i class="social fab fa-linkedin"></i></a>
@@ -311,15 +268,15 @@
 
       <div class="row">
 
-        <div class="col-lg-4">
-          <img src="img/Medinet-Logo.png"/></a>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <img id="footer-logo" src="img/Medinet-Logo.png"/></a>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-4 col-md-3 col-sm-12">
           <p>Privacy Policy</p>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-3 col-sm-12">
           <p>Terms of Service</p>
         </div>
       </div>
@@ -327,7 +284,7 @@
     </div>
   </footer>
 
-
+</div>
 </body>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>

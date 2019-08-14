@@ -15,6 +15,7 @@
 	left: 0;
 	width: 100vw;
 	height: 100vh;
+	overflow-x: hidden;
 	/*display: none;*/
 }
 
@@ -23,6 +24,7 @@
 	height: 110vh;
 	min-height: 800px;
 	width: auto;
+	overflow-x: hidden;
 }
 
 #interactiveCover{
@@ -33,6 +35,11 @@
 	height: 100vh;
 }
 
+#site-wrapper{
+	overflow-x: hidden;
+	max-width: 100vw;
+	position: absolute;
+}
 #cover{	
 	position: absolute;
 	top: 0;
@@ -70,10 +77,15 @@
 
 /*===================== BODY =====================*/
 html{
-	
+
+	width: 100vw;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 body{
-	max-width: 100vw;
+	margin:0;
+	width: 100vw;
+	max-width: 100%;
 	overflow-x: hidden;
 	font-family: "Lato";
 }
@@ -107,6 +119,9 @@ nav{
 	color: rgba(255,255,255,0.5) !important;
 }
 
+.navbar-light i{
+	color: white;
+}
 .nav-item.active{
 	border-bottom: solid 2px #0076be;
 }
@@ -119,18 +134,18 @@ nav{
 	/*border-right: 1px solid white;*/
 
 }
-
+@media(max-width: 576px){
+	.navbar li{
+		text-align: right;
+	}
+}
 /*===================== INTRO =====================*/
 #home{
-	/*background-color: green;*/
-	min-height: calc(100vh - 106px);
+	min-height: 110vh;
 	width: 100%;
 	padding-left: 30px;
 	padding-top: 10px;
 	padding-bottom: 0px;
-	/*background-image: url("../img/HomeBg.svg");
-	background-size: contain;
-	background-repeat: no-repeat;*/
 }
 
 #home *{
@@ -193,7 +208,7 @@ nav{
 }
 
 #home video{
-	width: 550px;
+	/*width: 550px;*/
 }
 
 #home video:focus{
@@ -262,8 +277,10 @@ nav{
 	display: none;
 }
 #phoneCarousel{
-	width: 300px;
-	height: 678px;
+	/*width: 300px;*/
+	/*height: 678px;*/
+	max-width: 300px;
+	max-height: 678px;
 	margin-right: auto;
 	margin-left: auto;
 	z-index: 1;
@@ -285,25 +302,17 @@ nav{
 }
 
 
-.carousel-control-next-icon {	
-	position: absolute;
-	margin-right: auto;
-	margin-left: auto;
-	top: 340px;
-	left: 550px;
- 
-}
 
 #carousel-next{
 	z-index: 20;
-	
     position: absolute;
-    right: 25%;
+    left:0;
     top: 300px;
     transform: translateY(-50%);
     
 }
 #carousel-next i{	
+	text-align: center;
   	font-size: 30px;
   	color: black;
   	margin-right: auto;
@@ -312,15 +321,15 @@ nav{
 
 #carousel-prev{
 	z-index: 20;
-	
     position: absolute;
-    left: 25%;
+    right:0 ;
     top: 300px;
     transform: translateY(-50%);
 
     
 }
 #carousel-prev i{	
+	text-align: center;
   	font-size: 30px;
   	color: black;
   	margin-right: auto;
@@ -328,22 +337,31 @@ nav{
 
 }
 
-video{
+#home video{
 	/*border: 1px solid black;*/
 }
 
 
-/*===================== FEATURES =====================*/
-#bgVector{
-	/*background-image: url("../img/features-bg.svg");*/
-	width: 100%;
-	height: calc(100% + 200px);
-	background-size: cover;
-	position: absolute;
-	left: 0;
-	transform: translateY(-80px);
-	z-index: 5;
+
+@media(max-width: 992px){
+	#home h1{
+		font-size: 2.5rem;
+	}
+
+	#home .btn-video{
+		font-size: 20px;
+	}
 }
+
+@media(max-width: 768px){
+	#home video{
+		width: 90%;
+	}
+}
+
+
+/*===================== FEATURES =====================*/
+
 #features .container{
 	z-index: 10;
 	position: relative;
@@ -354,15 +372,12 @@ video{
 
 #features{
 	background-color: white;
-	/*background-image: url("../img/features-bg.svg");
-	background-size: cover;*/
-	
 	margin-top: 0px;
 	margin-bottom: 50px;
-	padding-top: 20px;
+	padding-top: 0px;
 
 	background-image: url("../img/colBg1.svg");
-	background-size: 100% 100%;
+	background-size: 100% 90%;
 }
 
 #features hr{
@@ -448,72 +463,34 @@ video{
 }
 
 
-#consult_row{
+@media(max-width: 992px){
+	#features h1{
+		font-size: 30px;
+	}
 
-}
-/*===================== TESTIMONIALS =====================*/
-#testimonials{
-	height: 60vh;
-	overflow: hidden;
-}
-#testimonials video{
-	opacity: 1;
-	width: 100%;
-	transform: translateY(-15%);
-	transition:0.5s;
-	z-index: 2;
-}
-
-#testimonials video:hover{
-	opacity: 1;
-
-	
+	#features p{
+		font-size: 15px;
+	}
+	#features .row{
+		padding-left: 100px;
+		padding-right: 100px;
+		min-height: 500px;
+	}
 }
 
-#testimonials #videoOverlay{
-	position: absolute;
-	background-color: rgba(0,0,0,0.3);
-	width: 100%;
-	height: 60vh;
-	z-index: 3;
-	overflow: hidden;
-	transition:0.5s;
-}
-#testimonials #videoOverlay:hover{
-	background-color: rgba(255,255,255,0);
+@media(max-width: 768px){
+	#features{
+		background-image: none;
+	}
 }
 
-#testimonials #videoOverlay h1{
-	color: white;
-	/*text-shadow: 2px 2px 5px rgba(0,0,0,0.4);*/
-	text-align:center;
-	font-weight: 700;
-	font-size: 2.5rem;
-	margin-top: 150px;
+@media(max-width: 576px){
+	#features .row{
+		padding-left: 30px;
+		padding-right: 30px;
+		min-height: 400px;
+	}
 }
-
-#testimonials #videoOverlay i{
-	color: black;
-	padding-top: 20px;
-	font-size:100px;
-	color: white;
-	transition: 0.2s;
-}
-
-#testimonials #videoOverlay i:hover{
-	color: rgba(255,255,255,0.5);
-}
-
-#testimonials #videoOverlay button{
-	background-color: transparent;
-	border-width: 0px;
-}
-
-#testimonials #videoOverlay button:active, #testimonials #videoOverlay button:focus {
-	box-shadow:none;
-	outline: none;
-}
-
 
 /*===================== DOWNLOADS =====================*/
 #downloads{
@@ -528,14 +505,9 @@ video{
 	padding-top: 100px;
 }
 
-#downloads .badges{
-	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
-}
 
 #downloads .badges{
-	width: 70%;
+	
 	padding-top: 80px;
 	padding-bottom: 100px;
 	margin-right: auto;
@@ -554,6 +526,20 @@ video{
 #downloads .badge-link img:hover{
 	filter: opacity(50%);
 }
+
+@media(max-width: 992px){
+	#downloads .badge-link img{
+		width: 200px;	
+	}
+}
+
+@media(max-width: 576px){
+	#downloads .badge-link img{
+		padding-top: 20px;
+		padding-bottom: 20px;	
+	}
+}
+
 
 /*===================== EXAMPLES =====================*/
 
@@ -639,6 +625,26 @@ footer #copyright{
 	font-weight: 100;
 	font-size: 15px;
 	margin-bottom: 0px;
+}
+
+footer #footer-logo{
+	width: 200px;
+}
+
+@media(max-width: 768px){
+	footer #footer-logo{
+		width: 120px;
+	}
+}
+
+@media(max-width: 576px){
+	footer #email{
+		font-size: 15px;
+	}
+
+	footer .col-sm-12{
+		padding-bottom: 10px;
+	}
 }
 
 /*===================== TEMP =====================*/
