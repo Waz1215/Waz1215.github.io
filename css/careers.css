@@ -480,6 +480,11 @@ video{
 		padding-right: 30px;
 		min-height: 400px;
 	}
+
+	#features p{
+		color: rgba(14,19,24,1);
+		font-weight: 400 !important;
+	}
 }
 /*===================== TESTIMONIALS =====================*/
 #testimonials{
