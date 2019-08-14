@@ -3,12 +3,13 @@
 
 <head>
 
+  <!-- TODO: Add Meta Content -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Medinet Australia</title>
+  <title>Medinet Australia - About us</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,9 +23,6 @@
   <!-- Fontawesome -->
   <link rel="stylesheet" href="vendor/fontawesome-free/css/fontawesome.min.css">
 
-  <!-- Plugin CSS -->
-  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
-
   <!-- Custom styles for this template -->
   <link href="css/about.css" rel="stylesheet">
 
@@ -35,10 +33,17 @@
 <!-- Interactive Animation -->
 <body id="page-top">
   <div id="site-wrapper">
-  <!-- <img id="interactive1" class="interactiveImage" src='img/HomeBg.svg '/> -->
-  <div id="interactiveCover" class="interactiveImage"></div>
-  <div id='container1' class="interactiveContainer"></div>
+
+  <!-- InteractiveCover fades in and out to hide transitions in interactive animation -->
+  <div id="interactiveCover"></div>
+
+  <!-- Container1 Holds the canvas element for the animation -->
+  <div id="interactiveContainer"></div>
+
+  <!-- BackgroundGradient gives us the Blue Gradient for the Animation -->
   <div id="backgroundGradient"></div>
+
+  <!-- Cover Hides the Animation on Page Load for a few seconds -->
   <div id="cover"></div>
  
   <!-- Navigation -->
@@ -64,28 +69,24 @@
     </div>
   </nav>
 
-<!-- Section 1: Intro -->
+<!-- Section 1: Home -->
   <header id="home" class="masthead">
     <div class="container">
       <div class="row h-100">
+
         <div class="col-lg-5 col-md-5 col-sm-5 my-auto main-col">
           <h1 class="header-text">About Us</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           
-          <a><button id="cta-btn" type="button" class="btn btn-outline-primary btn-video"><i class="fas fa-arrow-alt-circle-right"></i> Call to Action Button</button>
-
-          <!-- <div class="card">
-            <div class="card-body">
-              <h4 class="card-title"><i class="fas fa-lock"></i> ASIC Regulated</h4>
-              <p> Supported by <a href="https://myhealth.net.au/"><img id="myhealth-logo" src="img/myhealth-logo.png" alt="Card image cap"/></a></p>
-            </div>
-          </div> -->
+          <a><button id="cta-btn" type="button" class="btn btn-outline-primary btn-video"><i class="fas fa-arrow-alt-circle-right"></i> Call to Action Button</button></a>
 
         </div>
+
         <div class="col-lg-7 col-md-7 col-sm-7 my-auto main-col">
-          
+          <!-- Additional Content can go Here -->
         </div>
       </div>
+        <!-- Use this to hide the bottom of the animation to prevent visual glitches -->
         <img id="canvasOverlay" src="img/HomeOverlay.svg"/>
     </div>
   </header>
@@ -114,21 +115,7 @@
     </div>
   </section>
 
-  <!-- Section 3: Testimonials 
-  <section id="testimonials">
-    <div id="videoOverlay">
-      <h1>What our Customers are Saying <br><button><i class="far fa-play-circle"></i></button></h1>
-    </div>
-    <video autoplay loop muted>
-      <source src="img/userVideo.mov" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    
-  </section>
-
-  -->
-
-  <!-- Section 4: Downloads -->
+  <!-- Section 3: Downloads -->
   <section id="downloads">
     <div class="container">
       <h1>Download the App Today</h1>
@@ -189,10 +176,13 @@
 
   <!-- Cookie JS -->
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-
+ 
+  <!-- Scripts for Animation -->
   <script src="js/p5/p5.min.js"></script> 
   <script src="js/p5/addons/p5.play.js"></script> 
   <script src="js/sketch.js"></script> 
+
+  <!-- Script for Smooth Scrolling -->
   <script src="js/scrollAnimation.js"></script> 
 
 

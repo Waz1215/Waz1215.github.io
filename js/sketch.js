@@ -150,7 +150,7 @@ var Canvas1 = function( p ) { // p could be any variable name
 	}
 	p.setup = function() {
     	var c = p.createCanvas(W, H);
-    	c.parent('container1');
+    	c.parent('#interactiveContainer');
     	c.id('canvas1');
 
     	p.angleMode(p.DEGREES);
@@ -187,66 +187,5 @@ var Canvas1 = function( p ) { // p could be any variable name
 };
 var myp5 = new p5(Canvas1, 'c1');
 
-// Canvas 2
-var Canvas2 = function( p ) { // p could be any variable name
 
-	p.Particles = [];
-	p.setup = function() {
-    	var c = p.createCanvas(W, H);
-    	c.parent('container2');
-    	c.id('canvas2');
-
-    	p.angleMode(p.DEGREES);
-    	p.ellipseMode(p.CENTER);
-		p.imageMode(p.CENTER);
-
-		for (var i = 0; i < len; i++){
-	  		p.Particles.push(new particle(p,"red",i));
-	  	}
- 	 };
-
-  	p.draw = function() {
-  		// console.log(cur);
-
-		p.background(255);
-		p.Particles.forEach(function(particle){
-			// particle.draw(2);
-		});
-  	};
-};
-// var myp5 = new p5(Canvas2, 'c2');
-
-// Canvas 3
-var Canvas3 = function( p ) { // p could be any variable name
-
-	p.Particles = [];
-	p.setup = function() {
-    	var c = p.createCanvas(W, H);
-    	c.parent('container3');
-    	c.id('canvas3');
-
-    	p.angleMode(p.DEGREES);
-    	p.ellipseMode(p.CENTER);
-		p.imageMode(p.CENTER);
-
-		for (var i = 0; i < len; i++){
-	  		p.Particles.push(new particle(p,"green",i));
-	  	}
- 	 };
-
-  	p.draw = function() {
-  		// console.log(cur);
-
-		p.background(255);
-		p.Particles.forEach(function(particle){
-			// particle.draw(3);
-		});
-  	};
-};
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
-
-// var myp5 = new p5(Canvas3, 'c3');
 

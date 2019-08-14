@@ -3,12 +3,13 @@
 
 <head>
 
+  <!-- TODO: Add Meta Content -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Medinet Australia</title>
+  <title>Medinet Australia - Home</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,26 +23,20 @@
   <!-- Fontawesome -->
   <link rel="stylesheet" href="vendor/fontawesome-free/css/fontawesome.min.css">
 
-  <!-- Plugin CSS -->
-  <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
-
   <!-- Custom styles for this template -->
   <link href="css/circle.css" rel="stylesheet">
 
-
-
 </head>
 
-<!-- Interactive Animation -->
+
 <body id="page-top">
 <div id="site-wrapper">
+
+<!-- Background Graphic for Home Section -->
   <div id="bgContainer">
-    <img id="interactive1" class="interactiveImage" src='img/HomeBg.svg '/>
+    <img id="homeBG" src='img/HomeBg.svg '/>
   </div>
-  <div id="interactiveCover" class="interactiveImage"></div>
-  <div id='container1' class="interactiveContainer"></div>
-  <div id="backgroundGradient"></div>
-  <div id="cover"></div>
+
  
   <!-- Navigation -->
   <nav class="navbar navbar-expand-sm navbar-light" id="mainNav">
@@ -66,10 +61,12 @@
     </div>
   </nav>
 
-<!-- Section 1: Intro -->
+<!-- Section 1: Home -->
   <header id="home" class="masthead">
     <div class="container">
       <div class="row h-100">
+
+        <!-- Text and Video -->
         <div class="col-lg-5 col-md-6 col-sm-12  main-col">
           <h1 class="header-text"><span id="header-text1">Doctor</span><span id="header-text2"> Anytime.</span><br><span id="header-text3">Anywhere.</span></h1>
           <p>Join over 5,000 people who receive medical consultations with Medinet. 
@@ -78,24 +75,20 @@
            <source src="img/MedinetHomeAnimationFinal.mp4" type="video/mp4" width="100%">
               Your browser does not support the video tag.
           </video><br>
-          <a><button id="cta-btn" type="button" class="btn btn-outline-primary btn-video"><i class="fas fa-arrow-alt-circle-right"></i> Get a Consultation Now</button>
-
-          <!-- <div class="card">
-            <div class="card-body">
-              <h4 class="card-title"><i class="fas fa-lock"></i> ASIC Regulated</h4>
-              <p> Supported by <a href="https://myhealth.net.au/"><img id="myhealth-logo" src="img/myhealth-logo.png" alt="Card image cap"/></a></p>
-            </div>
-          </div> -->
-
+          <a><button id="cta-btn" type="button" class="btn btn-outline-primary btn-video"><i class="fas fa-arrow-alt-circle-right"></i> Get a Consultation Now</button></a>
         </div>
+
+        <!-- Carousel -->
         <div class="col-lg-7 col-md-6 col-sm-7 d-none d-md-block  main-col">
           <div class="row">
+
             <div class="col-lg-3 col-md-1 col-sm-3  main-col">
               <a id="carousel-prev" href="#phoneCarousel" role="button" data-slide="prev">
                 <i class="fas fa-chevron-circle-left"></i>
                 <span class="sr-only">Previous</span>
               </a>
             </div>
+
              <div class="col-lg-6 col-md-10 col-sm-6  main-col">
                 <div id="phoneCarousel" class="carousel slide" data-ride="carousel">
                   <img id="phoneFrame" class="d-block" src="img/iphoneXframe.svg">
@@ -119,18 +112,15 @@
             </div>
 
           </div>
-
         </div>
+
       </div>
-        <img id="canvasOverlay" src="img/HomeOverlay.svg"/>
     </div>
   </header>
 
 
   <!-- Section 2: Features -->
   <section id="features">
-
-
     <div class="container">
 
       <div class="row" id="consult_row">
@@ -205,7 +195,6 @@
         </div>
       </div>
 
-
       <div class="row" id="check-in_row">
         <div class="col-lg-5 col-md-5 col-sm-5  d-none d-md-block main-col">
          <object id="check-in_graphic" width="100%"  type="image/svg+xml" data="img/check-in_graphic_min.svg"></object>
@@ -219,12 +208,10 @@
         </div>
       </div>
 
-
-
     </div>
   </section>
 
-  <!-- Section 4: Downloads -->
+  <!-- Section 3: Downloads -->
   <section id="downloads">
     <div class="container">
       <h1>Download the App Today</h1>
@@ -236,7 +223,7 @@
   </section>
 
 
-  <!-- Section 5: Examples -->
+  <!-- Section 4: Examples -->
   <section id="examples">
     <div class="container">
       <h1>Examples</h1>
@@ -286,6 +273,7 @@
 
 </div>
 </body>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -296,9 +284,7 @@
   <!-- Cookie JS -->
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 
-  <script src="js/p5/p5.min.js"></script> 
-  <script src="js/p5/addons/p5.play.js"></script> 
-  <!-- <script src="js/sketch.js"></script>  -->
+  <!-- Script for Smooth Scrolling to Sections -->
   <script src="js/scrollAnimation.js"></script> 
 
 
