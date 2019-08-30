@@ -75,16 +75,17 @@
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer19" />
+     inkscape:current-layer="layer23" />
   <g
      inkscape:groupmode="layer"
      id="layer23"
      inkscape:label="BG">
     <path
-       style="opacity:0.7;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.98745823;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:32.69291306;stroke-opacity:1"
-       d="M 1227.2498,639.03452 A 594.44913,594.44913 0 0 1 632.80062,1233.4836 594.44913,594.44913 0 0 1 38.351495,639.03452 594.44913,594.44913 0 0 1 632.80062,44.585389 594.44913,594.44913 0 0 1 1227.2498,639.03452 Z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5.98745823;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:32.69291306;stroke-opacity:1"
+       d="m 1227.2498,639.03452 c 0,157.65771 -62.6293,308.85817 -174.1102,420.33898 -111.4808,111.4808 -262.68127,174.1101 -420.33898,174.1101 -157.6577,0 -317.44104,-45.3597 -372.63041,-170.2749 -57.83266,-130.89793 131.0156,-251.17586 131.01559,-408.83356 0,-157.65771 -209.16366,-308.12929 -142.52108,-451.02025 58.56255,-125.566269 226.47819,-158.7695 384.1359,-158.769501 157.65772,-1.3e-5 308.8582,62.629261 420.33908,174.110101 111.4808,111.48084 174.1101,262.68131 174.1101,420.33903 z"
        id="path30298"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssasasss" />
   </g>
   <g
      inkscape:groupmode="layer"

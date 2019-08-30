@@ -500,7 +500,7 @@
      inkscape:window-height="855"
      inkscape:window-width="1440"
      showgrid="false"
-     inkscape:current-layer="layer16"
+     inkscape:current-layer="layer7"
      inkscape:document-units="mm"
      inkscape:cy="516.37511"
      inkscape:cx="702.90061"
@@ -528,20 +528,13 @@
      id="layer7"
      inkscape:label="TempColor"
      style="display:inline"
-     transform="translate(0.1063794,30.764104)"
-     sodipodi:insensitive="true">
+     transform="translate(0.1063794,30.764104)">
     <path
        style="opacity:1;fill:#539af5;fill-opacity:1;stroke:none;stroke-width:1.79916668;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:32.69291306;stroke-opacity:1"
-       d="M 258.3327,92.886989 C 310.20113,164.36945 114.3245,270.32847 50.74381,186.40994 20.113749,145.9821 36.475661,104.47447 20.721546,65.448437 2.5561865,20.449308 85.162709,-23.507829 138.54717,-20.234886 c 78.06319,4.785967 92.62009,75.683847 119.78553,113.121875 z"
+       d="M 253.57019,92.886989 C 305.43862,164.36945 109.56199,270.32847 45.981309,186.40994 15.351248,145.9821 31.71316,104.47447 15.959045,65.448437 -2.2063136,20.449308 80.400208,-23.507829 133.78466,-20.234886 c 78.06319,4.785967 92.62009,75.683847 119.78553,113.121875 z"
        id="path5364"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sssss" />
-    <path
-       sodipodi:nodetypes="sssss"
-       inkscape:connector-curvature="0"
-       id="path30241"
-       d="M 259.11665,142.92319 C 285.94521,228.1684 67.042305,224.03963 32.712762,176.08129 7.5720437,140.95974 36.405268,96.809036 26.993216,52.375929 10.356947,-26.161792 101.4488,-33.949526 189.1125,-0.38113571 257.64418,25.861183 238.46599,77.307633 259.11665,142.92319 Z"
-       style="opacity:0.55400002;fill:#8ac1fb;fill-opacity:1;stroke:none;stroke-width:1.79916668;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:32.69291306;stroke-opacity:1" />
   </g>
   <g
      inkscape:groupmode="layer"
