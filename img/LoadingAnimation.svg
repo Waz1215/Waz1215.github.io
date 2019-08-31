@@ -500,7 +500,7 @@
      inkscape:window-height="855"
      inkscape:window-width="1440"
      showgrid="false"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="g4131"
      inkscape:document-units="mm"
      inkscape:cy="516.37511"
      inkscape:cx="702.90061"
@@ -528,7 +528,8 @@
      id="layer7"
      inkscape:label="TempColor"
      style="display:inline"
-     transform="translate(0.1063794,30.764104)">
+     transform="translate(0.1063794,30.764104)"
+     sodipodi:insensitive="true">
     <path
        style="opacity:1;fill:#539af5;fill-opacity:1;stroke:none;stroke-width:1.79916668;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:32.69291306;stroke-opacity:1"
        d="M 253.57019,92.886989 C 305.43862,164.36945 109.56199,270.32847 45.981309,186.40994 15.351248,145.9821 31.71316,104.47447 15.959045,65.448437 -2.2063136,20.449308 80.400208,-23.507829 133.78466,-20.234886 c 78.06319,4.785967 92.62009,75.683847 119.78553,113.121875 z"
@@ -584,8 +585,7 @@
      id="layer15"
      inkscape:label="FloatingElement3"
      style="display:inline"
-     transform="translate(0.1063794,30.764104)"
-     sodipodi:insensitive="true">
+     transform="translate(0.1063794,30.764104)">
     <g
        id="g4131">
       <ellipse
@@ -594,7 +594,7 @@
          cy="46.242004"
          cx="49.728771"
          id="path4108"
-         style="opacity:1;fill:#71b0f9;fill-opacity:1;stroke:none;stroke-width:1.06500006;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:32.69291306;stroke-opacity:1" />
+         style="opacity:1;fill:#539af5;fill-opacity:1;stroke:none;stroke-width:1.06500006;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:32.69291306;stroke-opacity:1" />
       <g
          style="fill:#fdfdfd;fill-opacity:1"
          transform="matrix(0.57860202,-0.30507718,0,0.57860202,39.669999,41.683202)"
