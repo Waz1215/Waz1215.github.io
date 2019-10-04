@@ -72,7 +72,7 @@ nav{
 /*===================== HOME =====================*/
 #homeBG{
 	z-index: 1;
-	height: 110vh;
+	height: 115vh;
 	min-height:900px;
 	width: auto;
 	overflow-x: hidden;
@@ -111,10 +111,10 @@ nav{
 
 #home p{
 	margin-top: 20px;
-	margin-bottom: 30px;
+	padding-bottom: 0px;
 	font-weight: 400;
 	color: rgba(14,19,24,.8);
-	font-size:15px;
+	font-size:18pt;
 }
 
 #home .headline{
@@ -162,7 +162,8 @@ nav{
 }
 
 #home video{
-	/*width: 550px;*/
+	width: 90%;
+	padding-bottom: 20px;
 }
 
 #home video:focus{
@@ -306,6 +307,62 @@ nav{
 	width: 30%;
 }
 
+#home .points ul{
+	list-style-type: none;
+	counter-reset: custom-counter 0;
+}
+
+#home .points ul li{
+	margin-top: 2px;
+	font-size: 13pt;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: 300;
+	counter-increment: custom-counter;
+	position: relative;
+}
+
+#home .points ul li:hover{
+	transform: scale(1.1);
+	transform-origin: left;
+}
+
+#home .points ul li::before{
+/*	margin-right: 10px;
+	font-size: 13pt;
+	font-weight: bold;
+	text-align: center;
+	padding: 3px;
+	background-color: white;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	content:counter(custom-counter) ". ";
+	color:black;*/
+	content:counter(custom-counter) ". ";
+	color: black;
+  font-size: 15pt;
+  font-weight: 400;
+  position: absolute;
+  --size: 28px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  transition-duration: 0s;
+
+}
+#home .points ul li:hover::before{
+	transform: rotateY(360deg);
+	transition-duration: 0.5s;
+}
+
+
 @media(max-width: 992px){
 	#home h1{
 		font-size: 2.5rem;
@@ -344,7 +401,7 @@ nav{
 
 #home .badges{
 	
-	padding-top: 30px;
+	padding-top: 15px;
 	padding-bottom: 100px;
 	
 	text-align: left;
