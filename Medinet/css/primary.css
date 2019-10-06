@@ -308,6 +308,7 @@ nav{
 }
 
 #home .points ul{
+
 	list-style-type: none;
 	counter-reset: custom-counter 0;
 }
@@ -339,9 +340,10 @@ nav{
 	border-radius: 100%;
 	content:counter(custom-counter) ". ";
 	color:black;*/
-	content:counter(custom-counter) ". ";
+	content:counter(custom-counter) " ";
 	color: black;
   font-size: 15pt;
+  
   font-weight: 400;
   position: absolute;
   --size: 28px;
@@ -359,7 +361,7 @@ nav{
 }
 #home .points ul li:hover::before{
 	transform: rotateY(360deg);
-	transition-duration: 0.5s;
+	transition-duration: 1s;
 }
 
 
@@ -452,6 +454,71 @@ nav{
 	#home .badge-link img{
 		padding-top: 40px;
 		
+	}
+}
+
+
+
+/*===================== DOCTORS =====================*/
+
+#doctors{
+	margin-top: 80px;
+	background-image: url("../img/doctorsBG.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 80px;
+	min-height: 400px;
+	/*background-color: rgb(200,200,200);*/
+}
+
+#doctors h1{
+	padding-top: 100px;
+	text-align: center;
+	font-size: 35pt;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+#doctors p{
+	text-align: center;
+	font-size: 15pt;
+	padding-bottom: 100px;
+}
+
+
+@media(max-width: 992px){
+	#doctors{
+		margin-top: 20px;
+	}
+}
+
+@media(max-width: 768px){
+	#doctors h1{
+		font-size: 30pt;
+	}
+
+	#doctors p{
+		font-size: 14pt;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media(max-width: 576px){
+	#doctors h1{
+	padding-top: 40px;
+	}
+
+	 #doctors{
+	 	margin-top: 20px;
+	 	margin-bottom: 0px;
+	 }
+	#doctors p{
+		font-size: 13pt;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 40px;
 	}
 }
 
