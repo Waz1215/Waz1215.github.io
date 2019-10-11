@@ -1154,6 +1154,7 @@ footer #formSubmitButton{
 	color: white;
 	border-radius: 100px;
 	transition: 0.2s;
+	margin-bottom: 50px;
 }
 
 footer #formSubmitButton:hover{
@@ -1271,9 +1272,21 @@ footer #footer-logo{
 	width: 200px;
 }
 
+@media(max-width: 992px){
+
+	footer h1{
+		font-size: 40pt;
+	}
+}
+
 @media(max-width: 768px){
 	footer #footer-logo{
 		width: 120px;
+	}
+
+	footer h1{
+		font-size: 30pt;
+		padding-bottom: 30px;
 	}
 }
 
@@ -1284,6 +1297,10 @@ footer #footer-logo{
 
 	footer .col-sm-12{
 		padding-bottom: 10px;
+	}
+
+	footer .row{
+		width: 100%;
 	}
 }
 

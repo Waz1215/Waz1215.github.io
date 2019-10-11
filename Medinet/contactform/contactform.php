@@ -7,7 +7,7 @@
 /***************** Configuration *****************/
 
 // Enter your email, where you want to receive the messages.
-$contact_email_to = "wrafeek@gmail.com";
+$contact_email_to = "hello@medinet.com.au";
 
 // Subject prefix
 $contact_subject_prefix = "Contact Form Message: ";
