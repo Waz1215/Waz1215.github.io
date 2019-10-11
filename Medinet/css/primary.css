@@ -1134,6 +1134,7 @@ nav{
 
 /*===================== FOOTER =====================*/
 footer{
+	padding-top: 50px;
 	background-image: linear-gradient(to  right, #012c6f 0%, #1289ff 100%);
 }
 footer .container{
@@ -1144,6 +1145,66 @@ footer .row{
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
+
+}
+
+footer #formSubmitButton{
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+	border-radius: 100px;
+	transition: 0.2s;
+}
+
+footer #formSubmitButton:hover{
+	border: 2px solid white;
+	color: #0076be;
+	background-color: white;
+	border-radius: 100px;
+	transform: scale(1.1);
+	
+}
+
+footer .form-group{
+	color: black;
+}
+.validation {
+  color: black;
+  display:none;
+  margin: 0;
+  font-weight:400;
+  font-size:12pt;
+}
+
+#sendmessage {
+  color: white;
+  
+  display:none;
+  text-align:center;
+  padding:15px;
+  font-weight:600;
+  margin-bottom:15px;
+}
+
+#errormessage {
+  color: rgb(255,100,100);
+  display:none;
+  border:1px solid red;
+  text-align:center;
+  font-size: 20pt;
+  padding:15px;
+  font-weight:bold;
+  margin-bottom:15px;
+}
+
+#sendmessage.show, #errormessage.show, .show {
+	display:block;
+}
+
+footer h1{
+	font-size: 50pt;
+	color: white;
+	font-weight: bold;
 }
 footer p{
 	color: rgba(200,200,210,0.9);
@@ -1169,16 +1230,16 @@ footer .social:hover{
 	color: rgba(255,255,255,1);
 }
 
-footer #email{
+footer #emailLink{
 	font-size: 1rem;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-footer #email i{
+footer #emailLink i{
 	font-size: 20px;
 	padding-right: 20px;
 }
-footer #email:hover{
+footer #emailLink:hover{
 	text-decoration: none;
 	color: rgba(255,255,255,1);
 }
