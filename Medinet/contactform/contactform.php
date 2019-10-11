@@ -10,7 +10,7 @@
 $contact_email_to = "hello@medinet.com.au";
 
 // Subject prefix
-$contact_subject_prefix = "Contact Form Message: ";
+$contact_subject_prefix = "Medinet Australia Inquiry: ";
 
 // Name too short error text
 $contact_error_name = "Name is too short or empty!";
@@ -54,7 +54,7 @@ if(isset($_POST)) {
   }
 
   if(!isset($contact_email_from)) {
-    $contact_email_from = "contactform@" . @preg_replace('/^www\./','', $_SERVER['SERVER_NAME']);
+    $contact_email_from = "inquiry@" . @preg_replace('/^www\./','', $_SERVER['SERVER_NAME']);
   }
 
   $sendemail = mail($contact_email_to, $contact_subject_prefix . $subject, "Sender Email: " . $email . "\n" . "Message: " . $message,
