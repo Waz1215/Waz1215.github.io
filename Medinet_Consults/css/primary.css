@@ -1,9 +1,13 @@
 html, body{
 	overflow-x: hidden;
-	width: 100%;
-	 min-width: fit-content;
+	
+	/*min-width: fit-content;*/
 }
 
+#wrapper{
+	width: 100%;
+	overflow-x: hidden;
+}
 nav{
 	background-color: white;
 	box-shadow: 0px 2px  10px rgba(0,0,0,0.4);
@@ -11,6 +15,7 @@ nav{
 	font-family: "Montserrat";
 	font-size: 20px;
 	font-weight: 500;
+
 }
 
 nav .navbar-nav a{
@@ -142,17 +147,18 @@ nav .header-buttons{
 		margin-right: 20px;
 	}
 	#hero h1{
-		font-size: 55px;
+		font-size: 35px;
 	}
 
 	#hero p{
-		font-size: 22px;
+		width: 350px;
+		font-size: 18px;
 	}
 
 	.btn{
 		font-family: "Roboto";
-		font-size: 22px;
-		width: 200px;
+		font-size: 18px;
+		width: 150px;
 		height: 55px;
 		margin: 10px;
 	}
@@ -211,7 +217,7 @@ nav .header-buttons{
 	}
 
 	#why p{
-		font-size: 22px;
+		font-size: 18px;
 	}
 }
 
@@ -271,7 +277,7 @@ nav .header-buttons{
 	}
 
 	#how p{
-		font-size: 22px;
+		font-size: 18px;
 	}
 
 	#how .img-container{
@@ -357,7 +363,7 @@ nav .header-buttons{
 		display: none;
 	}
 	#contact p{
-		font-size: 22px;
+		font-size: 18px;
 	}
 
 	#contact .contact-container{
@@ -395,6 +401,14 @@ footer a:hover{
 
 
 @media(max-width: 576px){
+	footer p{
+		font-size: 18px;
+	}
+
+	footer a{
+		font-size: 18px;
+	}
+
 	footer .container{
 		max-width: 90%;
 	}
