@@ -68,6 +68,7 @@ body{
 #site-wrapper{
 	overflow-x: hidden;
 	max-width: 100vw;
+	width: 100vw;
 	position: absolute;
 }
 
@@ -244,6 +245,23 @@ nav{
 	padding: 10px 5px 10px 5px;*/
 }
 
+
+#home.specialist-masthead{
+	padding-left: 0 !important;
+	min-height: initial !important;
+}
+#home .specialist-container{
+	padding:0;
+}
+#home .specialist-container .main-col{
+	padding:0;
+}
+
+#home .specialist-header{
+	background-image: linear-gradient(to  right, #012c6f 0%, #1289ff 100%);
+	color: white;
+	padding: 70px;
+}
 /*===================== FEATURES =====================*/
 
 #features .container{
@@ -355,6 +373,283 @@ nav{
 	#features p{
 		color: rgba(14,19,24,1);
 		font-weight: 400 !important;
+	}
+}
+
+
+/*===================== WHY JOIN =====================*/
+
+#join .container{
+	z-index: 10;
+	position: relative;
+	padding-right: 0px;
+	padding-left: 0px;
+	
+}
+
+#join{ 
+	background-color: white;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	padding-top: 00px;
+	background-size: 100% 100%;
+}
+
+#join .row{
+	padding: 20px;
+	padding-right: 120px;
+	padding-left: 120px;
+
+}
+
+#join img{
+	width: 400px;
+}
+
+#join  h1{
+	padding-top: 50px;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 1.2;
+	z-index: 2;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+#join  h3{
+	text-align: center;
+}
+
+#join p{
+	color: rgba(14,19,24,.8);
+	font-weight: 400;
+	font-size: 18px;
+	
+	margin-top: 20px;
+	
+}
+
+#join .description{
+	font-size: 20px;
+	width: 80%;
+	color: black;
+	padding-bottom: 50px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#join li{
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+#join .read-more{
+	font-weight: 500;
+	color: #0076be;
+}
+
+#join .read-more:hover{
+	text-decoration: none;
+	color: gray;
+}
+#join i{
+	color: #0076be;
+	padding-top: 20px;
+	
+	font-size: 100px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#join .join-row p{
+	padding-left: 10px;
+}
+
+#join .points ul{
+
+	list-style-type: none;
+	counter-reset: custom-counter 0;
+}
+
+
+
+#join .join-row{
+	text-align: left;
+	padding:0px;
+
+}
+
+#join .join-row i{
+	font-size: 50px;
+}
+
+.featureCol{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.featureCol p{
+	color:gray !important;
+	font-weight: 300 !important;
+	border-left: 2px solid #0076be;
+	padding-left: 10px;
+	/*opacity: 0;*/
+}
+
+#join .card{
+	box-shadow: 0px 0px 5px gray;
+	height: 100%;
+}
+
+#join .card .card-body img{
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	padding: 10px;
+}
+
+#join .card .card-body .card-title{
+	text-align: center;
+	padding-top: 30px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+#join .card .card-body .card-text{
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 15px;
+}
+
+#join .card-row{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#join .join-contact{
+	font-size: 30px;
+}
+
+@media(max-width: 1140px){
+	#join .row{
+		padding-left: 50px;
+		padding-right: 50px;
+		
+	}
+}
+
+@media(max-width: 992px){
+	#join h1{
+		font-size: 40px;
+	}
+
+	#join p{
+		font-size: 15px;
+	}
+	#join .row{
+		padding-left: 50px;
+		padding-right: 50px;
+		
+	}
+
+	#join img{
+		width: 250px;
+		padding-top: 50%;
+		transform: translateY(-25%);
+	}
+}
+
+@media(max-width: 767px){
+	#join img{
+		width: 40%;
+		padding-top: 0%;
+		padding: 20px;
+		transform: none;
+	}
+
+	#join .card-row{
+		padding: 100px;
+		padding-bottom: 0px;
+	
+	}
+
+	#join .card-row div[class^="col"]{
+		min-height: 300px;
+		padding-bottom: 100px;
+	}
+
+	#join .card-row .card{
+		min-height: 400px;
+		padding: 50px;
+
+	}
+}
+
+@media(max-width: 576px){
+
+	#join h1{
+		font-size: 30px;
+	}
+	#features .row{
+		padding-left: 30px;
+		padding-right: 30px;
+		min-height: 400px;
+	}
+
+	#features p{
+		color: rgba(14,19,24,1);
+		font-weight: 400 !important;
+	}
+
+	#home .specialist-header{
+		font-size: 30px;
+	}
+	#home .specialist-header{
+		padding: 30px;
+	}
+
+	#join .row{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	#join .join-row i{
+		font-size: 30px;
+	}
+	#join .join-row p{
+		font-size: 15px;
+		padding-left: 15px;
+	}
+
+	#join .description{
+		font-size: 18px;
+	}
+
+	#join img{
+		width: 70%;
+		padding:20px;
+
+	}
+
+	#join .card-row div[class^="col"]{
+		min-height: 300px;
+		padding: 30px;
+	}
+
+	#join .card-row {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+	#join .card-row .card{
+		padding: 10px;
+	}
+	#join .join-contact{
+		font-size: 20px;
+		padding-right: 20px;
+		padding-left: 20px;
 	}
 }
 

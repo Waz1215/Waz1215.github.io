@@ -73,11 +73,11 @@ $(document).ready(function(){
 	//Examples Animations
 	$(".flip-card-inner").click(function(){
 		if ($(this).data("state")=="front"){
-			$(this).css({'transform' : 'rotateY(-180deg)'});
+			// $(this).css({'transform' : 'rotateY(-180deg)'});
 			$(this).data("state", "back");
 		}
 		else{
-			$(this).css({'transform' : 'rotateY(0deg)'});
+			// $(this).css({'transform' : 'rotateY(0deg)'});
 			$(this).data("state", "front");
 		}
 		

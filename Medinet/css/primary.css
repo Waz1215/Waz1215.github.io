@@ -72,7 +72,7 @@ nav{
 /*===================== HOME =====================*/
 #homeBG{
 	z-index: 1;
-	height: 115vh;
+	height: 125vh;
 	min-height:900px;
 	width: auto;
 	overflow-x: hidden;
@@ -953,15 +953,23 @@ nav{
 #examples .flip-card {
   background-color: transparent;
   width: 100%;
-  height: 600px;
+  height: 750px;
   perspective: 2000px; 
-  cursor:pointer; 
+  /*cursor:pointer; */
   -webkit-backface-visibility: hidden;
 
 }
 
 #examples .flip-card-inner img{
-	width: 100%;
+	padding:5px;
+	width: 40%;
+	height: auto;
+	border-radius: 100%;
+	box-shadow: 0px 0px 10px gray;
+	/*position: relative;*/
+	/*left: -40%;*/
+	margin-top: 10px;
+	margin-bottom: 5px;
 	-webkit-backface-visibility: hidden;
 }
 /* This container is needed to position the front and back side */
@@ -971,6 +979,7 @@ nav{
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
+  transform: rotateY(180deg);
   transform-style: preserve-3d;
 
 }
@@ -993,18 +1002,18 @@ nav{
 }
 
 #examples #flip-card-1{
-	background-image: url("../img/example1.jpg");
+	/*background-image: url("../img/example1.jpg");*/
 	-webkit-backface-visibility: hidden;
 
 }
 
 #examples #flip-card-2{
-	background-image: url("../img/example2.jpg");
+	/*background-image: url("../img/example2.jpg");*/
 	-webkit-backface-visibility: hidden;
 }
 
 #examples #flip-card-3{
-	background-image: url("../img/example3.jpg");
+	/*background-image: url("../img/example3.jpg");*/
 	-webkit-backface-visibility: hidden;
 }
 
@@ -1030,6 +1039,7 @@ nav{
 	background-color: white;
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
+	visibility: hidden;
 }
 
 #examples .flip-card-front h1{
@@ -1066,7 +1076,8 @@ nav{
 #examples .flip-card-back .flip-card-body{
   width: 80%;
   height: 80%;
-  border: 1px solid black;
+  border: 5px solid black;
+  border-image: linear-gradient(135deg, #012c6f, #1289ff) 20;
   margin-left: auto;
   margin-right: auto;
   backface-visibility: hidden;
@@ -1104,7 +1115,15 @@ nav{
   font-size: 12pt;
 }
 
+#examples .flip-card-body{
+	position: relative;
+}
 
+#examples .flip-card-footer{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
 #examples i{
 	vertical-align: super;
 	font-size: 10pt;
@@ -1125,7 +1144,7 @@ nav{
 
 @media(max-width: 767px){
 	#examples .flip-card-back p{
-		font-size: 13pt;
+		font-size: 12pt;
 	}
 	#examples .flip-card-front h1{
 		font-size: 70pt;
