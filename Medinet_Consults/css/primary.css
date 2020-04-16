@@ -18,6 +18,9 @@ nav{
 
 }
 
+nav .btn{
+	font-family: "Roboto";
+}
 nav .navbar-nav a{
 	color: unset;
 }
@@ -37,7 +40,75 @@ nav .navbar-nav{
 }
 
 nav .header-buttons{
+	position: absolute;
+	right: 10px;
+	top: 10px;
 	padding-right: 10px;
+}
+nav i{
+		color: #3048CE;
+	}
+
+nav button:focus{
+	outline: none;
+}
+
+nav #navbarNavAltMarkup{
+	/*display: none !important;*/
+	text-align: right;
+	font-size: 18px;
+}
+
+
+@media(max-width: 992px){
+	nav #navbarNavAltMarkup.show{
+		/*display: flex !important;*/
+	}
+
+	nav .header-buttons{
+		right: 50px;
+	}
+
+}
+@media(max-width: 768px){
+	
+	nav .btn-outline-primary{
+		background-color: #7462E0;
+		border: #7462E0;
+		color:white;
+	}
+
+	nav .btn-outline-primary:hover{
+		background-color: #7462E0;
+		opacity: 60%;
+	}
+
+
+
+
+	nav button:active{
+		outline: none;
+	}
+
+
+}
+
+
+@media(max-width: 576px){
+	nav img{
+		padding: 0px;
+		width: 150px;
+	}
+	nav .btn-outline-primary{
+		width: 100px;
+		font-size: 16px;
+		height: 45px;
+	}
+
+	nav .header-buttons{
+		top:0px;
+	}
+
 }
 
 .btn{
@@ -113,7 +184,7 @@ nav .header-buttons{
 
 @media(max-width: 992px){
 	#hero img{
-	 width: 400px;
+		width: 400px;
 	}
 
 	#hero div{
@@ -132,6 +203,7 @@ nav .header-buttons{
 	#hero p{
 		width: 500px;
 	}
+
 
 }
 
@@ -197,6 +269,14 @@ nav .header-buttons{
 }
 
 
+@media(max-width: 992px){
+	#why .container{
+		max-width: 80%;
+	}
+
+}
+
+
 @media(max-width: 768px){
 	#why .container{
 		text-align: left;
@@ -243,6 +323,7 @@ nav .header-buttons{
 }
 
 #how img{
+	width: 180px;
 	margin-bottom: 10px;
 }
 
@@ -261,6 +342,31 @@ nav .header-buttons{
 }
 
 #how .col{
+
+
+}
+
+@media(max-width: 992px){
+	#how .container{
+		max-width: 80%;
+	}
+
+}
+
+@media(max-width: 768px){
+
+	#how .img-container{
+		justify-content: center;
+		height: 200px;
+	}
+
+	#how img{
+		width: 300px;
+	}
+
+	#how p{
+		margin-bottom: 100px;
+	}
 
 
 }
@@ -349,6 +455,23 @@ nav .header-buttons{
 	opacity: 60%;
 }
 
+
+@media(max-width:992px){
+
+
+	#contact img{
+		width: 200px;
+		margin-bottom: 50px;
+	}
+
+	#contact p{
+		font-size: 18px;
+	}
+
+
+}
+
+
 @media(max-width: 576px){
 	#contact .container{
 		max-width: 90%;
@@ -399,6 +522,19 @@ footer a:hover{
 	text-decoration: none;
 }
 
+@media(max-width: 992px){
+
+
+	footer p{
+		font-size: 18px;
+	}
+
+	footer a{
+		font-size: 18px;
+	}
+
+
+}
 
 @media(max-width: 576px){
 	footer p{

@@ -6,27 +6,43 @@
     	<link rel="stylesheet" type="text/css" href="css/primary.css">
     	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
     	<title>Medinet Consults</title>
   	</head>
 	<body>
 	<div id="wrapper">
 		<nav class="navbar fixed-top navbar-expand-lg">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="https://consults.medinet.com.au">
 				<img src="img/Logo/Medinet Logo.png" />
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+			<div class="collapse navbar-collapse" id="">
 				<div class="navbar-nav">
 					<a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
 				</div>
-				<div class="header-buttons ml-auto">
-					<a href="#"><button type="button" class="btn btn-primary">LOG IN</button></a>
+			</div>
+			<div class="header-buttons ml-auto">
+					<a href="#"><button type="button" class="btn btn-primary d-none d-md-inline-block">LOG IN</button></a>
 					<a href="#"><button type="button" class="btn btn-outline-primary">SIGN UP</button></a>
+			</div>
+			<button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fas fa-bars"></i>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link active d-lg-none" href="#">Home<span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link active d-lg-none" href="#">Log In</a>
+					<a class="nav-item nav-link active d-lg-none" href="#">Sign Up</a>
+					<a class="nav-item nav-link active d-lg-none" href="#">Terms of Use</a>
+					<a class="nav-item nav-link active d-lg-none" href="#">Privacy Policy</a>
 				</div>
 			</div>
+
 		</nav>
 
 		<div id="hero">
@@ -79,21 +95,21 @@
 			<div>
 				<div class="container">
 					<div class="row">
-						<div class="col">
+						<div class="col-md-4 col-12">
 							<div class="img-container">
 								<img src="img/2x/sms@2x.png" />
 							</div>
 							<h2>Step 1</h2>
 							<p>The health care professional enters a patient’s mobile number into Medinet Consult’s secure platform prior to the consultation.</p>
 						</div>
-						<div class="col">
+						<div class="col-md-4 col-12">
 							<div class="img-container">
 								<img src="img/2x/message@2x.png" />
 							</div>
 							<h2>Step 2</h2>
 							<p>The patient receives an SMS with a unique link to the secure virtual consultation.</p>
 						</div>
-						<div class="col">
+						<div class="col-md-4 col-12">
 							<div class="img-container">
 								<img src="img/2x/chat@2x.png" />
 							</div>
@@ -113,7 +129,7 @@
 					</div>
 					<div class="col">
 						<h1>Contact Us</h1>
-						<p>If you have any questions or feedback, <br>it would be great to hear from you.</p>
+						<p>If you have any questions or feedback, it would be great to hear from you.</p>
 						<div class="container contact-container">
 							<div class="row">
 								<div class="col-3">
