@@ -324,7 +324,7 @@ nav .header-buttons{
 }
 
 #contact p.contact-info{
-	color: #7462E0;
+	color: #7462E0 !important;
 	font-weight: 500;
 }
 
