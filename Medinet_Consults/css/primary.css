@@ -1,13 +1,14 @@
+/*=================================================== GENERAL */
 html, body{
 	overflow-x: hidden;
-	
-	/*min-width: fit-content;*/
 }
 
 #wrapper{
 	width: 100%;
 	overflow-x: hidden;
 }
+
+/*=================================================== NAVBAR */
 nav{
 	background-color: white;
 	box-shadow: 0px 2px  10px rgba(0,0,0,0.4);
@@ -137,6 +138,8 @@ nav #navbarNavAltMarkup{
 }
 
 
+
+/*=================================================== HERO SECTION */
 #hero{
 	height: 100vh;
 	min-height: 700px;
@@ -238,7 +241,7 @@ nav #navbarNavAltMarkup{
 }
 
 
-
+/*=================================================== WHY SECTION */
 #why{
 	text-align: center;
 }
@@ -302,6 +305,8 @@ nav #navbarNavAltMarkup{
 }
 
 
+
+/*=================================================== HOW SECTION */
 #how{
 	text-align: center;
 }
@@ -406,6 +411,8 @@ nav #navbarNavAltMarkup{
 }
 
 
+
+/*=================================================== CONTACT SECTION */
 #contact{
 	background-color: #f2f3ff;
 	padding-top: 50px;
@@ -494,6 +501,8 @@ nav #navbarNavAltMarkup{
 	}
 
 }
+
+/*=================================================== FOOTER */
 
 footer{
 	background-color: #f2f3ff;
