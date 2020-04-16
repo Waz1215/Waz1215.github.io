@@ -1,5 +1,7 @@
 html, body{
-	 width: fit-content;
+	overflow-x: hidden;
+	width: 100%;
+	 min-width: fit-content;
 }
 
 nav{
