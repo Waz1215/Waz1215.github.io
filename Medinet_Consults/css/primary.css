@@ -224,8 +224,8 @@ nav #navbarNavAltMarkup{
 	}
 
 	#hero div{
-		margin-left: 20px;
-		margin-right: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 	#hero h1{
 		font-size: 35px;
@@ -597,7 +597,7 @@ footer a:hover{
 	}
 
 	footer a{
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	footer .container{
