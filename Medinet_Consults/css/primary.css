@@ -14,13 +14,14 @@ nav{
 	box-shadow: 0px 2px  10px rgba(0,0,0,0.4);
 	color: #73767c;
 	font-family: "Montserrat";
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 500;
 
 }
 
 nav .btn{
 	font-family: "Roboto";
+	font-size: 16px;
 }
 nav .navbar-nav a{
 	color: unset;
@@ -57,7 +58,7 @@ nav button:focus{
 nav #navbarNavAltMarkup{
 	/*display: none !important;*/
 	text-align: right;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 
@@ -109,6 +110,11 @@ nav #navbarNavAltMarkup{
 	nav .header-buttons{
 		top:0px;
 	}
+	nav #navbarNavAltMarkup{
+	/*display: none !important;*/
+	text-align: right;
+	font-size: 16px;
+}
 
 }
 
@@ -157,18 +163,18 @@ nav #navbarNavAltMarkup{
 }
 #hero h1{
 	font-family: "Montserrat";
-	font-size: 70px;
-	font-weight: 500;
+	font-size: 52px;
+	font-weight: 600;
 	color: #3048CE;
 	margin-bottom: 20px;
 }
 
 #hero p{
 	font-family: "Roboto";
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 400;
 	color: #3D3C60;
-	width: 600px;
+	width: 450px;
 }
 
 #hero .btn{
@@ -227,12 +233,12 @@ nav #navbarNavAltMarkup{
 
 	#hero p{
 		width: 350px;
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.btn{
 		font-family: "Roboto";
-		font-size: 18px;
+		font-size: 16px;
 		width: 150px;
 		height: 55px;
 		margin: 10px;
@@ -249,12 +255,18 @@ nav #navbarNavAltMarkup{
 #why h1{
 	font-family: "Montserrat";
 	font-size: 40px;
-	font-weight: 500;
+	font-weight: 600;
 	color: #3048CE;
 	margin-top: 100px;
 	margin-bottom: 50px;
 }
 
+
+#why p{
+	font-family: "Roboto";
+	font-size: 16px;
+	color: #3D3C60;
+}
 #why img{
 	margin-bottom: 10px;
 }
@@ -269,6 +281,8 @@ nav #navbarNavAltMarkup{
 
 #why div[class^="col"]{
 	margin-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 
@@ -291,16 +305,26 @@ nav #navbarNavAltMarkup{
 @media(max-width: 576px){
 	#why h1{
 		margin-top: 40px;
-		font-size: 30px;
+		font-size: 24px;
+	}
+
+	#why .container{
+		max-width: 100%;
 	}
 
 	#why img{
-		width: 80px;
+		width: 50px;
 		margin-bottom: 20px;
 	}
 
 	#why p{
-		font-size: 18px;
+		font-size: 16px;
+	}
+
+	#why div[class^="col"]{
+		margin-bottom: 50px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 
@@ -314,7 +338,7 @@ nav #navbarNavAltMarkup{
 #how h1{
 	font-family: "Montserrat";
 	font-size: 40px;
-	font-weight: 500;
+	font-weight: 600;
 	color: #3048CE;
 	margin-top: 100px;
 	margin-bottom: 50px;
@@ -322,8 +346,14 @@ nav #navbarNavAltMarkup{
 
 #how h2{
 	font-family: "Montserrat";
-	font-size: 30px;
+	font-size: 24px;
 	margin-bottom: 10px;
+	color: #151341;
+}
+
+#how p{
+	font-family: "Roboto";
+	font-size: 16px;
 	color: #3D3C60;
 }
 
@@ -383,12 +413,16 @@ nav #navbarNavAltMarkup{
 
 	#how h1{
 		margin-top: 40px;
-		font-size: 30px;
+		font-size: 24px;
 		margin-bottom: 0px;
 	}
 
+	#how h2{
+		font-size: 22px;
+	}
+
 	#how p{
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	#how .img-container{
@@ -400,7 +434,7 @@ nav #navbarNavAltMarkup{
 
 	}
 	#how img{
-		width: 280px;
+		width: 200px;
 
 	}
 
@@ -433,12 +467,13 @@ nav #navbarNavAltMarkup{
 #contact h1{
 	color: #3048CE;
 	font-family: "Montserrat";
-	font-size: 25px;
+	font-weight: 600;
+	font-size: 24px;
 }
 
 #contact p{
 	font-family: "Roboto";
-	font-size: 20px;
+	font-size: 16px;
 	color: #3D3C60;
 	margin-bottom: 0;
 	opacity: inherit;
@@ -471,8 +506,12 @@ nav #navbarNavAltMarkup{
 		margin-bottom: 50px;
 	}
 
+	#contact>.container{
+		max-width: 80%;
+	}
+
 	#contact p{
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 
@@ -493,7 +532,10 @@ nav #navbarNavAltMarkup{
 		display: none;
 	}
 	#contact p{
-		font-size: 18px;
+		font-size: 16px;
+	}
+	#contact h1{
+		font-size: 20px;
 	}
 
 	#contact .contact-container{
@@ -512,7 +554,7 @@ footer .container{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	max-width: 70%;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 footer p{
@@ -533,13 +575,17 @@ footer a:hover{
 
 @media(max-width: 992px){
 
+	footer .container{
+		max-width: 80%;
+		font-size: 16px;
+	}
 
 	footer p{
-		font-size: 18px;
+		/*font-size: 18px;*/
 	}
 
 	footer a{
-		font-size: 18px;
+		/*font-size: 18px;*/
 	}
 
 
@@ -547,7 +593,7 @@ footer a:hover{
 
 @media(max-width: 576px){
 	footer p{
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	footer a{
