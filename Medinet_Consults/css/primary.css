@@ -306,6 +306,8 @@ nav #navbarNavAltMarkup{
 	#why h1{
 		margin-top: 40px;
 		font-size: 24px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	#why .container{
