@@ -45,7 +45,8 @@ nav .navbar-nav a{
 	padding-right: 10px !important;
 }
 nav .navbar-nav a.active{
-	font-weight: 600;
+	color: #3048CE;
+	font-weight: 700;
 }
 nav .header-buttons{
 	position: absolute;
@@ -142,6 +143,11 @@ nav #navbarNavAltMarkup{
 	height: 55px;
 	margin: 10px;
 }
+
+.btn-primary:active, .btn-primary:focus{
+	background-color: #7462E0 !important;
+	box-shadow: none !important;
+}
 .btn-primary{
 	background-color: #7462E0;
 	border: #7462E0;
@@ -159,6 +165,11 @@ nav #navbarNavAltMarkup{
 	color: white;
 	background-color: #7462E0; 
 	border-color: #7462E0;
+}
+.btn-outline-primary:active, .btn-outline-primary:focus{
+	background-color: transparent !important;
+	box-shadow: none !important;
+	color: #7462E0 !important;
 }
 
 
@@ -205,6 +216,7 @@ nav #navbarNavAltMarkup{
 	right: 0;
 	bottom: 0;
 	z-index: 0;
+	max-width: 630px;
 	width: 57vw;
 }
 
@@ -282,6 +294,7 @@ nav #navbarNavAltMarkup{
 	bottom: -2px;
 	z-index: 0;
 	width: 57vw;
+	max-width: 650px;
 }
 
 @media(max-width: 767px){
@@ -317,7 +330,8 @@ nav #navbarNavAltMarkup{
 	right: 0px;
 	bottom: -2px;
 	z-index: 0;
-	width: 54vw;
+	width: 53vw;
+	max-width: 630px;
 }
 
 @media(max-width: 767px){
