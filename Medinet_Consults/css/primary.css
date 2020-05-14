@@ -50,7 +50,7 @@ nav .navbar-nav a.active{
 nav .header-buttons{
 	position: absolute;
 	right: 10px;
-	/*top: 10px;*/
+	top: 10px;
 	padding-right: 10px;
 }
 nav i{
@@ -171,7 +171,8 @@ nav #navbarNavAltMarkup{
 	display: flex;
   	align-items: center;
   	position: relative;
-  	
+  	overflow-y: hidden;
+  	overflow-x: hidden;
 }
 
 #hero div{
@@ -212,7 +213,7 @@ nav #navbarNavAltMarkup{
 
 @media(max-width: 992px){
 	#hero img{
-		width: 400px;
+		width: 50vw;
 	}
 
 	#hero div{
@@ -235,7 +236,7 @@ nav #navbarNavAltMarkup{
 
 }
 
-@media(max-width: 576px){
+@media(max-width: 575px){
 	#hero {
 		/*padding-top: 100px;*/
 		min-height: unset;
@@ -243,7 +244,7 @@ nav #navbarNavAltMarkup{
 	}
 
 	#hero div{
-		margin-left: 10px;
+		margin-left: 15px;
 		margin-right: 10px;
 	}
 	#hero h1{
@@ -278,9 +279,54 @@ nav #navbarNavAltMarkup{
 #hero.about img{
 	position: absolute;
 	right: -100px;
-	bottom: 0;
+	bottom: -2px;
 	z-index: 0;
 	width: 57vw;
+}
+
+@media(max-width: 767px){
+	#hero.about div{
+		width: 100%;
+	}
+	#hero.about h1{
+		text-align: center;
+	}
+}
+
+@media(max-width: 575px){
+	#hero.about h1{
+		text-align: center;
+		font-size: 35px;
+	}
+
+	#hero.about div{
+		width: 100%;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+
+
+#hero.FAQ{
+	background-color: #F7F7F7;
+}
+
+#hero.FAQ img{
+	position: absolute;
+	right: 0px;
+	bottom: -2px;
+	z-index: 0;
+	width: 54vw;
+}
+
+@media(max-width: 767px){
+	#hero.FAQ div{
+		width: 100%;
+	}
+	#hero.FAQ h1{
+		text-align: center;
+	}
 }
 
 /*=================================================== WHY SECTION */
@@ -346,8 +392,10 @@ nav #navbarNavAltMarkup{
 }
 
 @media(max-width: 576px){
-	#why h1{
+	#why{
 		margin-top: 40px;
+	}
+	#why h1{
 		font-size: 24px;
 		padding-left: 15px;
 		padding-right: 15px;
@@ -459,9 +507,10 @@ nav #navbarNavAltMarkup{
 	#how .container{
 		max-width: 90%;
 	}
-
-	#how h1{
+	#how{
 		margin-top: 40px;
+	}
+	#how h1{
 		font-size: 24px;
 		margin-bottom: 0px;
 	}
@@ -497,6 +546,8 @@ nav #navbarNavAltMarkup{
 /*=================================================== ABOUT SECTION */
 #about-section{
 	/*text-align: center;*/
+	padding-bottom: 50px;
+	padding-top: 50px;
 }
 
 #about-section h1{
@@ -504,7 +555,6 @@ nav #navbarNavAltMarkup{
 	font-size: 40px;
 	font-weight: 600;
 	color: #3048CE;
-	margin-top: 100px;
 	margin-bottom: 30px;
 }
 
@@ -516,28 +566,148 @@ nav #navbarNavAltMarkup{
 }
 
 #about-section .row{
-	padding-left: 100px;
-	padding-right: 100px;
+	/*padding-left: 100px;
+	padding-right: 100px;*/
 }
 #about-section .img-col{
 	text-align: right;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
 }
-
+#about-section div[class^="col"]{
+	/*padding-right: 20px;
+	padding-left: 20px;*/
+}
 #about-section img{
 	/*padding-left: 40px;*/
-	width: auto;
+	width: 100%;
+	max-width: 425px;
 	height: auto;
 }
 #about-section .container{
-	max-width: 100%;
+	max-width: 85%;
 	text-align: left;
 	/*max-width: 70%;*/
 }
 
+
+@media(max-width: 767px){
+	#about-section .img-col{
+		text-align: right;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#about-section img{
+		padding-top: 20px;
+	}
+}
+
+@media(max-width: 575px){
+	#about-section .img-col{
+		text-align: right;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#about-section img{
+		padding-top: 20px;
+	}
+
+	#about-section h1{
+		font-size: 24px;
+	}
+
+	#about-section p{
+		font-size: 14px;
+	}
+}
+
+/*=================================================== FAQ SECTION */
+#FAQ-section{
+	/*text-align: center;*/
+	padding-bottom: 50px;
+	padding-top: 100px;
+	font-family: "Roboto";
+}
+
+#FAQ-section .question-col{
+	font-weight: 500;
+	color: #151341;
+	font-size: 18px;
+}
+#FAQ-section .question-col p{
+	max-width: 80%;
+}
+
+#FAQ-section .answer-col{
+	color: #3D3C60;
+	padding-bottom: 10px;
+}
+
+#FAQ-section ol{
+	padding-left: 0;
+	list-style-position: inside;
+}
+
+#FAQ-section hr{
+	border-color: #E8E8E8;
+	border-width: 2px;
+}
+
+#FAQ-section .collapse-FAQ .question-col>a{
+	color: #151341;	
+}
+
+#FAQ-section .collapse-FAQ .question-col>a:hover{
+	text-decoration: none;
+}
+#FAQ-section .collapse-FAQ a>div{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+
+#FAQ-section .collapse-FAQ .question-col p{
+	display: inline-block;
+}
+
+#FAQ-section .collapse-FAQ .question-col a.clicked i{
+	transform: rotate(-180deg);
+}
+
+#FAQ-section .collapse-FAQ .question-col i{
+	transition-duration: 0.2s;
+}
+
+#FAQ-section .collapse-FAQ .question-col hr{
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+@media(max-width: 575px){
+	#FAQ-section .question-col{
+		font-size: 16px;
+	}
+	#FAQ-section .answer-col{
+		font-size: 14px;
+	}
+	#FAQ-section{
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	#FAQ-section .container{
+		width: 90%;
+	}
+}
 
 /*=================================================== CONTACT SECTION */
 #contact{
