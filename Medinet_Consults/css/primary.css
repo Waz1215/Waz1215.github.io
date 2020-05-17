@@ -285,6 +285,13 @@ nav .row{
 }
 
 
+@media(max-width: 1174px){
+	#hero{
+		height: calc(100vh - 75px);
+		margin-top: 75px;
+	}
+
+}
 
 
 @media(max-width: 991px){
