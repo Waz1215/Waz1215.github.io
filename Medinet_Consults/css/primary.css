@@ -322,7 +322,7 @@ nav .row{
 
 @media(max-width: 575px){
 	#hero {
-		margin-top: 75px;
+		margin-top: 65px;
 		min-height: unset;
 		/*height: 500px;*/
 		height: auto;
