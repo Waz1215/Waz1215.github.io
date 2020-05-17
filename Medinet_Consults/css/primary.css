@@ -21,10 +21,17 @@ nav{
 	font-family: "Montserrat";
 	font-size: 16px;
 	font-weight: 500;
+	justify-content: unset !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	/*padding: 5px 0 5px 0 !important;*/
 }
 nav .btn{
 	font-family: "Roboto";
 	font-size: 16px;
+}
+nav .navbar{
+
 }
 nav .navbar-nav a{
 	color: unset;
@@ -48,11 +55,14 @@ nav .navbar-nav a.active{
 	color: #3048CE;
 	font-weight: 700;
 }
+nav .nav-flex{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
 nav .header-buttons{
-	position: absolute;
-	right: 10px;
-	top: 10px;
-	padding-right: 10px;
+	display: flex;
 }
 nav i{
 	color: #3048CE;
@@ -66,7 +76,30 @@ nav #navbarNavAltMarkup{
 	font-size: 16px;
 }
 
-@media (min-width: 1170px){
+
+nav .navbar-collapse{
+	padding-left: 0px;
+	/*max-width: calc(100vw - 650px);*/
+	flex-direction: row-reverse;
+}
+nav .navbar-collapse ul{
+	min-width: 550px;
+	width: 80%;
+	justify-content: space-between;
+	margin-right: 10px;
+	max-width: 700px;
+}
+
+nav .container{
+	max-width: 100%;
+}
+
+nav .row{
+	width: 100%;
+	align-items: center;
+}
+
+@media (min-width: 1175px){
     nav {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -91,15 +124,41 @@ nav #navbarNavAltMarkup{
     }
 }
 
-@media(max-width: 1169px){
-	nav #navbarNavAltMarkup.show{
-		/*display: flex !important;*/
+@media(max-width: 1174px){
+	nav #navbarNavAltMarkup {
+		/*text-align: left;*/
 	}
 	nav .header-buttons{
 		right: 50px;
 	}
+	nav .navbar-collapse {
+        max-width: unset;
+    }
+
+    nav{
+    	padding: 0 !important;
+		margin-bottom: 5px;
+		padding-top: 5px;
+	}
+	nav>div{
+		padding-left: 16px !important;
+		padding-right: 16px !important;
+	}
+
+
+
+
+	nav #navbarNavAltMarkup{
+		/*display: none !important;*/
+		text-align: left;
+		font-size: 16px;
+		background-color: #f2f3ff;
+		font-weight: normal;
+	}
+
+
 }
-@media(max-width: 768px){
+@media(max-width: 767px){
 	nav .btn-outline-primary{
 		background-color: #7462E0;
 		border: #7462E0;
@@ -112,28 +171,28 @@ nav #navbarNavAltMarkup{
 	nav button:active{
 		outline: none;
 	}
-}
-
-
-@media(max-width: 576px){
-	nav img{
+		nav img{
 		padding: 0px;
 		width: 140px;
 	}
+}
+
+
+@media(max-width: 575px){
 	nav .btn-outline-primary{
 		width: 120px;
 		font-size: 14px;
 		height: 45px;
 	}
-
 	nav .header-buttons{
 		top:0px;
 	}
-	nav #navbarNavAltMarkup{
-		/*display: none !important;*/
-		text-align: right;
-		font-size: 16px;
+
+		nav #navbarNavAltMarkup .mobile-nav{
+		height: 100vh;
+		
 	}
+	
 
 }
 
@@ -176,7 +235,8 @@ nav #navbarNavAltMarkup{
 
 /*=================================================== HERO SECTION */
 #hero{
-	height: 100vh;
+	height: calc(100vh - 85px);
+	margin-top: 85px;
 	min-height: 700px;
 	background-color: #f2f3ff;
 	display: flex;
@@ -187,8 +247,10 @@ nav #navbarNavAltMarkup{
 }
 
 #hero div{
-	margin-left: 100px;
-	margin-right: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
 	z-index: 1;
 }
 #hero h1{
@@ -205,9 +267,11 @@ nav #navbarNavAltMarkup{
 	font-weight: 400;
 	color: #3D3C60;
 	width: 450px;
+	margin: 0;
 }
 
 #hero .btn{
+	margin-top: 20px;
 	margin-left: 0;
 }
 
@@ -223,23 +287,24 @@ nav #navbarNavAltMarkup{
 
 
 
-@media(max-width: 992px){
+@media(max-width: 991px){
 	#hero img{
 		width: 50vw;
 	}
 
 	#hero div{
-		margin-left: 75px;
-		margin-right: 75px;
+		/*margin-left: 75px;
+		margin-right: 75px;*/
 	}
 
 }
 
 
-@media(max-width: 768px){
+@media(max-width: 767px){
 	#hero div{
-		margin-left: 50px;
-		margin-right: 50px;
+		max-width: 90%;
+		padding-left: 20px;
+		padding-right: 20px
 	}
 	#hero p{
 		width: 500px;
@@ -250,22 +315,29 @@ nav #navbarNavAltMarkup{
 
 @media(max-width: 575px){
 	#hero {
-		/*padding-top: 100px;*/
+		margin-top: 75px;
 		min-height: unset;
-		height: 500px;
+		/*height: 500px;*/
+		height: auto;
+		min-height: 400px;
 	}
 
 	#hero div{
-		margin-left: 15px;
-		margin-right: 10px;
+		max-width: 100%;
+		/*margin-left: 10px;
+		margin-right: 10px;*/
 	}
 	#hero h1{
 		font-size: 35px;
 	}
 
 	#hero p{
-		width: 350px;
+		width: auto;
 		font-size: 16px;
+	}
+	#hero .container{
+		margin-bottom: 50px;
+		margin-top: 50px;
 	}
 
 	.btn{
@@ -282,6 +354,7 @@ nav #navbarNavAltMarkup{
 
 #hero.about{
 	background-color: #151341;
+	text-align: left;
 }
 
 #hero.about h1{
@@ -330,7 +403,7 @@ nav #navbarNavAltMarkup{
 	right: 0px;
 	bottom: -2px;
 	z-index: 0;
-	width: 53vw;
+	width: 50vw;
 	max-width: 630px;
 }
 
@@ -346,6 +419,7 @@ nav #navbarNavAltMarkup{
 /*=================================================== WHY SECTION */
 #why{
 	text-align: center;
+	margin-top: 50px;
 }
 
 #why h1{
@@ -353,8 +427,8 @@ nav #navbarNavAltMarkup{
 	font-size: 40px;
 	font-weight: 600;
 	color: #3048CE;
-	margin-top: 100px;
 	margin-bottom: 50px;
+	text-align: center;
 }
 
 
@@ -362,6 +436,7 @@ nav #navbarNavAltMarkup{
 	font-family: "Roboto";
 	font-size: 16px;
 	color: #3D3C60;
+	margin-bottom: 0;
 	width: 230px;
 }
 #why img{
@@ -381,42 +456,52 @@ nav #navbarNavAltMarkup{
 	padding-left: 30px;
 	padding-right: 30px;
 	display: inline-flex;
-	justify-content: center;
+	/*justify-content: center;*/
 }
 
-#why .col-center{
+#why .why-center{
 	display: block !important;
 }
 
 
-@media(max-width: 992px){
+@media(max-width: 991px){
 	#why .container{
-		max-width: 80%;
+		/*max-width: 80%;*/
 	}
 
 }
 
 
-@media(max-width: 768px){
+@media(max-width: 767px){
 	#why .container{
 		text-align: left;
 		max-width: 90%;
 	}
 
+	#why h1{
+		text-align: center;
+	}
+
+	#why div[class^="col"]{
+		padding-left:20px;
+		padding-right:20px;
+	}
+
 }
 
-@media(max-width: 576px){
+@media(max-width: 575px){
 	#why{
-		margin-top: 40px;
+		margin-top: 50px;
 	}
 	#why h1{
 		font-size: 24px;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	#why .container{
 		max-width: 100%;
+		padding: 0;
 	}
 
 	#why p{
@@ -432,10 +517,13 @@ nav #navbarNavAltMarkup{
 		font-size: 16px;
 	}
 
+	#why .row{
+		margin: 0;
+	}
 	#why div[class^="col"]{
 		margin-bottom: 50px;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 
@@ -451,8 +539,8 @@ nav #navbarNavAltMarkup{
 	font-size: 40px;
 	font-weight: 600;
 	color: #3048CE;
-	margin-top: 100px;
 	margin-bottom: 50px;
+	text-align: center;
 }
 
 #how h2{
@@ -466,6 +554,7 @@ nav #navbarNavAltMarkup{
 	font-family: "Roboto";
 	font-size: 16px;
 	color: #3D3C60;
+	margin-bottom: 0;
 }
 
 #how img{
@@ -492,18 +581,30 @@ nav #navbarNavAltMarkup{
 	padding-right: 30px;
 }
 
-@media(max-width: 992px){
+@media(max-width: 991px){
 	#how .container{
-		max-width: 80%;
+		/*max-width: 80%;*/
 	}
 
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
 
 	#how .img-container{
 		justify-content: center;
-		height: 200px;
+		height: auto;
+	}
+
+	#how .col-md-4{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#how .container{
+		max-width: 90%;
+	}
+
+	#how .row{
 	}
 
 	#how img{
@@ -511,18 +612,34 @@ nav #navbarNavAltMarkup{
 	}
 
 	#how p{
-		margin-bottom: 100px;
+		margin-bottom: 50px;
 	}
 
 
 }
 
-@media(max-width: 576px){
+@media(max-width: 575px){
 	#how .container{
-		max-width: 90%;
+		max-width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#how .row{
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+	#how .col-md-4{
+		padding-left: 0;
+		padding-right: 0;
 	}
 	#how{
-		margin-top: 40px;
+		/*margin-top: 50px;*/
+	}
+
+	#how p{
+		margin-bottom: 50px;
 	}
 	#how h1{
 		font-size: 24px;
@@ -539,7 +656,7 @@ nav #navbarNavAltMarkup{
 
 	#how .img-container{
 		justify-content: center;
-		height: 250px;
+		height: 200px;
 	}
 
 	#how .container{
@@ -569,7 +686,7 @@ nav #navbarNavAltMarkup{
 	font-size: 40px;
 	font-weight: 600;
 	color: #3048CE;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 
@@ -601,11 +718,27 @@ nav #navbarNavAltMarkup{
 	height: auto;
 }
 #about-section .container{
-	max-width: 85%;
+	/*max-width: 85%;*/
 	text-align: left;
 	/*max-width: 70%;*/
 }
+#about-section .row{
+	padding-left: 15px;
+	padding-right: 15px;
+}
 
+@media(max-width: 991px){
+	#about-section .img-col{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#about-section img{
+		padding-top: 50px;
+	}
+}
 
 @media(max-width: 767px){
 	#about-section .img-col{
@@ -614,6 +747,20 @@ nav #navbarNavAltMarkup{
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+	}
+
+	#about-section .container{
+		max-width: 90%;
+	}
+
+	#about-section .row{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#about-section div[class^="col"]{
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	#about-section img{
@@ -630,8 +777,12 @@ nav #navbarNavAltMarkup{
 		justify-content: center;
 	}
 
+	#about-section .container{
+		max-width: 100%;
+	}
 	#about-section img{
-		padding-top: 20px;
+		padding-top: 50px;
+		width: 70%;
 	}
 
 	#about-section h1{
@@ -640,6 +791,7 @@ nav #navbarNavAltMarkup{
 
 	#about-section p{
 		font-size: 14px;
+		margin-bottom: 0;
 	}
 }
 
@@ -647,7 +799,7 @@ nav #navbarNavAltMarkup{
 #FAQ-section{
 	/*text-align: center;*/
 	padding-bottom: 50px;
-	padding-top: 100px;
+	padding-top: 50px;
 	font-family: "Roboto";
 }
 
@@ -673,6 +825,11 @@ nav #navbarNavAltMarkup{
 #FAQ-section hr{
 	border-color: #E8E8E8;
 	border-width: 2px;
+}
+
+#FAQ-section .container{
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 #FAQ-section .collapse-FAQ .question-col>a{
@@ -707,6 +864,21 @@ nav #navbarNavAltMarkup{
 	padding-bottom: 10px;
 }
 
+@media(max-width: 767px){
+
+	#FAQ-section .container{
+		max-width: 90%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	#FAQ-section ol{
+		margin-left: 20px;
+		list-style-position: outside;
+	}
+
+}
+
 @media(max-width: 575px){
 	#FAQ-section .question-col{
 		font-size: 16px;
@@ -719,7 +891,17 @@ nav #navbarNavAltMarkup{
 		padding-top: 20px;
 	}
 	#FAQ-section .container{
-		width: 90%;
+		max-width: 100%;
+		/*padding-left: 20px;
+		padding-right: 20px;*/
+	}
+
+	#FAQ-section .row{
+		margin: 0;
+	}
+	#FAQ-section div[class^="col"]{
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -727,16 +909,35 @@ nav #navbarNavAltMarkup{
 #contact{
 	background-color: #f2f3ff;
 	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 #contact>.container{
-	max-width: 80%;
+	
 }
 #contact .contact-container{
+	font-weight: 500;
 	padding: 0;
-	margin-top: 20px;
+	margin-top: .5rem;
 }
 
+#contact>.container>.row{
+	padding: 0;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#contact div[class^="col"]{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#contact .contact-container>.row{
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0;
+}
+#contact .contact-container .col-lg-9{
+	padding-left: 10px;
+}
 #contact img{
 	width: 300px;
 }
@@ -758,7 +959,7 @@ nav #navbarNavAltMarkup{
 
 #contact p.contact-info{
 	color: #7462E0 !important;
-	font-weight: 500;
+	font-weight: normal;
 }
 
 #contact hr{
@@ -780,7 +981,7 @@ nav #navbarNavAltMarkup{
 }
 
 
-@media(max-width:992px){
+@media(max-width: 991px){
 
 
 	#contact img{
@@ -789,7 +990,7 @@ nav #navbarNavAltMarkup{
 	}
 
 	#contact>.container{
-		max-width: 80%;
+		/*max-width: 80%;*/
 	}
 
 	#contact p{
@@ -799,10 +1000,36 @@ nav #navbarNavAltMarkup{
 
 }
 
-
-@media(max-width: 576px){
+@media(max-width: 767px){
 	#contact .container{
 		max-width: 90%;
+	}
+
+	#contact .contact-container{
+		margin: 0;
+		margin-top: 20px;
+	}
+
+
+	#contact>.container>.row{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#contact .contact-container .col-lg-9{
+		padding-left: 20px;
+	}
+}
+
+
+@media(max-width: 575px){
+	#contact .container{
+		max-width: 100%;
+		/*padding-left: 20px;
+		padding-right: 20px;*/
+	}
+	#contact>.container>.row{
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	#contact img{
@@ -823,6 +1050,9 @@ nav #navbarNavAltMarkup{
 	#contact .contact-container{
 		margin-left: 0;
 	}
+	#contact .contact-container .col-lg-9{
+		padding-left: 30px;
+	}
 
 }
 
@@ -833,10 +1063,16 @@ footer{
 }
 
 footer .container{
-	padding-top: 20px;
+	padding-top: 0px;
 	padding-bottom: 20px;
-	max-width: 80%;
+	padding-left: 0;
+	padding-right: 0;
 	font-size: 16px;
+}
+
+footer>.container>div{
+	padding-right: 30px;
+	padding-left: 30px;
 }
 
 footer p{
@@ -845,6 +1081,7 @@ footer p{
 }
 
 footer a{
+	font-weight: 500;
 	color: #7462E0;
 	font-family: "Roboto";
 }
@@ -855,11 +1092,27 @@ footer a:hover{
 	text-decoration: none;
 }
 
-@media(max-width: 992px){
+footer hr{
+	padding: 0;
+	padding-bottom: 20px;
+	margin: 0;
+	border-width: 1px;
+	border-color: #7462E0;
+}
+
+footer br{
+	display: none;
+}
+
+@media(max-width: 991px){
 
 	footer .container{
-		max-width: 80%;
+		/*max-width: 80%;*/
 		font-size: 16px;
+	}
+
+	footer br{
+		display: initial;
 	}
 
 	footer p{
@@ -873,7 +1126,31 @@ footer a:hover{
 
 }
 
-@media(max-width: 576px){
+
+@media(max-width: 767px){
+
+	footer .container{
+		max-width: 90%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	footer .container>div{
+		padding:0;
+	}
+
+	footer .row{
+		margin: 0;
+	}
+
+	footer div[class^="col"]{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+}
+
+@media(max-width: 575px){
 	footer p{
 		font-size: 16px;
 	}
@@ -881,9 +1158,14 @@ footer a:hover{
 	footer a{
 		font-size: 16px;
 	}
-
+	
+	footer br{
+		display: none;
+	}
 	footer .container{
-		max-width: 90%;
+		max-width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 
 	footer .col-12{
