@@ -922,6 +922,7 @@ nav .row{
 
 #FAQ-section .collapse-FAQ .question-col p{
 	display: inline-block;
+	padding-bottom: 15px;
 }
 
 #FAQ-section .collapse-FAQ .question-col a.clicked i{
@@ -944,6 +945,11 @@ nav .row{
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	#FAQ-section .collapse-FAQ .question-col hr{
+		margin: 0;
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
 
 	#FAQ-section ol{
 		margin-left: 20px;
@@ -951,10 +957,14 @@ nav .row{
 	}
 
 	#FAQ-section .answer-col{
-		padding-top: 30px;
+		padding-top: 0px;
+	}
+	#FAQ-section .answer-col ol, #FAQ-section .answer-col p {
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 	#FAQ-section .row{
-		padding-bottom: 30px;
+		padding-bottom: 15px;
 		margin-left: 0;
 		margin-right: 0;
 
@@ -986,10 +996,7 @@ nav .row{
 	#FAQ-section .row{
 		padding-bottom: 15px;
 	}
-	#FAQ-section hr{
-		padding-top: 15px;
-		padding-bottom: 0;
-	}
+
 
 	#FAQ-section div[class^="col"]{
 		padding-left: 0;
