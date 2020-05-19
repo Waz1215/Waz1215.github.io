@@ -115,6 +115,7 @@ nav .row{
     nav .navbar-collapse {
         display: flex!important;
         flex-basis: unset;
+        justify-content: space-around;
     }
     nav .navbar-toggler {
         display: none;
@@ -122,17 +123,33 @@ nav .row{
     nav .mobile-nav{
     	display: none;
     }
+    nav #navbarNavAltMarkup{
+		transition-duration: 0s;
+	}
+
+	nav #navbarNavAltMarkup.slide-in{
+		transform: translateX(0);
+	}
+	nav #navbarNavAltMarkup.slide-out{
+		transform: translateX(-100%);
+	}
 }
 
 @media(max-width: 1174px){
 	nav #navbarNavAltMarkup {
 		/*text-align: left;*/
+
 	}
 	nav .header-buttons{
 		right: 50px;
 	}
 	nav .navbar-collapse {
         max-width: unset;
+    }
+
+    nav .mobile-nav>a{
+    	padding-top: 15px;
+    	padding-bottom: 0;
     }
 
     nav{
@@ -154,6 +171,22 @@ nav .row{
 		font-size: 16px;
 		background-color: #f2f3ff;
 		font-weight: normal;
+		position: absolute;
+		top: 75px;
+		left: 0;
+		width: 100vw;
+		height: calc(100vh - 75px);
+	}
+
+	nav #navbarNavAltMarkup{
+		transition-duration: 0.5s;
+	}
+
+	nav #navbarNavAltMarkup.slide-in{
+		transform: translateX(0);
+	}
+	nav #navbarNavAltMarkup.slide-out{
+		transform: translateX(-100%);
 	}
 
 
@@ -188,11 +221,16 @@ nav .row{
 		top:0px;
 	}
 
-		nav #navbarNavAltMarkup .mobile-nav{
+	nav #navbarNavAltMarkup .mobile-nav{
 		height: 100vh;
 		
 	}
-	
+
+
+	nav #navbarNavAltMarkup{
+		top: 65px;
+		height: calc(100vh - 65px);
+	}
 
 }
 
@@ -272,6 +310,7 @@ nav .row{
 
 #hero .btn{
 	margin-top: 20px;
+	margin-bottom: 0;
 	margin-left: 0;
 }
 
@@ -434,7 +473,7 @@ nav .row{
 	font-size: 40px;
 	font-weight: 600;
 	color: #3048CE;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	text-align: center;
 }
 
@@ -459,7 +498,7 @@ nav .row{
 }
 
 #why div[class^="col"]{
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	padding-left: 30px;
 	padding-right: 30px;
 	display: inline-flex;
@@ -528,7 +567,7 @@ nav .row{
 		margin: 0;
 	}
 	#why div[class^="col"]{
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -546,7 +585,8 @@ nav .row{
 	font-size: 40px;
 	font-weight: 600;
 	color: #3048CE;
-	margin-bottom: 50px;
+	margin-top: 20px;
+	margin-bottom: 30px;
 	text-align: center;
 }
 
@@ -612,14 +652,21 @@ nav .row{
 	}
 
 	#how .row{
+		margin-bottom: 0;
 	}
 
 	#how img{
 		/*width: 300px;*/
+		margin-bottom: 0px;
+		margin-top: 10px;
+	}
+
+	#how h2{
+		margin-top: 10px;
 	}
 
 	#how p{
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 
 
@@ -663,7 +710,7 @@ nav .row{
 
 	#how .img-container{
 		justify-content: center;
-		height: 200px;
+		min-height: 150px;
 	}
 
 	#how .container{
@@ -671,6 +718,7 @@ nav .row{
 	}
 	#how img{
 		width: 200px;
+		margin-bottom: 10px;
 
 	}
 
@@ -693,7 +741,7 @@ nav .row{
 	font-size: 40px;
 	font-weight: 600;
 	color: #3048CE;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 
@@ -743,7 +791,7 @@ nav .row{
 	}
 
 	#about-section img{
-		padding-top: 50px;
+		padding-top: 30px;
 	}
 }
 
@@ -771,7 +819,7 @@ nav .row{
 	}
 
 	#about-section img{
-		padding-top: 20px;
+		padding-top: 30px;
 	}
 }
 
@@ -788,7 +836,7 @@ nav .row{
 		max-width: 100%;
 	}
 	#about-section img{
-		padding-top: 50px;
+		padding-top: 30px;
 		width: 70%;
 	}
 
@@ -805,7 +853,7 @@ nav .row{
 /*=================================================== FAQ SECTION */
 #FAQ-section{
 	/*text-align: center;*/
-	padding-bottom: 50px;
+	padding-bottom: 0px;
 	padding-top: 50px;
 	font-family: "Roboto";
 }
@@ -821,14 +869,22 @@ nav .row{
 
 #FAQ-section .answer-col{
 	color: #3D3C60;
-	padding-bottom: 10px;
+	/*padding-bottom: 10px;*/
 }
 
 #FAQ-section ol{
 	padding-left: 0;
 	list-style-position: inside;
+	margin-bottom: 0;
 }
 
+#FAQ-section .row{
+	padding-bottom: 50px;
+}
+
+#FAQ-section p{
+	margin-bottom: 0;
+}
 #FAQ-section hr{
 	border-color: #E8E8E8;
 	border-width: 2px;
@@ -884,28 +940,47 @@ nav .row{
 		list-style-position: outside;
 	}
 
+	#FAQ-section .answer-col{
+		padding-top: 30px;
+	}
+	#FAQ-section .row{
+		padding-bottom: 30px;
+		margin-left: 0;
+		margin-right: 0;
+
+	}
+	#FAQ-section hr{
+		padding-top: 30px;
+	}
+
 }
 
 @media(max-width: 575px){
 	#FAQ-section .question-col{
 		font-size: 16px;
+
+
 	}
 	#FAQ-section .answer-col{
 		font-size: 14px;
 	}
 	#FAQ-section{
 		padding-bottom: 20px;
-		padding-top: 20px;
+		padding-top: 50px;
 	}
 	#FAQ-section .container{
 		max-width: 100%;
 		/*padding-left: 20px;
 		padding-right: 20px;*/
 	}
-
 	#FAQ-section .row{
-		margin: 0;
+		padding-bottom: 15px;
 	}
+	#FAQ-section hr{
+		padding-top: 15px;
+		padding-bottom: 0;
+	}
+
 	#FAQ-section div[class^="col"]{
 		padding-left: 0;
 		padding-right: 0;
@@ -925,7 +1000,7 @@ nav .row{
 #contact .contact-container{
 	font-weight: 500;
 	padding: 0;
-	margin-top: .5rem;
+	margin-top: 30px;
 }
 
 #contact>.container>.row{
@@ -954,6 +1029,7 @@ nav .row{
 	font-family: "Montserrat";
 	font-weight: 600;
 	font-size: 24px;
+	margin-bottom: 30px;
 }
 
 #contact p{
@@ -1025,10 +1101,18 @@ nav .row{
 	#contact .contact-container .col-lg-9{
 		padding-left: 20px;
 	}
+	#contact h1{
+		margin-bottom: 0;
+		padding-bottom: 30px;
+	}
 }
 
 
 @media(max-width: 575px){
+	#contact{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 	#contact .container{
 		max-width: 100%;
 		/*padding-left: 20px;
@@ -1041,7 +1125,7 @@ nav .row{
 
 	#contact img{
 		width: 200px;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 
 	#contact br{
@@ -1056,6 +1140,7 @@ nav .row{
 
 	#contact .contact-container{
 		margin-left: 0;
+		margin-top: 30px;
 	}
 	#contact .contact-container .col-lg-9{
 		padding-left: 30px;
@@ -1101,7 +1186,7 @@ footer a:hover{
 
 footer hr{
 	padding: 0;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 	margin: 0;
 	border-width: 1px;
 	border-color: #7462E0;
@@ -1111,6 +1196,18 @@ footer br{
 	display: none;
 }
 
+footer .row{
+	margin: 0;
+}
+
+footer div[class^="col"]{
+	padding-left:0;
+	padding-right:0;
+}
+footer .footer-right{
+	text-align: right;
+}
+
 @media(max-width: 991px){
 
 	footer .container{
@@ -1118,9 +1215,7 @@ footer br{
 		font-size: 16px;
 	}
 
-	footer br{
-		display: initial;
-	}
+
 
 	footer p{
 		/*font-size: 18px;*/
@@ -1135,7 +1230,6 @@ footer br{
 
 
 @media(max-width: 767px){
-
 	footer .container{
 		max-width: 90%;
 		padding-left: 20px;
@@ -1154,12 +1248,16 @@ footer br{
 		padding-left: 0;
 		padding-right: 0;
 	}
+	footer br{
+		display: initial;
+	}
 
 }
 
 @media(max-width: 575px){
 	footer p{
 		font-size: 16px;
+		margin-bottom: 0;
 	}
 
 	footer a{
@@ -1173,10 +1271,14 @@ footer br{
 		max-width: 100%;
 		padding-left: 20px;
 		padding-right: 20px;
+		padding-bottom: 0;
 	}
 
 	footer .col-12{
-		padding-bottom: 20px;
+		padding-bottom: 30px;
 	}
+	footer .footer-right{
+		text-align: left;
+}
 
 }

@@ -22,4 +22,17 @@ $( document ).ready(function() {
     		$(this).addClass("unclicked");
     	}
 	});
+
+
+	//Slide Nav Toggle
+	$("#slide-nav-toggler").click(function(event) {
+    	if ($("#navbarNavAltMarkup").hasClass("slide-out")){
+    		$("#navbarNavAltMarkup").removeClass("slide-out");
+    		$("#navbarNavAltMarkup").addClass("slide-in");
+    	}
+    	else{
+    		$("#navbarNavAltMarkup").removeClass("slide-in");
+    		$("#navbarNavAltMarkup").addClass("slide-out");
+    	}
+	});
 });
