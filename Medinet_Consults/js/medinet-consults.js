@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-
 	//Scroll to Active Element
 	$("#main-nav .nav-link.scroll").click(function(event) {
     	event.preventDefault();
