@@ -29,7 +29,7 @@ $( document ).ready(function() {
     	if ($("#navbarNavAltMarkup").hasClass("slide-out")){
     		$("#navbarNavAltMarkup").removeClass("slide-out");
     		$("#navbarNavAltMarkup").addClass("slide-in");
-    		// $("body").css("overflow-y", "hidden");
+    		
     	}
     	else{
     		$("#navbarNavAltMarkup").removeClass("slide-in");
