@@ -150,6 +150,7 @@ nav .row{
     nav .mobile-nav>a{
     	padding-top: 15px;
     	padding-bottom: 0;
+    	width: fit-content;
     }
 
     nav{
