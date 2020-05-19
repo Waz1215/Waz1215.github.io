@@ -5,6 +5,7 @@ html, body{
 body{
 	/*height: 100vh;*/
 	position: relative;
+	background-color: #f2f3ff;
 }
 #wrapper{
 	width: 100%;
@@ -24,6 +25,7 @@ nav{
 	justify-content: unset !important;
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
+	z-index: 2001 !important;
 	/*padding: 5px 0 5px 0 !important;*/
 }
 nav .btn{
@@ -231,6 +233,8 @@ nav .row{
 		top: 65px;
 		height: calc(200vh);
 	}
+
+	
 
 }
 
