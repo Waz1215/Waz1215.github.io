@@ -316,10 +316,11 @@ nav .row{
 	color: #3D3C60;
 	width: 450px;
 	margin: 0;
+	padding-bottom: 30px;
 }
 
 #hero .btn{
-	margin-top: 20px;
+	margin-top: 0px;
 	margin-bottom: 0;
 	margin-left: 0;
 }
