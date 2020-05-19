@@ -29,12 +29,12 @@ $( document ).ready(function() {
     	if ($("#navbarNavAltMarkup").hasClass("slide-out")){
     		$("#navbarNavAltMarkup").removeClass("slide-out");
     		$("#navbarNavAltMarkup").addClass("slide-in");
-    		$("body").css("overflow-y", "hidden");
+    		// $("body").css("overflow-y", "hidden");
     	}
     	else{
     		$("#navbarNavAltMarkup").removeClass("slide-in");
     		$("#navbarNavAltMarkup").addClass("slide-out");
-    		$("body").css("overflow-y", "auto");
+    		// $("body").css("overflow-y", "auto");
     	}
 	});
 });
