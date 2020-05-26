@@ -5,7 +5,7 @@ $( document ).ready(function() {
     	$(".navbar-toggler").click();
     	var el = $(this).data("destination");
     	$('html, body').animate({
-        	scrollTop: $(el).offset().top-50
+        	scrollTop: $(el).offset().top-110
     	}, 500, "swing");
 	});
 
@@ -36,4 +36,18 @@ $( document ).ready(function() {
     		// $("body").css("overflow-y", "auto");
     	}
 	});
+
+	//Adjust for Linking to Features and How it Works from other pages
+	if (window.location.hash){
+		if (window.location.hash=="#Features"){
+			$('html, body').animate({
+        		scrollTop: $("#Why-Choose-Medinet-Consults").offset().top-110
+    		}, 500, "swing");
+		}
+		if (window.location.hash=="#How-it-Works"){
+			$('html, body').animate({
+        		scrollTop: $("#How-does-it-Work").offset().top-110
+    		}, 500, "swing");
+		}
+	}
 });

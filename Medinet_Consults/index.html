@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- TODO: Add Meta Content -->
+		<!-- META DATA -->
 		<meta charset="UTF-8">
     	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+    	<meta name="description" content="Medinet Consults is an Australia-based telehealth platform for doctors to provide online healthcare. Secure, easy to use and reduces your practices admin.">
+    	<meta name="google-site-verification" content="abERatGRWvN1VDZFg1u2RGVmaH2IoyhwoKiWZ-fIZhc" />
+
+    	<!-- FACEBOOK META DATA -->
+    	<meta property="og:url"                content="https://consults.medinet.com.au/">
+		<meta property="og:title"              content="Secure Telehealth Platform for Doctors" />
+		<meta property="og:description"        content="Medinet Consults is an Australia-based telehealth platform for doctors to provide online healthcare. Secure, easy to use and reduces your practices admin." />
+		<meta property="og:image"              content="img/social/image_fb.png" />
+
+		<!-- TWITTER META DATA -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Secure Telehealth Platform for Doctors" />
+		<meta name="twitter:url" content="https://consults.medinet.com.au/" />
+		<meta name="twitter:description" content="Medinet Consults is an Australia-based telehealth platform for doctors to provide online healthcare. Secure, easy to use and reduces your practices admin." />
+		<meta name=”twitter:image” content=”img/social/image_twitter.png” />
 
     	<!-- STYLES -->
     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -15,9 +30,9 @@
 
     	<!-- TITLE -->
     	<link rel="icon" href="./favicon.png" type="image/x-icon"/>
-    	<title>Medinet Consults - Home</title>
+    	<title>Medinet Consults - Secure Telehealth Platform for Doctors</title>
   	</head>
-	<body data-spy="scroll" data-target="#main-nav" data-offset="100">
+	<body data-spy="scroll" data-target="#main-nav" data-offset="135">
 	<div id="wrapper">
 		<!-- Navigation -->
 		<nav id="main-nav" class="navbar fixed-top">
@@ -34,10 +49,10 @@
 	                    	<a class="nav-link scroll" href="#Home" data-destination="#Home">Home </a>
 	                	</li>
 	                	<li class="nav-item">
-	                    	<a class="nav-link scroll" href="#Why-Choose-Medinet-Consults" data-destination="#Why-Choose-Medinet-Consults">Features</a>
+	                    	<a id="features-button" class="nav-link scroll" href="#Why-Choose-Medinet-Consults" data-destination="#Why-Choose-Medinet-Consults">Features</a>
 	                	</li>
 	                	<li class="nav-item">
-	                    	<a class="nav-link scroll" href="#How-does-it-Work" data-destination="#How-does-it-Work">How it Works</a>
+	                    	<a id="how-it-works-button" class="nav-link scroll" href="#How-does-it-Work" data-destination="#How-does-it-Work">How it Works</a>
 	                	</li>
 	                	<li class="nav-item">
 	                    	<a class="nav-link scroll" href="#Contact-Us" data-destination="#Contact-Us">Contact Us</a>
@@ -88,62 +103,64 @@
 
 
 		<!-- HERO IMAGE -->
-		<div id="Home"></div>
-		<div id="hero">
-			<div class="container">
-				<h1>Medinet Consults</h1>
-				<p>Medinet Consults is a seamless medical video conferencing tool that is secure and easy to use.</p>
+		<div id="Home">
+			<div id="hero">
+				<div class="container">
+					<h1>Medinet Consults</h1>
+					<p>Medinet Consults is a seamless medical video conferencing tool that is secure and easy to use.</p>
 
-				<!-- CTA Buttons -->
-				<a href="https://app-consults.medinet.com.au/login"><button type="button" class="btn btn-primary">LOG IN</button></a>
-				<a href="https://app-consults.medinet.com.au/register"><button type="button" class="btn btn-outline-primary">TRY FOR FREE</button></a>
+					<!-- CTA Buttons -->
+					<a href="https://app-consults.medinet.com.au/login"><button type="button" class="btn btn-primary">LOG IN</button></a>
+					<a href="https://app-consults.medinet.com.au/register"><button type="button" class="btn btn-outline-primary">TRY FOR FREE</button></a>
+				</div>
+				<img src="img/hero-telehealth.png" class="d-none d-md-block"/>
 			</div>
-			<img src="img/hero-telehealth.png" class="d-none d-md-block"/>
 		</div>
 
 		<!-- WHY CHOOSE MEDINET -->
-		<div id="Why-Choose-Medinet-Consults"></div>
-		<div id="why">
-			
-			<div>
-				<div class="container">
-				<h1>Why choose Medinet Consults?</h1>
-					<div class="row">
-						<div class="col-lg-4 col-md-6 col-sm-6 col-6">
-							<div class="why-center">
-								<img src="img/1x/file-upload.png" />
-								<p>Reduces front office admin, allowing upload of images and medical documents. There is no more need to email, fax or post documents</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 col-6">
+		<div id="Why-Choose-Medinet-Consults">
+			<div id="why">
+				
+				<div>
+					<div class="container">
+					<h1>Why choose Medinet Consults?</h1>
+						<div class="row">
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6">
 								<div class="why-center">
-								<img src="img/1x/healthcare.png" />
-								<p>Made specifically for health care professionals with privacy and security in mind – end-to-end encrypted and no data leaves Australia</p>
+									<img src="img/1x/file-upload.png" />
+									<p>Reduces front office admin, allowing upload of images and medical documents. There is no more need to email, fax or post documents</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 col-6">
-								<div class="why-center">
-								<img src="img/calendar-48px.png" />
-								<p>Enable patient bookings for telehealth and face to face consults that integrate into practice management software</p>
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6">
+									<div class="why-center">
+									<img src="img/1x/healthcare.png" />
+									<p>Made specifically for health care professionals with privacy and security in mind – end-to-end encrypted and no data leaves Australia</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 col-6">
-								<div class="why-center">
-								<img src="img/devices-48px.png" />
-								<p>Simple and easy to use.<br>No downloads, no patient logins. Works on phone, desktop or tablet</p>
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6">
+									<div class="why-center">
+									<img src="img/calendar-48px.png" />
+									<p>Enable patient bookings for telehealth and face to face consults that integrate into practice management software</p>
+								</div>
 							</div>
-						</div>
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6">
+									<div class="why-center">
+									<img src="img/devices-48px.png" />
+									<p>Simple and easy to use.<br>No downloads, no patient logins. Works on phone, desktop or tablet</p>
+								</div>
+							</div>
 
-						<div class="col-lg-4 col-md-6 col-sm-6 col-6">
-								<div class="why-center">
-								<img src="img/split-laptop-48px.png" />
-								<p>Split screen application - the practitioner can add clinical notes during the consult directly into the PMS</p>
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6">
+									<div class="why-center">
+									<img src="img/split-laptop-48px.png" />
+									<p>Split screen application - the practitioner can add clinical notes during the consult directly into the PMS</p>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6 col-6">
-								<div class="why-center">
-								<img src="img/1x/notification.png" />
-								<p>No more waiting for patients - be alerted when a patient has joined the consult room</p>
+							<div class="col-lg-4 col-md-6 col-sm-6 col-6">
+									<div class="why-center">
+									<img src="img/1x/notification.png" />
+									<p>No more waiting for patients - be alerted when a patient has joined the consult room</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -153,32 +170,33 @@
 
 
 		<!-- HOW DOES IT WORK? -->
-		<div id="How-does-it-Work"></div>
-		<div id="how">
-			<div>
-				<div class="container">
-					<h1>How does it work?</h1>
-					<div class="row">
-						<div class="col-md-4 col-12">
-							<div class="img-container">
-								<img src="img/2x/sms@2x.png" />
+		<div id="How-does-it-Work">
+			<div id="how">
+				<div>
+					<div class="container">
+						<h1>How does it work?</h1>
+						<div class="row">
+							<div class="col-md-4 col-12">
+								<div class="img-container">
+									<img src="img/2x/sms@2x.png" />
+								</div>
+								<h2>Step 1</h2>
+								<p>The health care professional enters a patient’s mobile number into Medinet Consult’s secure platform prior to the consultation.</p>
 							</div>
-							<h2>Step 1</h2>
-							<p>The health care professional enters a patient’s mobile number into Medinet Consult’s secure platform prior to the consultation.</p>
-						</div>
-						<div class="col-md-4 col-12">
-							<div class="img-container">
-								<img src="img/2x/message@2x.png" />
+							<div class="col-md-4 col-12">
+								<div class="img-container">
+									<img src="img/2x/message@2x.png" />
+								</div>
+								<h2>Step 2</h2>
+								<p>The patient receives an SMS with a unique link to the secure consultation and enters the virtual consult room.</p>
 							</div>
-							<h2>Step 2</h2>
-							<p>The patient receives an SMS with a unique link to the secure consultation and enters the virtual consult room.</p>
-						</div>
-						<div class="col-md-4 col-12">
-							<div class="img-container">
-								<img src="img/2x/chat@2x.png" />
+							<div class="col-md-4 col-12">
+								<div class="img-container">
+									<img src="img/2x/chat@2x.png" />
+								</div>
+								<h2>Step 3</h2>
+								<p>The health care professional is alerted when the patient enters the room and can begin the consultation.</p>
 							</div>
-							<h2>Step 3</h2>
-							<p>The health care professional is alerted when the patient enters the room and can begin the consultation.</p>
 						</div>
 					</div>
 				</div>
@@ -186,31 +204,32 @@
 		</div>
 
 		<!-- CONTACT US -->
-		<div id="Contact-Us"></div>
-		<div id="contact">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-md-7 col-12">	
-						<img src="img/Logo/Medinet Logo.png"/>
-					</div>
-					<div class="col-md-4 col-12">
-						<h1>Contact Us</h1>
-						<p>If you have any questions or feedback, it would be great to hear from you.</p>
-						<div class="container contact-container">
-							<div class="row">
-								<div class="col-lg-2 col-md-3 col-sm-1 col-1">
-									<p>Phone:</p>
+		<div id="Contact-Us">
+			<div id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-md-7 col-12">	
+							<img src="img/Logo/Medinet Logo.png"/>
+						</div>
+						<div class="col-md-4 col-12">
+							<h1>Contact Us</h1>
+							<p>If you have any questions or feedback, it would be great to hear from you.</p>
+							<div class="container contact-container">
+								<div class="row">
+									<div class="col-lg-2 col-md-3 col-sm-1 col-1">
+										<p>Phone:</p>
+									</div>
+									<div class="col-lg-9 col-6">
+										<p class="contact-info">02 9161 8088</p>
+									</div>
 								</div>
-								<div class="col-lg-9 col-6">
-									<p class="contact-info">02 9161 8088</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-2 col-md-3 col-sm-1 col-1">
-									<p>Email:</p>
-								</div>
-								<div class="col-lg-9 col-6">
-									<a href="mailto:consults@medinet.com.au"><p class="contact-info">consults@medinet.com.au</p></a>
+								<div class="row">
+									<div class="col-lg-2 col-md-3 col-sm-1 col-1">
+										<p>Email:</p>
+									</div>
+									<div class="col-lg-9 col-6">
+										<a href="mailto:consults@medinet.com.au"><p class="contact-info">consults@medinet.com.au</p></a>
+									</div>
 								</div>
 							</div>
 						</div>

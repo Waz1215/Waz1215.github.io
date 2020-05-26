@@ -1,11 +1,26 @@
+/*=================================================== VARIABLES */
+:root{
+	--heading-font: "Montserrat";
+	--body-font: "Roboto";
+	--theme-color-blue: #3048CE;
+	--theme-color-purple: #7462E0;
+	--primary-heading-color: #3048CE;
+	--secondary-heading-color: #151341;
+	--body-color: #3D3C60;
+	--background-color-blue: #f2f3ff;
+	--background-color-purple: #151341;
+	--background-color-gray: #F7F7F7;
+}
+
+
 /*=================================================== GENERAL */
 html, body{
 	overflow-x: hidden;
 }
 body{
-	/*height: 100vh;*/
 	position: relative;
 }
+
 #wrapper{
 	width: 100%;
 	overflow-x: hidden;
@@ -17,17 +32,16 @@ body{
 nav{
 	background-color: white;
 	box-shadow: 0px 2px  10px rgba(0,0,0,0.4);
-	color: #3D3C60;
-	font-family: "Montserrat";
+	color: var(--body-color);
+	font-family: var(--heading-font);
 	font-size: 16px;
 	font-weight: 500;
 	justify-content: unset !important;
 	padding-top: 5px !important;
 	padding-bottom: 5px !important;
-	/*padding: 5px 0 5px 0 !important;*/
 }
 nav .btn{
-	font-family: "Roboto";
+	font-family: var(--body-font);
 	font-size: 16px;
 }
 nav .navbar{
@@ -52,7 +66,7 @@ nav .navbar-nav a{
 	padding-right: 10px !important;
 }
 nav .navbar-nav a.active{
-	color: #3048CE;
+	color: var(--theme-color-blue);
 	font-weight: 700;
 }
 nav .nav-flex{
@@ -65,7 +79,7 @@ nav .header-buttons{
 	display: flex;
 }
 nav i{
-	color: #3048CE;
+	color: var(--theme-color-blue);
 }
 nav button:focus{
 	outline: none;
@@ -172,7 +186,7 @@ nav .row{
 		/*display: none !important;*/
 		text-align: left;
 		font-size: 16px;
-		background-color: #f2f3ff;
+		background-color: var(--background-color-blue);
 		
 		position: absolute;
 		top: 75px;
@@ -196,12 +210,12 @@ nav .row{
 }
 @media(max-width: 767px){
 	nav .btn-outline-primary{
-		background-color: #7462E0;
-		border: #7462E0;
+		background-color: var(--theme-color-purple);
+		border: var(--theme-color-purple);
 		color:white;
 	}
 	nav .btn-outline-primary:hover{
-		background-color: #7462E0;
+		background-color: var(--theme-color-purple);
 		opacity: 60%;
 	}
 	nav button:active{
@@ -226,6 +240,7 @@ nav .row{
 
 	nav #navbarNavAltMarkup .mobile-nav{
 		height: 100vh;
+		min-height: 1000px;
 		
 	}
 
@@ -248,38 +263,38 @@ nav .row{
 }
 
 .btn{
-	font-family: "Roboto";
+	font-family: var(--body-font);
 	width: 170px;
 	height: 55px;
 	margin: 10px;
 }
 
 .btn-primary:active, .btn-primary:focus{
-	background-color: #7462E0 !important;
+	background-color: var(--theme-color-purple) !important;
 	box-shadow: none !important;
 }
 .btn-primary{
-	background-color: #7462E0;
-	border: #7462E0;
+	background-color: var(--theme-color-purple);
+	border: var(--theme-color-purple);
 }
 .btn-primary:hover{
-	background-color: #7462E0;
+	background-color: var(--theme-color-purple);
 	opacity: 60%;
 }
 .btn-outline-primary{
-	color: #7462E0;
-	border-color: #7462E0;
+	color: var(--theme-color-purple);
+	border-color: var(--theme-color-purple);
 }
 
 .btn-outline-primary:hover{
 	color: white;
-	background-color: #7462E0; 
-	border-color: #7462E0;
+	background-color: var(--theme-color-purple); 
+	border-color: var(--theme-color-purple);
 }
 .btn-outline-primary:active, .btn-outline-primary:focus{
 	background-color: transparent !important;
 	box-shadow: none !important;
-	color: #7462E0 !important;
+	color: var(--theme-color-purple) !important;
 }
 
 
@@ -287,9 +302,10 @@ nav .row{
 /*=================================================== HERO SECTION */
 #hero{
 	height: calc(100vh - 85px);
+	max-height: 550px;
 	margin-top: 85px;
-	min-height: 700px;
-	background-color: #f2f3ff;
+	min-height: 400px;
+	background-color: var(--background-color-blue);
 	display: flex;
   	align-items: center;
   	position: relative;
@@ -305,18 +321,18 @@ nav .row{
 	z-index: 1;
 }
 #hero h1{
-	font-family: "Montserrat";
+	font-family: var(--heading-font);
 	font-size: 52px;
 	font-weight: 600;
-	color: #3048CE;
+	color: var(--theme-color-blue);
 	margin-bottom: 20px;
 }
 
 #hero p{
-	font-family: "Roboto";
+	font-family: var(--body-font);
 	font-size: 16px;
 	font-weight: 400;
-	color: #3D3C60;
+	color: var(--body-color);
 	width: 450px;
 	margin: 0;
 	padding-bottom: 30px;
@@ -401,7 +417,7 @@ nav .row{
 	}
 
 	.btn{
-		font-family: "Roboto";
+		font-family: var(--body-font);
 		font-size: 16px;
 		width: 150px;
 		height: 55px;
@@ -413,7 +429,7 @@ nav .row{
 
 
 #hero.about{
-	background-color: #151341;
+	background-color: var(--background-color-purple);
 	text-align: left;
 }
 
@@ -426,8 +442,14 @@ nav .row{
 	right: -100px;
 	bottom: -2px;
 	z-index: 0;
-	width: 57vw;
+	width: 50vw;
 	max-width: 650px;
+}
+
+@media(max-width: 991px){
+	#hero.about img{
+		width: 46vw;
+	}
 }
 
 @media(max-width: 767px){
@@ -455,7 +477,7 @@ nav .row{
 
 
 #hero.FAQ{
-	background-color: #F7F7F7;
+	background-color: var(--background-color-gray);
 }
 
 #hero.FAQ img{
@@ -463,8 +485,14 @@ nav .row{
 	right: 0px;
 	bottom: -2px;
 	z-index: 0;
-	width: 50vw;
-	max-width: 630px;
+	width: 46vw;
+	max-width: 600px;
+}
+
+@media(max-width: 991px){
+	#hero.FAQ img{
+		width: 40vw;
+	}
 }
 
 @media(max-width: 767px){
@@ -483,19 +511,19 @@ nav .row{
 }
 
 #why h1{
-	font-family: "Montserrat";
+	font-family: var(--heading-font);
 	font-size: 40px;
 	font-weight: 600;
-	color: #3048CE;
+	color: var(--primary-heading-color);
 	margin-bottom: 30px;
 	text-align: center;
 }
 
 
 #why p{
-	font-family: "Roboto";
+	font-family: var(--body-font);
 	font-size: 16px;
-	color: #3D3C60;
+	color: var(--body-color);
 	margin-bottom: 0;
 	width: 230px;
 }
@@ -595,26 +623,26 @@ nav .row{
 }
 
 #how h1{
-	font-family: "Montserrat";
+	font-family: var(--heading-font);
 	font-size: 40px;
 	font-weight: 600;
-	color: #3048CE;
+	color: var(--primary-heading-color);
 	margin-top: 20px;
 	margin-bottom: 30px;
 	text-align: center;
 }
 
 #how h2{
-	font-family: "Montserrat";
+	font-family: var(--heading-font);
 	font-size: 24px;
 	margin-bottom: 10px;
-	color: #151341;
+	color: var(--secondary-heading-color);
 }
 
 #how p{
-	font-family: "Roboto";
+	font-family: var(--body-font);
 	font-size: 16px;
-	color: #3D3C60;
+	color: var(--body-color);
 	margin-bottom: 0;
 }
 
@@ -747,11 +775,11 @@ nav .row{
 #about-section{
 	/*text-align: center;*/
 	padding-bottom: 50px;
-	padding-top: 50px;
+	margin-top: 50px;
 }
 
 #about-section h1{
-	font-family: "Montserrat";
+	font-family: var(--heading-font);
 	font-size: 40px;
 	font-weight: 600;
 	color: #3048CE;
@@ -760,9 +788,9 @@ nav .row{
 
 
 #about-section p{
-	font-family: "Roboto";
+	font-family: var(--body-font);
 	font-size: 16px;
-	color: #3D3C60;
+	color: var(--body-color);
 }
 
 #about-section .row{
@@ -868,13 +896,13 @@ nav .row{
 #FAQ-section{
 	/*text-align: center;*/
 	padding-bottom: 0px;
-	padding-top: 50px;
-	font-family: "Roboto";
+	margin-top: 50px;
+	font-family: var(--body-font);
 }
 
 #FAQ-section .question-col{
 	font-weight: 500;
-	color: #151341;
+	color: var(--secondary-heading-color);
 	font-size: 18px;
 }
 #FAQ-section .question-col p{
@@ -882,7 +910,7 @@ nav .row{
 }
 
 #FAQ-section .answer-col{
-	color: #3D3C60;
+	color: var(--body-color);
 	/*padding-bottom: 10px;*/
 }
 
@@ -910,7 +938,7 @@ nav .row{
 }
 
 #FAQ-section .collapse-FAQ .question-col>a{
-	color: #151341;	
+	color: var(--secondary-heading-color);	
 }
 
 #FAQ-section .collapse-FAQ .question-col>a:hover{
@@ -990,7 +1018,7 @@ nav .row{
 	}
 	#FAQ-section{
 		padding-bottom: 20px;
-		padding-top: 50px;
+		margin-top: 50px;
 	}
 	#FAQ-section .container{
 		max-width: 100%;
@@ -1010,7 +1038,7 @@ nav .row{
 
 /*=================================================== CONTACT SECTION */
 #contact{
-	background-color: #f2f3ff;
+	background-color: var(--background-color-blue);
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -1046,23 +1074,23 @@ nav .row{
 }
 
 #contact h1{
-	color: #3048CE;
-	font-family: "Montserrat";
+	color: var(--primary-heading-color);
+	font-family: var(--heading-font);
 	font-weight: 600;
 	font-size: 24px;
 	margin-bottom: 30px;
 }
 
 #contact p{
-	font-family: "Roboto";
+	font-family: var(--body-font);
 	font-size: 16px;
-	color: #3D3C60;
+	color: var(--body-color);
 	margin-bottom: 0;
 	opacity: inherit;
 }
 
 #contact p.contact-info{
-	color: #7462E0 !important;
+	color: var(--theme-color-purple) !important;
 	font-weight: normal;
 }
 
@@ -1172,7 +1200,7 @@ nav .row{
 /*=================================================== FOOTER */
 
 footer{
-	background-color: #f2f3ff;
+	background-color: var(--background-color-blue);
 }
 
 footer .container{
@@ -1189,18 +1217,18 @@ footer>.container>div{
 }
 
 footer p{
-	color: #3D3C60;
-	font-family: "Roboto";
+	color: var(--body-color);
+	font-family: var(--body-font);
 }
 
 footer a{
 	font-weight: 500;
-	color: #7462E0;
-	font-family: "Roboto";
+	color: var(--theme-color-purple);
+	font-family: var(--body-font);
 }
 
 footer a:hover{
-	color: #7462E0;
+	color: var(--theme-color-purple);
 	opacity: 60%;
 	text-decoration: none;
 }
@@ -1210,7 +1238,7 @@ footer hr{
 	padding-bottom: 30px;
 	margin: 0;
 	border-width: 1px;
-	border-color: #7462E0;
+	border-color: var(--theme-color-purple);
 }
 
 footer br{
