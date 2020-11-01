@@ -7,16 +7,25 @@
 
       <a-assets>
         <img id="sky" src="img/skybox24.jpg">
-         <img id="blanket" src="img/blanket.jpg">
+        <img id="blanket" src="img/blanket.jpg">
+        <img id="shadow" src="img/shadow.png">
+        <a-asset-item id="tree" src="models/BTree/tree2.gltf"></a-asset-item>
+        <a-asset-item id="tree-mtl" src="models/Oak/oakTree.mtl"></a-asset-item>
         <!-- <a-asset-item id="tree" src="models/Tree1/Tree1.obj"></a-asset-item> -->
       </a-assets>
-      
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <!-- <a-entity light="type:directional; castShadow:true;" position="1 5 0"></a-entity> -->
+      <a-entity light="type: ambient; color: #FF0"></a-entity>
+      <a-entity light="type: point; intensity: 4; distance: 100; decay: 2"  position="0 1 0"></a-entity>
+      <a-entity light="type: point; intensity: 1; distance: 100; decay: 2"  position="-5 1 0"></a-entity>
+      <a-box position="-4 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere> -->
       <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
       <!-- <a-entity obj-model="#tree"></a-entity> -->
-      <!-- <a-obj-model src="models/Tree1/Tree1.obj" scale = " 0.5 0.5 0.5"></a-obj-model> -->
-      <a-plane position="0 -5 0" rotation="-90 0 0" width="10" height="10" src="#blanket"></a-plane>
+      <a-entity position="0 -1 -1" rotation="0 0 0" scale="1 1 1" gltf-model="#tree" ></a-entity>
+      <!-- <a-circle color="#CCC" radius="5" position="0  -1 -1" rotation="-90 0 0"></a-circle> -->
+      <a-image position="0 -1 -1" rotation="-90 0 0" scale= "20 20 20" src="#shadow"></a-image>
+     <!--  <a-obj-model src="models/Oak/oakTree.obj" position="-4 0.5 -3" scale = "0.5 0.5 0.5"></a-obj-model> -->
+      <!-- <a-plane position="0 -1 0" rotation="-90 0 0" width="10" height="10" src="#blanket"></a-plane> -->
       <a-sky src="#sky" phi-start="0" radius="10000"></a-sky>
     </a-scene>
   </body>
