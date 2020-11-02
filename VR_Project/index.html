@@ -1,9 +1,10 @@
 <html>
   <head>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   </head>
   <body>
-  <button> TEST</button>
+  <i class='fas fa-music' style="font-size: 40px; opacity: 0.8; position: absolute; right: 10; top: 10; z-index: 1; color: white;"></i>
     <a-scene>
 
       <a-assets>
@@ -11,6 +12,7 @@
         <img id="shadow" src="img/shadow.png">
         <img id="ray" src="img/ray.png">
         <audio id="ambience" src="sounds/Ambience.mp3" preload="auto"></audio>
+        <audio id="bts" src="sounds/BTSRadio.mp3" preload="auto"></audio>
         <a-asset-item id="blanket1" src="models/Blanket/blanket2.gltf"></a-asset-item>
         <a-asset-item id="note" src="models/BTree/note.gltf"></a-asset-item>
         <a-asset-item id="tree" src="models/BTree/tree4.gltf"></a-asset-item>
@@ -21,7 +23,7 @@
       <a-entity light="type: point; intensity: 4; distance: 100; decay: 2"  position="5 1 0"></a-entity>
       <a-entity position="0 0 1" rotation="0 45 0" scale="1 1 1" gltf-model="#tree" ></a-entity>
       <a-entity position="0 1.3 0.8" rotation="0 180 0" scale="0.1 0.1 0.1" gltf-model="#note" sound="src: #ambience; autoplay: true; volume: 2" ></a-entity>
-      <a-entity position="0 0 -0.9" rotation="0 0 0" scale="0.3 0.3 0.3" gltf-model="#blanket1" ></a-entity>
+      <a-entity position="0 0 -0.9" rotation="0 0 0" scale="0.3 0.3 0.3" gltf-model="#blanket1" sound="src: #bts; autoplay: true; volume: 2" ></a-entity>
       
       <a-image position="0 -0.2 1" rotation="-90 0 0" scale= "5 5 5" src="#shadow"></a-image>
        <a-image position="0 3 -1" rotation="-110 0 0" scale= "0.4 10 1" src="#ray" opacity="0.5"></a-image>
