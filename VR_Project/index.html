@@ -12,24 +12,15 @@
         <a-asset-item id="blanket1" src="models/Blanket/blanket2.gltf"></a-asset-item>
         <a-asset-item id="note" src="models/BTree/note.gltf"></a-asset-item>
         <a-asset-item id="tree" src="models/BTree/tree4.gltf"></a-asset-item>
-        
-        <!-- <a-asset-item id="tree" src="models/Tree1/Tree1.obj"></a-asset-item> -->
+
       </a-assets>
       <a-entity light="type:directional; castShadow:false;" position="1 5 0"></a-entity>
-      <!-- <a-entity light="type: spot; angle: -90"></a-entity> -->
-
-      <!-- <a-entity light="type: ambient; color: #FF0"></a-entity> -->
       <a-entity light="type: point; intensity: 2; distance: 100; decay: 2"  position="0 1 0"></a-entity>
       <a-entity light="type: point; intensity: 4; distance: 100; decay: 2"  position="5 1 0"></a-entity>
-      <!-- <a-entity light="type: point; intensity: 2; distance: 10; decay: 2"  position="0 2 -3"></a-entity> -->
-      <!-- <a-box position="0 1 -3" rotation="0 45 0" color="#4CC3D9"></a-box> -->
-      <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere> -->
-      <!-- <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
-      <!-- <a-entity obj-model="#tree"></a-entity> -->
       <a-entity position="0 0 1" rotation="0 45 0" scale="1 1 1" gltf-model="#tree" ></a-entity>
-      <a-entity position="0 1.3 0.8" rotation="0 180 0" scale="0.1 0.1 0.1" gltf-model="#note" ></a-entity>
+      <a-entity position="0 1.3 0.8" rotation="0 180 0" scale="0.1 0.1 0.1" gltf-model="#note" sound="src: url(sounds/Ambience.mp3); autoplay: true" ></a-entity>
       <a-entity position="0 0 -0.9" rotation="0 0 0" scale="0.3 0.3 0.3" gltf-model="#blanket1" ></a-entity>
-      <!-- <a-circle color="#CCC" radius="5" position="0  -1 -1" rotation="-90 0 0"></a-circle> -->
+      
       <a-image position="0 -0.2 1" rotation="-90 0 0" scale= "5 5 5" src="#shadow"></a-image>
        <a-image position="0 3 -1" rotation="-110 0 0" scale= "0.4 10 1" src="#ray" opacity="0.5"></a-image>
       <a-image position="1 3 -1" rotation="-110 -10 0" scale= "0.4 10 1" src="#ray" opacity="0.5"></a-image>
