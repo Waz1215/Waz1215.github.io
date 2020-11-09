@@ -6,6 +6,14 @@ body{
 	overflow-x: hidden;
 }
 
+
+
+@media (min-width: 1200px){
+	.container{
+	    max-width: 1200px;
+	}
+}
+
 .header{
 	height: 100px;
 	width: 100%;
@@ -125,9 +133,280 @@ body{
 			padding-bottom: 12px;
 		}
 
+		p{
+			line-height: 18px;
+		}
+
 	}
 }
 
+.partners{
+		padding-right: 50px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		padding-left: 50px;
+		position: relative;
+
+		@media (max-width: $lg){
+			padding-right: 0;
+			padding-left: 0;
+		}
+
+		h2{
+			text-align: center;
+			// padding-bottom: 10px;
+		}
+
+
+
+		.partner-flex{
+			flex-direction: row;
+			justify-content: space-between;
+			padding-top: 50px;
+
+			img{
+				align-self: center;
+				// width: 12%;
+				height: auto;
+			}
+
+			.carousel-container{
+
+				overflow-x: hidden;
+
+				position: relative;
+
+				height: 142px;
+				max-height: 142px;
+
+				.custom-carousel{
+					
+
+					display: inline-flex;
+					min-width: 1600px;
+					position: relative;
+					transition: transform 1s;
+
+					.img-block{
+						width: 230px;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						height: 100px;
+
+
+						img{
+							max-width: 70%;
+							max-height: 100%;
+							align-self: center;
+						}
+					}
+				}
+
+			}
+
+
+
+			.carousel-control-next{
+				background-image: linear-gradient(to right, rgba(255,255,255,0) ,$white 80%);
+				opacity: 1;
+				justify-content: flex-end;
+				width: 50px;
+				padding-top: 50px;
+
+				&:hover{
+					i{
+						color: transparentize($brand-dark, 0.4);
+					}
+				}
+			}
+
+			.carousel-control-prev{
+				background-image: linear-gradient(to left, rgba(255,255,255,0) ,$white 80%);
+				opacity: 1;
+				justify-content: flex-start;
+				width: 50px;
+				padding-top: 50px;
+
+				&:hover{
+					i{
+						color: transparentize($brand-dark, 0.4);
+					}
+				}
+			}
+
+
+		}
+
+		.carousel{
+			margin-top: -40px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 800px;
+			max-width: 80%;
+			height: 250px;
+
+			@media (max-width: $xs){
+				max-width: 100%;
+			}
+
+			i{
+				color: $brand-dark;
+				font-size: 30px;
+			}
+
+			.carousel-control-next{
+				background-image: linear-gradient(to right, rgba(255,255,255,0) ,$white 80%);
+				opacity: 1;
+				justify-content: flex-end;
+				width: 20%;
+
+				&:hover{
+					i{
+						color: transparentize($brand-dark, 0.4);
+					}
+				}
+			}
+
+			.carousel-control-prev{
+				background-image: linear-gradient(to left, rgba(255,255,255,0) ,$white 80%);
+				opacity: 1;
+				justify-content: flex-start;
+				width: 20%;
+
+				&:hover{
+					i{
+						color: transparentize($brand-dark, 0.4);
+					}
+				}
+			}
+
+			.carousel-inner{
+				height: 100%;
+				display: flex;
+				align-items: center;
+			}
+
+			.carousel-item{
+				
+				img{
+					margin-left: auto;
+					margin-right: auto;
+					/*max-width: 80%;*/
+					max-width: 60%;
+					/*width: 200px;*/
+				}
+
+			}
+
+			.carousel-indicators{
+				padding-top: 30px;
+			}
+			
+			li{
+				background-color: $white;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				margin: 10px;
+			}
+
+		}
+}
+
+.key-features{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: $background;
+
+	h2{
+		text-align: center;
+		padding-bottom: 50px;
+	}
+
+	.video-col{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.feature-section{
+		padding-bottom: 50px;
+
+		h3{
+			font-size: 20px;
+			font-family: $playfair;
+			font-weight: $bold;
+			display: inline-block;
+			padding: 5px 10px 5px 10px;
+			margin-left: -10px;
+			margin-top: 10px;
+		}
+
+		p{
+			font-family: $roboto;
+			font-size: 16px;
+			font-weight: $regular;
+			line-height: 19px;
+			color: $brand-dark;
+		}
+
+		.loading-bar{
+			width: 100%;
+		    height: 3px;
+		    background-color: #C8CAD6;
+		    border-radius: 5px;
+		}
+
+		.progress-bar{
+		    width: 10%;
+		    height: 3px;
+		    transition-duration: 0.2s;
+		    position: relative;
+		    top: -3px;
+		    border-radius: 5px;
+		}
+
+		&#access {
+			h3{
+				color: #4464FF;
+				background-color: #D7DDF9;				
+			}
+			.progress-bar{
+				background-color: #4464FF;
+			}
+
+		}
+		&#referrals{
+			h3{
+				color: #E18B35;
+				background-color: transparentize(#FFC184, 0.3);
+			}
+			.progress-bar{
+				background-color: #E18B35;
+			}
+		}
+		&#bookings{
+			h3{
+				color: #459D87;
+				background-color: #B9ECDF;
+			}
+			.progress-bar{
+				background-color: #459D87;
+			}
+		}
+		&#news{
+			h3{
+				color: #F5A800;
+				background-color: transparentize(#FCD581, 0.3);
+			}
+			.progress-bar{
+				background-color: #F5A800;
+			}
+		}
+		
+	}
+}
 
 
 

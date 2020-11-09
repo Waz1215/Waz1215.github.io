@@ -25,3 +25,15 @@
 .card-heading{
 	@include text_class($playfair, $bold, $brand-secondary, 21px);
 }
+
+.card-text{
+	@include text_class($roboto, $regular, $brand-secondary, 16px);
+}
+
+.partner-heading{
+	@include text_class($playfair, $bold, $brand-dark, 28px);
+}
+
+.key-features-heading{
+	@include text_class($playfair, $bold, $brand-dark, 28px);
+}
