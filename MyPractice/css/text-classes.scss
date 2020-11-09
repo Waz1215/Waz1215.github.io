@@ -1,0 +1,27 @@
+/* Text Classes */
+@mixin text_class($font, $weight, $color, $size){
+	font-family: $font;
+	font-weight: $weight;
+	color: $color;
+	font-size: $size;
+}
+
+.logo-text{
+	@include text_class($roboto, $bold, $brand-dark, 37px);
+}
+
+.hero-heading{
+	@include text_class($playfair, $bold, $brand-dark, 48px);
+}
+
+.hero-text{
+	@include text_class($roboto, $regular, $brand-dark, 30px);
+}
+
+.why-heading{
+	@include text_class($playfair, $bold, $white, 28px);
+}
+
+.card-heading{
+	@include text_class($playfair, $bold, $brand-secondary, 21px);
+}
