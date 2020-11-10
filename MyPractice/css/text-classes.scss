@@ -37,3 +37,22 @@
 .key-features-heading{
 	@include text_class($playfair, $bold, $brand-dark, 28px);
 }
+
+.download-heading{
+	@include text_class($playfair, $bold, $brand-dark, 36px);
+}
+
+.download-text{
+	@include text_class($roboto, $regular, $brand-dark, 27px);
+}
+
+.white-logo{
+	@include text_class($roboto, $bold, $white, 37px);
+}
+
+.footer-heading{
+	@include text_class($poppins, $bold, $white, 14px);
+}
+.footer-text{
+	@include text_class($roboto, $regular, $white, 14px);
+}

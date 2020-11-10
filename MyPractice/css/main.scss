@@ -424,13 +424,292 @@ body{
 	}
 }
 
+.featured-in{
+
+		// margin-bottom: 100px;
+		padding-right: 50px;
+		padding-left: 50px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		position: relative;
+
+		@media (max-width: $lg){
+			padding-right: 0;
+			padding-left: 0;
+		}
+		
+		
+		@media (max-width: $lg){
+			// padding-top: 0;
+		}
+
+		h2{
+			text-align: center;
+		}
 
 
 
 
 
+		.feature-flex{
+			flex-direction: row;
+			justify-content: space-between;
+			padding-top: 50px;
+
+			img{
+				align-self: center;
+				// width: 12%;
+				height: auto;
+			}
+
+			.carousel-container{
+
+				overflow-x: hidden;
+
+				position: relative;
+
+				height: 142px;
+				max-height: 142px;
+
+				.custom-carousel{
+					
+
+					display: inline-flex;
+					min-width: 1600px;
+					position: relative;
+					transition: transform 1s;
+
+					.img-block{
+						width: 230px;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						height: 100px;
 
 
+						img{
+							max-width: 70%;
+							max-height: 100%;
+							align-self: center;
+						}
+				}
+
+			}
+
+
+
+			.carousel-control-next{
+				background-image: linear-gradient(to right, rgba(255,255,255,0) ,$white 80%);
+				opacity: 1;
+				justify-content: flex-end;
+				width: 50px;
+				padding-top: 50px;
+
+				&:hover{
+					i{
+						color: transparentize($brand-dark, 0.4);
+					}
+				}
+			}
+
+			.carousel-control-prev{
+				background-image: linear-gradient(to left, rgba(255,255,255,0) ,$white 80%);
+				opacity: 1;
+				justify-content: flex-start;
+				width: 50px;
+				padding-top: 50px;
+
+				&:hover{
+					i{
+						color: transparentize($brand-dark, 0.4);
+					}
+				}
+			}
+		}
+
+		
+
+		.carousel{
+			margin-top: -40px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 800px;
+			max-width: 80%;
+			height: 250px;
+
+			@media (max-width: $xs){
+				max-width: 100%;
+			}
+
+			i{
+				color: $brand-dark;
+				font-size: 30px;
+
+				@media (max-width: $sm){
+					font-size: 25px;
+				}
+			}
+
+			.carousel-control-next{
+				background-image: linear-gradient(to right, rgba(255,255,255,0) ,$white 80%);
+				opacity: 1;
+				justify-content: flex-end;
+				width: 20%;
+
+				&:hover{
+					i{
+						color: transparentize($brand-dark, 0.4);
+					}
+				}
+			}
+
+			.carousel-control-prev{
+				background-image: linear-gradient(to left, rgba(255,255,255,0) ,$white 80%);
+				opacity: 1;
+				justify-content: flex-start;
+				width: 20%;
+
+				&:hover{
+					i{
+						color: transparentize($brand-dark, 0.4);
+					}
+				}
+			}
+
+			.carousel-inner{
+				height: 100%;
+				display: flex;
+				align-items: center;
+			}
+
+			.carousel-item{
+				
+				img{
+					margin-left: auto;
+					margin-right: auto;
+				
+					max-width: 60%;
+		
+					max-height: 100px;
+				}
+
+			}
+
+			.carousel-indicators{
+				padding-top: 30px;
+			}
+			
+			li{
+				background-color: $white;
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				margin: 10px;
+			}
+
+		}
+
+	}
+}
+
+
+.download{
+	background-color: $background;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	h2{
+		line-height: 48px;
+		padding-bottom: 15px;
+	}
+
+	.dl-icons{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		.icon-holder{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}
+
+footer{
+	background-color: $brand-secondary;
+	padding-top: 50px;
+	padding-bottom: 35px;
+
+	.footer-div{
+	    display: flex;
+    	flex-direction: row;
+    	align-items: flex-start;
+    	justify-content: space-between;
+	}
+
+	.footer-dl{
+		p{
+			text-align: center;
+		}
+
+		div{
+			max-width: 400px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			img{
+				max-height: 35px;
+				margin: 5px;
+				margin-top: 0px;
+			}
+		}
+	}
+	.contact{
+		text-align: right;
+		line-height: 17px;
+
+		p{
+			margin-bottom: 0;
+		}
+
+		a{
+			text-decoration: underline;
+			color: $white;
+
+			&:hover{
+				opacity: 0.6;
+			}
+		}
+	}
+
+	.footer-logo{
+		display: flex;
+		flex-direction: row;
+		
+		align-items: baseline;
+		// width: 100px;
+
+		img{
+			position: relative;
+			bottom: -2px;
+			padding-right: 15px;
+		}
+	}
+
+	.dl-col{
+		display: flex;
+		justify-content: center;
+	}
+
+	.copyright{
+		text-align: center;
+		padding-top: 65px;
+
+	}
+}
 
 
 
