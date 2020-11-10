@@ -286,16 +286,22 @@ function cycleVideos(){
 	});
 
 
+function scrollTo(){
+	$('.hero-btn').click(function(){
+		console.log($(".key-features").offset().top);
+		
+		$('html,body').animate({
+	        scrollTop: $(".key-features").offset().top - 100
+	    }, 500);
+	});
+}
+
+
 
 
 $(document).ready(function(){
 	customCarouselPartner();
 	customCarouselFeature();
-	// cycleVideos();
-});
+	scrollTo();
 
-// window.addEventListener("resize", function(){
-// 	console.log("RESIZE");
-// 	customCarouselPartner();
-// 	customCarouselFeature();
-// });
+});

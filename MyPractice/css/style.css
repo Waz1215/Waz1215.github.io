@@ -77,6 +77,18 @@
   color: #FFFFFF;
   font-size: 14px; }
 
+.download-hero-heading {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  color: #03045E;
+  font-size: 48px; }
+
+.download-hero-text {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #03045E;
+  font-size: 28px; }
+
 body {
   width: 100%;
   overflow-x: hidden; }
@@ -112,7 +124,8 @@ body {
     padding-right: 15px; }
     @media (max-width: 767px) {
       .header .logo img {
-        height: 27px; } }
+        height: 27px;
+        padding-right: 10px; } }
   @media (max-width: 767px) {
     .header .logo-text {
       font-size: 24px; } }
@@ -668,3 +681,46 @@ footer {
     @media (max-width: 767px) {
       footer .copyright {
         padding-top: 20px; } }
+
+.download-hero {
+  padding-top: 150px; }
+  .download-hero p {
+    line-height: 35px;
+    padding-top: 20px; }
+  .download-hero .hero-icon {
+    position: relative;
+    top: -20px;
+    max-width: 100%; }
+  .download-hero .qrcode {
+    position: relative;
+    left: -15px;
+    padding-top: 30px; }
+  .download-hero .icon-holder {
+    padding-top: 70px;
+    padding-bottom: 100px; }
+    .download-hero .icon-holder img {
+      height: 90px;
+      padding-right: 10px; }
+  @media (max-width: 991px) {
+    .download-hero .icon-holder img {
+      height: unset;
+      width: 300px;
+      padding-bottom: 10px; } }
+  @media (max-width: 767px) {
+    .download-hero .row {
+      flex-direction: column-reverse; }
+    .download-hero .hero-icon {
+      top: 0px;
+      width: 50%; }
+    .download-hero h1 {
+      font-size: 36px; }
+    .download-hero p {
+      font-size: 30px; }
+    .download-hero .icon-holder img {
+      height: unset;
+      width: 300px;
+      padding-bottom: 10px; } }
+  @media (max-width: 575px) {
+    .download-hero .icon-holder {
+      padding-top: 20px;
+      padding-bottom: 20px; } }

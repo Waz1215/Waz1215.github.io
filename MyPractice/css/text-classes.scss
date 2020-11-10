@@ -56,3 +56,12 @@
 .footer-text{
 	@include text_class($roboto, $regular, $white, 14px);
 }
+
+.download-hero-heading{
+	@include text_class($roboto, $bold, $brand-dark, 48px);
+}
+
+.download-hero-text{
+	@include text_class($roboto, $regular, $brand-dark, 28px);
+}
+

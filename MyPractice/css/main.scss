@@ -52,6 +52,7 @@ body{
 			
 			@media (max-width: $sm){
 				height: 27px;
+				padding-right: 10px;
 			}
 		}
 	}
@@ -968,9 +969,78 @@ footer{
 }
 
 
+.download-hero{
+	padding-top:150px;
 
+	p{
+		line-height: 35px;
+		padding-top: 20px;
+	}
 
+	.hero-icon{
+		position: relative;
+		top: -20px;
+		max-width: 100%;
+	}
 
+	.qrcode{
+		position:relative;
+		left: -15px;
+		padding-top: 30px;
+	}
+	.icon-holder{
+		padding-top: 70px;
+		padding-bottom: 100px;
+
+		img{
+			height: 90px;
+			padding-right: 10px;
+		}
+	}
+
+	@media (max-width: $md){
+		.icon-holder{
+			img{
+				height:  unset;
+				width: 300px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+
+	@media (max-width: $sm){
+		.row{
+			flex-direction: column-reverse;
+		}
+
+		.hero-icon{
+			top: 0px;
+			width: 50%;
+		}
+
+		h1{
+			font-size: 36px;
+		}
+		p{
+			font-size: 30px;
+		}
+
+		.icon-holder{
+
+			img{
+				height:  unset;
+				width: 300px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+	@media (max-width: $xs){
+		.icon-holder{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+}
 
 
 
