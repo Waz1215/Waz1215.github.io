@@ -9,6 +9,9 @@
 
 	  	<!-- BootStrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<!-- FontAwesome -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
 
 		<!-- Custom Styles -->
@@ -18,7 +21,7 @@
 
 	<body>
 		<!-- Header -->
-		<div class="header">
+		<div class="header green-header">
 			<div class="container">
 				
 				<div class="logo">
@@ -27,7 +30,7 @@
 						<span class="logo-text">MyPractice</span>
 					</a>
 				</div>
-				<a href="./"><button class="header-btn">Get MyPractice App</button></a>
+				<a href="download.html"><button class="header-btn">Get MyPractice App</button></a>
 				
 			</div>
 		</div>
@@ -36,16 +39,24 @@
 		<div class="hero">
 			<div class="container">
 				<div class="row">
-					<div class="col-6">
+					<div class="col-md-12 col-lg-6 hero-col d-none d-lg-block">
 						<img src="img/logo.svg" width="72px" />
 						<h1 class="hero-heading">MyPractice.<br>MyApp.</h1>
 						<p class="hero-text">MyPractice helps to connect the dots between patients and their healthcare providers.</p>
 						<button class="hero-btn">Get Started Now</button>
 					</div>
-					<div class="col-6">
+					<div class="col-md-12 col-lg-6 img-col">
 						<img class="hero-img" src="img/hero.png"/>
 					</div>
 				</div>
+			</div>
+		</div>
+
+		<div class="hero mobile d-lg-none">
+			<div class="container mobile-view">
+				<h1 class="hero-heading">MyPractice.<br>MyApp.</h1>
+				<p class="hero-text">MyPractice helps to connect the dots between patients and their healthcare providers.</p>
+				<button class="hero-btn">Get Started Now</button>
 			</div>
 		</div>
 
@@ -86,7 +97,7 @@
 		<div class="partners">
 			<div class="container">
 				<h2 class="partner-heading">Our partners</h2>
-				<div class="partner-flex d-none d-lg-flex">
+				<div class="partner-flex d-lg-flex">
 					<a class="carousel-control-prev" role="button" data-slide="prev">
 						<i class="fa fa-chevron-left" aria-hidden="true"></i>
 						<span class="sr-only">Previous</span>
@@ -116,35 +127,90 @@
 	  		<div class="container">
 		  		<h2 class="key-features-heading">Key features</h2>
 		  		<div class="row">
-		  			<div class="col-6 video-col">
+		  			<div class="col-12 col-lg-6 video-col">
 		  				<video id="iPhoneDemo" width="358" height="716" poster="img/iPhoneStill.png" muted autoplay>
 							<!-- <source src="img/videos/Scripts.mp4" type="video/mp4"> -->
 						</video>
 		  			</div>
-		  			<div class="col-5">
-		  				<div class="feature-section active" id="access" data-index="0">
-		  					<div class="loading-bar"></div>
-		  					<div class="progress-bar"></div>
-		  					<h3>Access prescriptions and certificates</h3>
-		  					<p>Scripts generated from telehealth no longer need to be sent to pharmacies manually. We offer full automisation around processing of medical documents generated via telehealth consultations.</p>
+		  			<div class="col-12 col-lg-5">
+		  				<div class="d-none d-lg-block">
+			  				<div class="feature-section active" id="access" data-index="0">
+			  					<div class="loading-bar"></div>
+			  					<div class="progress-bar"></div>
+			  					<h3>Access prescriptions and certificates</h3>
+			  					<p>Scripts generated from telehealth no longer need to be sent to pharmacies manually. We offer full automisation around processing of medical documents generated via telehealth consultations.</p>
+			  				</div>
+			  				<div class="feature-section inactive" id="referrals" data-index="1">
+			  					<div class="loading-bar"></div>
+			  					<div class="progress-bar"></div>
+			  					<h3>Manage referrals</h3>
+			  					<p>Pathology, radiology and specialist referrals are all available for the patient straight after their consultation via the MyPractice app.</p>
+			  				</div>
+			  				<div class="feature-section inactive" id="bookings" data-index="2">
+			  					<div class="loading-bar"></div>
+			  					<div class="progress-bar"></div>
+			  					<h3>Appointment bookings</h3>
+			  					<p>Patients can book and cancel appointments with their regular doctor via the MyPractice app.</p>
+			  				</div>
+			  				<div class="feature-section inactive" id="news" data-index="3">
+			  					<div class="loading-bar"></div>
+			  					<div class="progress-bar"></div>
+			  					<h3>Practice news and announcements</h3>
+			  					<p>Send customised messages to your patients to create patient loyalty and help notify patients of upcoming changes or longer opening hours.</p>
+			  				</div>
 		  				</div>
-		  				<div class="feature-section inactive" id="referrals" data-index="1">
-		  					<div class="loading-bar"></div>
-		  					<div class="progress-bar"></div>
-		  					<h3>Manage referrals</h3>
-		  					<p>Pathology, radiology and specialist referrals are all available for the patient straight after their consultation via the MyPractice app.</p>
-		  				</div>
-		  				<div class="feature-section inactive" id="bookings" data-index="2">
-		  					<div class="loading-bar"></div>
-		  					<div class="progress-bar"></div>
-		  					<h3>Appointment bookings</h3>
-		  					<p>Patients can book and cancel appointments with their regular doctor via the MyPractice app.</p>
-		  				</div>
-		  				<div class="feature-section inactive" id="news" data-index="3">
-		  					<div class="loading-bar"></div>
-		  					<div class="progress-bar"></div>
-		  					<h3>Practice news and announcements</h3>
-		  					<p>Send customised messages to your patients to create patient loyalty and help notify patients of upcoming changes or longer opening hours.</p>
+		  				<div>
+		  					<div id="key-features-carousel" class="carousel slide d-lg-none" data-ride="carousel" data-interval="false">
+							  <ol class="carousel-indicators">
+							    <li data-target="#key-features-carousel" data-slide-to="0" class="active"></li>
+							    <li data-target="#key-features-carousel" data-slide-to="1"></li>
+							    <li data-target="#key-features-carousel" data-slide-to="2"></li>
+							    <li data-target="#key-features-carousel" data-slide-to="3"></li>
+							  </ol>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							    	<div class="feature-section-mobile " id="access" data-index="0">
+					  					<div class="loading-bar"></div>
+					  					<div class="progress-bar"></div>
+					  					<h3>Access prescriptions and certificates</h3>
+					  					<p>Scripts generated from telehealth no longer need to be sent to pharmacies manually. We offer full automisation around processing of medical documents generated via telehealth consultations.</p>
+				  					</div>
+							    </div>
+							    <div class="carousel-item">
+					  				<div class="feature-section-mobile " id="referrals" data-index="1">
+					  					<div class="loading-bar"></div>
+					  					<div class="progress-bar"></div>
+					  					<h3>Manage referrals</h3>
+					  					<p>Pathology, radiology and specialist referrals are all available for the patient straight after their consultation via the MyPractice app.</p>
+					  				</div>
+							    </div>
+							    <div class="carousel-item">
+					  				<div class="feature-section-mobile " id="bookings" data-index="2">
+					  					<div class="loading-bar"></div>
+					  					<div class="progress-bar"></div>
+					  					<h3>Appointment bookings</h3>
+					  					<p>Patients can book and cancel appointments with their regular doctor via the MyPractice app.</p>
+					  				</div>
+							    </div>
+								<div class="carousel-item">
+					  				<div class="feature-section-mobile " id="news" data-index="3">
+					  					<div class="loading-bar"></div>
+					  					<div class="progress-bar"></div>
+					  					<h3>Practice news and announcements</h3>
+					  					<p>Send customised messages to your patients to create patient loyalty and help notify patients of upcoming changes or longer opening hours.</p>
+					  				</div>
+							    </div>
+							  </div>
+							  <a class="carousel-control-prev" href="#key-features-carousel" role="button" data-slide="prev">
+							    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+							    <span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#key-features-carousel" role="button" data-slide="next">
+							    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+							    <span class="sr-only">Next</span>
+							  </a>
+							</div>
+
 		  				</div>
 		  			</div>
 		  		</div>
@@ -155,7 +221,7 @@
 		<div class="featured-in">
 			<div class="container">
 				<h2 class="partner-heading">As featured in</h2>
-				<div class="feature-flex d-none d-lg-flex">
+				<div class="feature-flex  d-lg-flex">
 					<a class="carousel-control-prev" role="button" data-slide="prev">
 						<i class="fa fa-chevron-left" aria-hidden="true"></i>
 						<span class="sr-only">Previous</span>
@@ -188,11 +254,11 @@
 		<div class="download">
 			<div class="container">
 				<div class="row">
-				<div class="col-6">
+				<div class="col-12 col-md-6">
 					<h2 class="download-heading">Healthcare has never been <br>more connected.</h2>
 					<p class="download-text">Download MyPractice today to get started.</p>
 				</div>
-				<div class="col-6 dl-icons">
+				<div class="col-12 col-md-6 dl-icons">
 					<div class="icon-holder">
 						<img src="img/icons/googleplay.svg"/>
 						<img src="img/icons/appstore.svg"/>
@@ -206,13 +272,13 @@
 		<footer>
 			<div class="container">
 			<div class="row">
-				<div class="col-4">
+				<div class="col-12 col-md-4">
 					<div class="footer-logo">
 						<img src="img/whitelogo.svg"/>
 						<h2 class="white-logo">MyPractice</h2>
 					</div>
 				</div>
-				<div class="col-4 dl-col">
+				<div class="col-12 col-md-4 dl-col d-none d-md-flex">
 					<div class="footer-dl">
 						<p class="footer-heading">Get the MyPractice App</p>
 						<div>
@@ -221,7 +287,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-12 col-md-4">
 					<div class="contact">
 						<p class="footer-heading">Got any questions?</p>
 						<p class="footer-text">
@@ -229,6 +295,15 @@
 							Monday - Friday 9am - 5pm<br>
 							<a href="refer-a-practice.html">Refer a practice</a>
 						</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 dl-col d-md-none">
+					<div class="footer-dl">
+						<p class="footer-heading">Get the MyPractice App</p>
+						<div>
+							<img src="img/icons/googleplay.svg"/>
+							<img src="img/icons/appstore.svg"/>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -2,7 +2,6 @@ function customCarouselPartner(){
 
 	var count = 0;
 	var total = $(".partners .custom-carousel .img-block").length;
-	console.log(total);
 	var width = Math.ceil($(".partners .custom-carousel .img-block").width());
 	var pos = 0;
 	var loading = false;
@@ -190,6 +189,7 @@ function cycleVideos(){
     var cur = null;
     var duration = null;
   	var videos = [...document.getElementsByClassName("feature-section")];
+  	var videoMobile = [...document.getElementsByClassName("feature-section-mobile")];
     var titles = ["Scripts.mp4",  "Referrals.mp4", "Bookings.mp4", "News.mp4" ];
     var sources = [];
     var index = 0;
@@ -198,9 +198,9 @@ function cycleVideos(){
   	videos.forEach((x,i) =>{
   		x.onclick = function(){
         index = i;
-  		
-  			if (cur) clearTimeout(cur);
-  			reset(changeVid.bind(null,x));
+        $('#key-features-carousel').carousel(i);
+  		if (cur) clearTimeout(cur);
+  		reset(changeVid.bind(null,i));
   		}
   	});
   	
@@ -213,14 +213,20 @@ function cycleVideos(){
 	  		var curVid = x.getElementsByClassName("progress-bar")[0];
 	  		curVid.style.width = "0%";
   			curVid.style.transitionDuration = "0s";
-
+	  	});
+	  	videoMobile.forEach(x =>{
+	  		$(x).removeClass("active");
+	  		$(x).addClass("inactive");
+	  		var curVid = x.getElementsByClassName("progress-bar")[0];
+	  		curVid.style.width = "0%";
+  			curVid.style.transitionDuration = "0s";
 	  	});
       //Small Delay to Avoid Batching CSS Changes
       if (f) setTimeout(f,1);
   	}
 
      //Change Video
-    function changeVid(x){
+    function changeVid(i){
       //Swap Video Source
       var vid = document.getElementById("iPhoneDemo");
       vid.querySelectorAll('*').forEach(n => n.remove());
@@ -231,7 +237,7 @@ function cycleVideos(){
 
       vid.ondurationchange = function() {
         duration = vid.duration;     
-        playVid(x);   
+        playVid(i);   
       };
       vid.oncanplay = function() {
 
@@ -239,16 +245,19 @@ function cycleVideos(){
     }
 
     //Play Video and Load Progress Bar
-  	function playVid(v){
+  	function playVid(i){
 
   	  //Toggle Active or Inactive
-  	  $(v).addClass("active");
-	  $(v).removeClass("inactive");
+  	  $(videos[i]).addClass("active");
+	  $(videos[i]).removeClass("inactive");
       //Begin Progress Bar
-      var x = v.getElementsByClassName("progress-bar")[0];
+      var x = videos[i].getElementsByClassName("progress-bar")[0];
+      var y = videoMobile[i].getElementsByClassName("progress-bar")[0];
       if (duration){
         x.style.width = "100%";
         x.style.transitionDuration = `${duration}s`;
+        y.style.width = "100%";
+        y.style.transitionDuration = `${duration}s`;
       } 
 
   		
@@ -257,7 +266,7 @@ function cycleVideos(){
         reset(null);
         index = index == 3 ? 0 : index + 1;
         videos[index].click();
-  			console.log("DONE ", index);	
+        if ($('#key-features-carousel').css("display") != "none") $('#key-features-carousel').carousel('next');
   		}, (duration || 2) * 1000);
   	}
 
@@ -270,7 +279,11 @@ function cycleVideos(){
       });
     }
 	
-	// setTimeout(function(){console.log("DONE")}, video[0].duration * 1000);
+	//Carousel Version for Mobile View
+	$('#key-features-carousel').on('slid.bs.carousel', function () {
+		var ci = $('div.carousel-item.active').index();
+		if ($('#key-features-carousel').css("display") != "none") videos[ci].click();
+	});
 
 
 
@@ -280,3 +293,9 @@ $(document).ready(function(){
 	customCarouselFeature();
 	// cycleVideos();
 });
+
+// window.addEventListener("resize", function(){
+// 	console.log("RESIZE");
+// 	customCarouselPartner();
+// 	customCarouselFeature();
+// });
