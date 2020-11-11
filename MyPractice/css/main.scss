@@ -49,6 +49,7 @@ body{
 
 		img{
 			padding-right: 15px;
+			height: 42px;
 			
 			@media (max-width: $sm){
 				height: 27px;
@@ -954,6 +955,7 @@ footer{
 			position: relative;
 			bottom: -2px;
 			padding-right: 15px;
+			height: 45px;
 		}
 
 		@media (max-width: $sm){

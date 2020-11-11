@@ -121,7 +121,8 @@ body {
     flex-direction: row;
     align-items: flex-start; }
   .header .logo img {
-    padding-right: 15px; }
+    padding-right: 15px;
+    height: 42px; }
     @media (max-width: 767px) {
       .header .logo img {
         height: 27px;
@@ -675,7 +676,8 @@ footer {
     footer .footer-logo img {
       position: relative;
       bottom: -2px;
-      padding-right: 15px; }
+      padding-right: 15px;
+      height: 45px; }
     @media (max-width: 767px) {
       footer .footer-logo {
         transform: none; } }
