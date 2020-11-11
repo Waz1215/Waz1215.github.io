@@ -626,14 +626,18 @@ body {
         .download .dl-icons .icon-holder {
           flex-direction: column;
           align-items: center; }
+          .download .dl-icons .icon-holder a {
+            width: 70%; }
           .download .dl-icons .icon-holder img {
             height: unset;
-            width: 70%;
+            width: 100%;
             padding-bottom: 10px; } }
       @media (max-width: 767px) {
+        .download .dl-icons .icon-holder a {
+          width: 250px; }
         .download .dl-icons .icon-holder img {
           height: unset;
-          width: 250px;
+          width: 100%;
           padding-bottom: 10px; } }
   @media (max-width: 1199px) {
     .download img {

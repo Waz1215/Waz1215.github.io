@@ -873,17 +873,24 @@ body{
 				flex-direction: column;
 				align-items: center;
 
+				a{
+					width: 70%;
+				}
 				img{
 					height: unset;
-					width: 70%;
+					width: 100%;
 					padding-bottom: 10px;
 				}
 			}
 
 			@media (max-width: $sm){
+
+				a{
+					width: 250px;
+				}
 				img{
 					height: unset;
-					width: 250px;
+					width: 100%;
 					padding-bottom: 10px;
 				}
 			}
