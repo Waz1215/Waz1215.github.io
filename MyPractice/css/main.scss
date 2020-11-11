@@ -22,6 +22,23 @@ body{
 	top: 0;
 	left: 0;
 	z-index: 2;
+	transition-duration: 0.2s;
+
+	&.shrink{
+		height: 64px;
+		background-color: $white !important;
+
+		.logo{
+			transform: scale(0.9);
+		}
+		a{
+			transform: scale(0.9);
+		}
+
+		.header-btn{
+			color: $white !important;
+		}
+	}
 	
 	&.green-header{
 		background-color: $brand-green;
@@ -38,13 +55,20 @@ body{
 		height: 100%;
 	}
 
+	a{
+		transition-duration: 0.2s;
+		transform-origin: center right;
+	}
+
 	.logo{
-		
+		transition-duration: 0.2s;
+		transform-origin: center left;
 		a{
 			text-decoration: none;
 			display: flex;
 			flex-direction: row;
 			align-items: flex-start;
+			transform-origin: center left;
 		}
 
 		img{
