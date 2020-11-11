@@ -311,6 +311,13 @@ body{
 				height: 142px;
 				max-height: 142px;
 
+				@media (max-width: $xs){
+					width: 270px;
+					margin: auto;
+				}
+
+
+
 				.custom-carousel{
 					
 
@@ -331,7 +338,7 @@ body{
 						}
 
 						@media (max-width: $xs){
-							width: 340px;
+							width: 130px;
 						}
 
 
@@ -673,6 +680,11 @@ body{
 				height: 142px;
 				max-height: 142px;
 
+				@media (max-width: $xs){
+					width: 270px;
+					margin: auto;
+				}
+
 				.custom-carousel{
 					
 
@@ -693,7 +705,7 @@ body{
 						}
 
 						@media (max-width: $xs){
-							width: 340px;
+							width: 130px;
 						}
 
 
