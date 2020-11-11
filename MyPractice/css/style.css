@@ -377,6 +377,12 @@ body {
         padding-bottom: 30px; } }
   .key-features #key-features-carousel {
     height: 150px; }
+    @media (max-width: 991px) {
+      .key-features #key-features-carousel {
+        height: 200px; } }
+    @media (max-width: 767px) {
+      .key-features #key-features-carousel {
+        height: 180px; } }
     @media (max-width: 575px) {
       .key-features #key-features-carousel {
         height: 230px; } }
@@ -429,6 +435,7 @@ body {
       height: 3px;
       transition-duration: 0.2s;
       transition-timing-function: linear;
+      animation-timing-function: linear !important;
       position: relative;
       top: -3px;
       border-radius: 5px; }
@@ -439,7 +446,7 @@ body {
       background-color: #4464FF; }
     .key-features .feature-section#referrals h3, .key-features .feature-section-mobile#referrals h3 {
       color: #E18B35;
-      background-color: rgba(255, 193, 132, 0.7); }
+      background-color: rgba(255, 193, 132, 0.3); }
     .key-features .feature-section#referrals .progress-bar, .key-features .feature-section-mobile#referrals .progress-bar {
       background-color: #E18B35; }
     .key-features .feature-section#bookings h3, .key-features .feature-section-mobile#bookings h3 {
@@ -449,7 +456,7 @@ body {
       background-color: #459D87; }
     .key-features .feature-section#news h3, .key-features .feature-section-mobile#news h3 {
       color: #F5A800;
-      background-color: rgba(252, 213, 129, 0.7); }
+      background-color: rgba(252, 213, 129, 0.3); }
     .key-features .feature-section#news .progress-bar, .key-features .feature-section-mobile#news .progress-bar {
       background-color: #F5A800; }
 
@@ -724,3 +731,9 @@ footer {
     .download-hero .icon-holder {
       padding-top: 20px;
       padding-bottom: 20px; } }
+
+@keyframes grow {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }

@@ -199,7 +199,6 @@ function cycleVideos(){
   		x.onclick = function(){
         index = i;
         $('#key-features-carousel').carousel(i);
-  		if (cur) clearTimeout(cur);
   		reset(changeVid.bind(null,i));
   		}
   	});
@@ -211,15 +210,13 @@ function cycleVideos(){
 	  		$(x).removeClass("active");
 	  		$(x).addClass("inactive");
 	  		var curVid = x.getElementsByClassName("progress-bar")[0];
-	  		curVid.style.width = "0%";
-  			curVid.style.transitionDuration = "0s";
+	  		curVid.style.animation = "none";
 	  	});
 	  	videoMobile.forEach(x =>{
 	  		$(x).removeClass("active");
 	  		$(x).addClass("inactive");
 	  		var curVid = x.getElementsByClassName("progress-bar")[0];
-	  		curVid.style.width = "0%";
-  			curVid.style.transitionDuration = "0s";
+	  		curVid.style.animation = "none";
 	  	});
       //Small Delay to Avoid Batching CSS Changes
       if (f) setTimeout(f,1);
@@ -235,13 +232,37 @@ function cycleVideos(){
       //Load VIdeo
       vid.load();
 
+      //Update Duration
       vid.ondurationchange = function() {
         duration = vid.duration;     
-        playVid(i);   
+       
       };
-      vid.oncanplay = function() {
 
+      //Begin Progress Bar Animation
+      vid.oncanplay = function() {
+         playVid(i);   
       }
+
+      var x = videos[i];
+      var y = videoMobile[i]
+      //If Paused, Halt Progress Bar
+      vid.onpause = function(){
+        x.getElementsByClassName("progress-bar")[0].style.animationPlayState="paused";
+        y.getElementsByClassName("progress-bar")[0].style.animationPlayState="paused";
+      }
+
+      //Resume Progress Bar on Play
+      vid.onplay = function(){
+        x.getElementsByClassName("progress-bar")[0].style.animationPlayState="running";
+        y.getElementsByClassName("progress-bar")[0].style.animationPlayState="running";
+      }
+
+      //Video is over, reset progress bar and play next
+      vid.onended = function() {
+        reset(null);
+        index = index == 3 ? 0 : index + 1;
+        videos[index].click();
+      };
     }
 
     //Play Video and Load Progress Bar
@@ -254,20 +275,12 @@ function cycleVideos(){
       var x = videos[i].getElementsByClassName("progress-bar")[0];
       var y = videoMobile[i].getElementsByClassName("progress-bar")[0];
       if (duration){
-        x.style.width = "100%";
-        x.style.transitionDuration = `${duration}s`;
-        y.style.width = "100%";
-        y.style.transitionDuration = `${duration}s`;
+      	if (duration){
+        	x.style.animation = `grow ${duration}s 1`;  
+        	y.style.animation = `grow ${duration}s 1`;     
+      	} 
       } 
 
-  		
-      //Reference to Function to Switch to Next Video
-  		cur = setTimeout(function(){
-        reset(null);
-        index = index == 3 ? 0 : index + 1;
-        videos[index].click();
-        if ($('#key-features-carousel').css("display") != "none") $('#key-features-carousel').carousel('next');
-  		}, (duration || 2) * 1000);
   	}
 
     window.onload = function(){

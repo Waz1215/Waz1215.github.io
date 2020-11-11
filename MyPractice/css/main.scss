@@ -459,6 +459,14 @@ body{
 	#key-features-carousel{
 		height: 150px;
 
+		@media (max-width: $md){
+			height: 200px;
+		}
+
+		@media (max-width: $sm){
+			height: 180px;
+		}
+
 		@media (max-width: $xs){
 			height: 230px;
 		}
@@ -537,6 +545,7 @@ body{
 		    height: 3px;
 		    transition-duration: 0.2s;
 		    transition-timing-function: linear;
+		    animation-timing-function: linear !important;
 		    position: relative;
 		    top: -3px;
 		    border-radius: 5px;
@@ -555,7 +564,7 @@ body{
 		&#referrals{
 			h3{
 				color: #E18B35;
-				background-color: transparentize(#FFC184, 0.3);
+				background-color: transparentize(#FFC184, 0.7);
 			}
 			.progress-bar{
 				background-color: #E18B35;
@@ -573,7 +582,7 @@ body{
 		&#news{
 			h3{
 				color: #F5A800;
-				background-color: transparentize(#FCD581, 0.3);
+				background-color: transparentize(#FCD581, 0.7);
 			}
 			.progress-bar{
 				background-color: #F5A800;
@@ -1044,7 +1053,10 @@ footer{
 
 
 
-
+@keyframes grow {
+	from {width: 0;}
+	to {width: 100%;}
+}
 
 
 
