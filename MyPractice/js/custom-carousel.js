@@ -250,12 +250,21 @@ function cycleVideos(){
         x.getElementsByClassName("progress-bar")[0].style.animationPlayState="paused";
         y.getElementsByClassName("progress-bar")[0].style.animationPlayState="paused";
       }
+	  vid.onsuspend = function() {
+      	// x.getElementsByClassName("progress-bar")[0].style.animationPlayState="paused";
+       //  y.getElementsByClassName("progress-bar")[0].style.animationPlayState="paused";
+	  };
 
       //Resume Progress Bar on Play
       vid.onplay = function(){
         x.getElementsByClassName("progress-bar")[0].style.animationPlayState="running";
         y.getElementsByClassName("progress-bar")[0].style.animationPlayState="running";
       }
+
+      vid.onplaying = function() {
+        x.getElementsByClassName("progress-bar")[0].style.animationPlayState="running";
+        y.getElementsByClassName("progress-bar")[0].style.animationPlayState="running";
+	  };	
 
       //Video is over, reset progress bar and play next
       vid.onended = function() {
@@ -275,10 +284,8 @@ function cycleVideos(){
       var x = videos[i].getElementsByClassName("progress-bar")[0];
       var y = videoMobile[i].getElementsByClassName("progress-bar")[0];
       if (duration){
-      	if (duration){
-        	x.style.animation = `grow ${duration}s 1`;  
-        	y.style.animation = `grow ${duration}s 1`;     
-      	} 
+        x.style.animation = `grow ${duration}s 1`;  
+        y.style.animation = `grow ${duration}s 1`;     
       } 
 
   	}
@@ -291,6 +298,18 @@ function cycleVideos(){
         sources.push(s);
       });
     }
+
+    $('body').on('touchstart', function () {
+            const videoElement = document.getElementById("iPhoneDemo");
+            if (videoElement.playing) {
+                // video is already playing so do nothing
+            }
+            else {
+                // video is not playing
+                // so play video now
+                videoElement.play();
+            }
+    });
 	
 	//Carousel Version for Mobile View
 	$('#key-features-carousel').on('slid.bs.carousel', function () {
@@ -316,5 +335,6 @@ $(document).ready(function(){
 	customCarouselPartner();
 	customCarouselFeature();
 	scrollTo();
-
+	history.scrollRestoration = "manual"
 });
+
